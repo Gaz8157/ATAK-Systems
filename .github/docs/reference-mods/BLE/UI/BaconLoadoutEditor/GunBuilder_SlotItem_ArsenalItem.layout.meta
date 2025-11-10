@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8F6B3BF38DC59A48}UI/BaconLoadoutEditor/GunBuilder_SlotItem_ArsenalItem.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass PS5 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

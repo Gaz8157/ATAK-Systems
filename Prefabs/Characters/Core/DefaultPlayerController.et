@@ -1,0 +1,15 @@
+SCR_PlayerController {
+ ID "1A9BA6BEFA06E3B1"
+ components {
+  SCR_HUDManagerComponent "{2FDC275D9EBCDB8B}" {
+   InfoDisplays {
+    ATAK_DeviceDisplay "{66CF2CC0B12FC5CE}" {
+     m_LayoutPath "{20A41D927F2AEF05}UI/Layouts/atak/ATAK_LayoutMain.layout"
+    }
+    ATAK_CompassDisplay "{66CF2CC0B751C305}" {
+     m_LayoutPath "{9659FBF7DF8F6408}UI/Layouts/atak/ATAK_Compass.layout"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,143 @@
+ActionManager {
+ Actions {
+  Action HCA_RadUI_Interact_Hold {
+   InputSource InputSourceSum "{5EAC8E5C6A5A5852}" {
+    Sources {
+     InputSourceValue "{5EAC8E5C6A5A585B}" {
+      FilterPreset "hold"
+      Input "keyboard:KC_LMENU"
+      Filter InputFilterHold "{5EAC8E5C6A5A584C}" {
+       HoldDuration 1
+      }
+     }
+    }
+   }
+  }
+  Action HCA_RadUI_Interact_Toggle {
+   InputSource InputSourceSum "{5EAC8E5C6A5A586E}" {
+    Sources {
+     InputSourceCombo "{620E7EB57FB9781C}" {
+      FilterPreset "click"
+      Sources {
+       InputSourceValue "{620E7EB57FB97808}" {
+        Input "keyboard:KC_LCONTROL"
+       }
+       InputSourceValue "{620E7EB57FB9783C}" {
+        Input "keyboard:KC_B"
+       }
+      }
+     }
+    }
+   }
+  }
+  Action HCA_RadUI_Interact_Choose_Up {
+   InputSource InputSourceSum "{5EAC9A51710715EA}" {
+    Sources {
+     InputSourceValue "{5EAC9A5171071592}" {
+      FilterPreset "click"
+      Input "mouse:wheel"
+      Filter InputFilterClick "{5EAC9A5171071586}" {
+      }
+     }
+    }
+   }
+  }
+  Action HCA_RadUI_Interact_Choose_Down {
+   InputSource InputSourceSum "{5EAC9A51710715A1}" {
+    Sources {
+     InputSourceValue "{5EAC9A51710715AE}" {
+      FilterPreset "click"
+      Input "mouse:wheel-"
+      Filter InputFilterClick "{5EAC9A5171071553}" {
+      }
+     }
+    }
+   }
+  }
+  Action HCA_RadUI_Interact_Choose {
+   Type AnalogRelative
+   InputSource InputSourceSum "{5EAC984B5D4276C1}" {
+    Sources {
+     InputSourceValue "{5EAC984B5D4276CA}" {
+      FilterPreset "up"
+      Input "mouse:wheel+"
+      Filter InputFilterDown "{5ECE408171388F43}" {
+       Multiplier 1
+      }
+     }
+     InputSourceValue "{5EAC984B5D427687}" {
+      FilterPreset "down"
+      Input "mouse:wheel-"
+      Filter InputFilterDown "{5ECE408171388F65}" {
+       Multiplier -1
+      }
+     }
+     InputSourceValue "{620E7EB57FB97ECC}" {
+      FilterPreset "gamepad:down"
+      Input "gamepad0:pad_down"
+      Filter InputFilterClick "{620E7EB57FB97EFF}" {
+       Multiplier -1
+      }
+     }
+     InputSourceValue "{620E7EB57FB97EEF}" {
+      FilterPreset "gamepad:up"
+      Input "gamepad0:pad_up"
+      Filter InputFilterClick "{620E7EB57FB97E9D}" {
+      }
+     }
+    }
+   }
+  }
+  Action HCA_RadUI_Interact_Confirm {
+   InputSource InputSourceSum "{5ECE408171388F0E}" {
+    Sources {
+     InputSourceValue "{5ECE408171388F31}" {
+      FilterPreset "click"
+      Input "keyboard:KC_E"
+      Filter InputFilterClick "{5ECE408171388F24}" {
+      }
+     }
+     InputSourceValue "{620E7EB57FB97E43}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:a"
+      Filter InputFilterClick "{620E7EB57FB97E71}" {
+       ClickDuration 125
+      }
+     }
+    }
+   }
+  }
+  Action HCA_RadUI_Interact_Cancel {
+   InputSource InputSourceSum "{5ECE408171388CCF}" {
+    Sources {
+     InputSourceValue "{5ECE408171388CF4}" {
+      FilterPreset "click"
+      Input "keyboard:KC_Q"
+      Filter InputFilterClick "{5ECE408171388CE4}" {
+      }
+     }
+     InputSourceValue "{620E7EB57FB97E27}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:b"
+      Filter InputFilterClick "{620E7EB57FB97FD5}" {
+       ClickDuration 125
+      }
+     }
+    }
+   }
+  }
+ }
+ Contexts {
+  ActionContext CharacterGeneralContext {
+   ActionRefs +{
+    "HCA_RadUI_Interact_Hold"
+    "HCA_RadUI_Interact_Toggle"
+    "HCA_RadUI_Interact_Choose_Up"
+    "HCA_RadUI_Interact_Choose_Down"
+    "HCA_RadUI_Interact_Choose"
+    "HCA_RadUI_Interact_Confirm"
+    "HCA_RadUI_Interact_Cancel"
+   }
+  }
+ }
+}

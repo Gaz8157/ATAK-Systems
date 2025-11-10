@@ -1,0 +1,41 @@
+HorizontalLayoutWidgetClass {
+ Name "RankAndSupplyInfo"
+ components {
+  GunBuilderUI_RankAndSupplyInfoComponent "{64FAFD0F7155F7A8}" {
+  }
+ }
+ {
+  OverlayWidgetClass "{64FAFD0A24623688}" : "{240A59B5FB1DA903}UI/BaconLoadoutEditor/GunBuilder_SupplyOverlay.layout" {
+   Name "SupplyOverlay"
+   Slot LayoutSlot "{64FAFD0A24623671}" {
+    HorizontalAlign 2
+    VerticalAlign 0
+    Padding 0 6 6 0
+   }
+   "Z Order" 1
+   "Is Visible" 1
+   {
+    HorizontalLayoutWidgetClass "{64FAAA140A451751}" {
+     Prefab "{64FAAA140A451751}"
+     {
+      TextWidgetClass "{64FAAA14A1B95B1F}" {
+       Prefab "{64FAAA14A1B95B1F}"
+       Slot LayoutSlot "{64FAAA14A1B95AFC}" {
+       }
+       "Min Font Size" 10
+      }
+     }
+    }
+   }
+  }
+  OverlayWidgetClass "{64FAFD0A211A5945}" : "{B61A24675C598E67}UI/BaconLoadoutEditor/GunBuilder_RankOverlay.layout" {
+   Name "RankOverlay"
+   Slot LayoutSlot "{64FAFD0A211A590B}" {
+    HorizontalAlign 2
+    VerticalAlign 0
+    Padding 0 6 6 0
+   }
+   "Is Visible" 1
+  }
+ }
+}

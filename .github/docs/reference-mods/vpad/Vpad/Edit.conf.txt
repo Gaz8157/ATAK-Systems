@@ -1,0 +1,94 @@
+SCR_EditorAttributeList {
+ m_aAttributes {
+  SCR_gOS_SCR_EditorAttribute_Main "{61F0C1B77E559BA9}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{61F0C1B766F84B44}" {
+    Name "vPad test setting #1"
+    Description "the first one"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+  }
+  SCR_gOS_SCR_EditorAttribute_Setting_Default_HINT "{61FA1A2E190E71D5}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{61F0C1B766F84B44}" {
+    Name "Catergory:Settings Defaults"
+    Description "Change the default settings applied to clients who have NOT opened the vPad settings page and saved their settings... (this setting itself does not do anything)"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+  }
+  SCR_gOS_SCR_EditorAttribute_Setting_Default_Disable "{61FA101DFE935503}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{61FA1492692B7AD4}" {
+    Name "Set Def:Minimap Enabled"
+    Description "Controls the default state of the minimap enabled setting in the vPad Options for all clients"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+  }
+  SCR_gOS_SCR_EditorAttribute_Setting_Default_Hold_M "{633F3E13985F45F0}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{633F3E13985F4534}" {
+    Name "Set Def:Tap M for full MAP"
+    Description "Server Default to Tap M for opening the full map instantly. Can be changed by individual players."
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout"
+  }
+  SCR_gOS_SCR_EditorAttribute_Hint_Replace_OnUse "{6468A1AAC0BAEF4D}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{6468A1AAC0BAE527}" {
+    Name "Catergory:Replace Vanilla Map on Equip"
+    Description "Automatically replace map when a player equips the map. Replaces with the designated map type. ... (this setting itself does not do anything)"
+    m_cDescriptionIconColor 0.075 0.204 1 1
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+  }
+  gOS_SCR_FactionEditorAttribute_Replace_OnUse_PaperMap "{6468A1AB17E01F92}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{6468A1AB1F3FBBAF}" {
+    Name "Paper Map"
+    Description "Replace the vanilla map with the paper minimap when equiped"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+   m_iButtonsOnRow 5
+   m_fButtonHeight 90
+  }
+  gOS_SCR_FactionEditorAttribute_Replace_OnUse_vPad_Green "{6468A1AB1B06C99E}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{6468A1ABF33EA3CD}" {
+    Name "vPad Green"
+    Description "Replace the vanilla map with the vPad Green when equipped"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+   m_iButtonsOnRow 5
+   m_fButtonHeight 90
+  }
+  SCR_gOS_SCR_EditorAttribute_Hint_Arsenal_Add "{646C9AC90F330619}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{646C9AC90F3307E2}" {
+    Name "Catergory:Add minimap to arsenal(Ammunition supply depot)"
+    Description "Automatically adds the specifc minimap object to the arsenal. Without the minimap object, the minimap cannot be used. ... (this setting itself does not do anything)"
+    m_cDescriptionIconColor 0.075 0.204 1 1
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{D1F686225704ADC2}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_Selection.layout"
+  }
+  gOS_SCR_FactionEditorAttribute_Arsenal_Add_PaperMap "{646C9AC90C1E5891}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{646C9AC90C1E58AF}" {
+    Name "Paper Map"
+    Description "Paper minimap is added to the arsenal of the faction"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+   m_iButtonsOnRow 5
+   m_fButtonHeight 90
+  }
+  gOS_SCR_FactionEditorAttribute_Arsenal_Add_vPad_Green "{646C9AC9F23A0F08}" {
+   m_UIInfo SCR_EditorAttributeUIInfo "{646C9AC9F23A0CC8}" {
+    Name "vPad Green"
+    Description "vPad Green is added to the arsenal of the faction"
+   }
+   m_CategoryConfig "{AC1A4380AECADF92}Configs/Editor/AttributeCategories/gOS_GameSettings.conf"
+   m_Layout "{6E34D64D72CAB7DC}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_ButtonBox_MultiSelection.layout"
+   m_iButtonsOnRow 5
+   m_fButtonHeight 90
+  }
+ }
+}

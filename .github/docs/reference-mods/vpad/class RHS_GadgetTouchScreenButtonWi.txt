@@ -1,0 +1,56 @@
+class RHS_GadgetTouchScreenButtonWidgetComponent : RHS_TouchScreenWidgetHandler
+{
+	[Attribute("")]
+	protected int m_iButtonNum;
+	protected bool m_bButtonDown;
+	protected RHS_GadgetTouchScreenWidgetComponent m_GadgetTouchScreenWidgetHandler;
+	
+	//------------------------------------------------------------------------------------------------
+	override void HandlerAttached(Widget w)
+	{
+		super.HandlerAttached(w);
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	void Init(RHS_GadgetTouchScreenWidgetComponent gadgetTouchScreenWidgetHandler)
+	{
+		m_GadgetTouchScreenWidgetHandler = gadgetTouchScreenWidgetHandler;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override void OnCursorDown()
+	{
+		super.OnCursorDown();
+		
+		m_GadgetTouchScreenWidgetHandler.ButtonDown(m_iButtonNum);
+		m_bButtonDown = true;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override void OnCursorUp()
+	{
+		super.OnCursorUp();
+		
+		if (m_bButtonDown)
+			m_GadgetTouchScreenWidgetHandler.ButtonUp(m_iButtonNum);
+		m_bButtonDown = false;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override void OnUnHover()
+	{
+		super.OnUnHover();
+		
+		if (m_bButtonDown)
+			m_GadgetTouchScreenWidgetHandler.ButtonUp(m_iButtonNum);
+		m_bButtonDown = false;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override void OnCursorClick()
+	{
+		super.OnCursorClick();
+		
+		
+	}
+}

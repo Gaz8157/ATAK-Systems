@@ -1,0 +1,266 @@
+ButtonWidgetClass {
+ Name "Button"
+ Slot ButtonWidgetSlot "{6073127B92689CAA}" {
+  HorizontalAlign 3
+  VerticalAlign 3
+ }
+ Color 1 1 1 0
+ components {
+  GunBuilderUI_MultifunctionSlotUIComponent "{605AD32619002203}" {
+   m_aEffects {
+    SCR_ButtonEffectOpacity "{605AD32628C6BE3C}" {
+     m_eEvents 6144
+     m_sWidgetName "SlotBorder"
+     m_fAnimationTime 0.1
+     m_fDefault 0
+     m_fHovered 0.25
+     m_fActivated 0.25
+     m_fActivatedHovered 0
+     m_fDisabled 0
+     m_fDisabledActivated 0
+     m_fClicked 0
+     m_fFocusGained 0.1
+     m_fFocusLost 0
+     m_fToggledOn 0
+     m_fToggledOff 0
+     m_fMouseEnter 0.1
+     m_fMouseLeave 0
+    }
+    SCR_ButtonEffectSound "{605AD32629E53E24}" {
+     m_aTags {
+      "CheckerKnob"
+     }
+     m_eEvents EVENT_MOUSE_ENTER
+     m_eInputDevices 50
+     m_sSound "SOUND_FE_BUTTON_HOVER"
+    }
+    SCR_ButtonEffectSound "{605AD3262AE7B8D8}" {
+     m_aTags {
+      "CheckerKnob"
+     }
+     m_eEvents EVENT_FOCUS_GAINED
+     m_eInputDevices 61
+     m_sSound "SOUND_FE_BUTTON_HOVER"
+    }
+    SCR_ButtonEffectOpacity "{605B59A45061FB96}" {
+     m_sWidgetName "SlotText"
+     m_fDefault 0.25
+     m_fActivated 0.5
+     m_fClicked 0.5
+     m_fFocusGained 0.35
+     m_fMouseEnter 0.35
+     m_fMouseLeave 0.35
+    }
+   }
+   m_bFocusOnMouseEnter 1
+   m_sWidgetImageName "SlotImage"
+   m_sWidgetTextName "SlotText"
+  }
+ }
+ {
+  SizeLayoutWidgetClass "{606EE37792C0017A}" {
+   Name "SizeLayout"
+   Slot ButtonWidgetSlot "{605AD3260D2FB171}" {
+    HorizontalAlign 3
+    VerticalAlign 0
+   }
+   AllowWidthOverride 1
+   WidthOverride 416
+   AllowHeightOverride 1
+   HeightOverride 64
+   AllowMinDesiredWidth 1
+   MinDesiredWidth 416
+   AllowMinDesiredHeight 1
+   MinDesiredHeight 64
+   {
+    OverlayWidgetClass "{606EE37792C0017B}" {
+     Name "Overlay"
+     Slot AlignableSlot "{605AD3203219A536}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      HorizontalLayoutWidgetClass "{60E166A15F761853}" {
+       Name "IconHorizontalLayout"
+       Slot OverlayWidgetSlot "{60E166A15F76183A}" {
+        HorizontalAlign 2
+        VerticalAlign 0
+        Padding 0 4 4 0
+       }
+       "Z Order" 1
+       {
+        OverlayWidgetClass "{64FAAA100E42A6FA}" : "{240A59B5FB1DA903}UI/BaconLoadoutEditor/GunBuilder_SupplyOverlay.layout" {
+         Name "SupplyOverlay"
+         Slot LayoutSlot "{64FAAA1F06CF2B85}" {
+          HorizontalAlign 2
+          VerticalAlign 1
+         }
+         "Z Order" 1
+        }
+        ImageWidgetClass "{60E13D2A1B64BA95}" {
+         Name "ItemHighlightImageExtra"
+         Slot LayoutSlot "{611D192172C190AD}" {
+          HorizontalAlign 2
+          VerticalAlign 1
+         }
+         "Z Order" 2
+         "Is Visible" 0
+         Color 1 1 1 0.502
+         Texture "{FDD5423E69D007F8}UI/Textures/Icons/icons_wrapperUI-128.imageset"
+         Image "weapons"
+         Size 24 24
+        }
+        ImageWidgetClass "{606EE37792C00178}" {
+         Name "ItemHighlightImage"
+         Slot LayoutSlot "{611D192172C19070}" {
+          HorizontalAlign 2
+          VerticalAlign 1
+         }
+         "Z Order" 3
+         "Is Visible" 0
+         Color 1 1 1 0.502
+         Texture "{FDD5423E69D007F8}UI/Textures/Icons/icons_wrapperUI-128.imageset"
+         Image "weapons"
+         Size 24 24
+        }
+        OverlayWidgetClass "{64FAAA212C4699B8}" : "{B61A24675C598E67}UI/BaconLoadoutEditor/GunBuilder_RankOverlay.layout" {
+         Name "RankOverlay"
+         Slot LayoutSlot "{64FAAA220EAFB458}" {
+          HorizontalAlign 2
+          VerticalAlign 0
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{606EE377AF5513D6}" {
+       Name "ItemHighlightContainer"
+       Slot OverlayWidgetSlot "{606EE377AF5513F3}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Is Visible" 0
+       {
+        ImageWidgetClass "{606EE3702952F036}" {
+         Name "ItemHighlightGlow"
+         Slot OverlayWidgetSlot "{606EE3492A6E383C}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         "Is Visible" 0
+         Color 0.761 0.392 0.078 0.112
+         Image "weapons"
+         Size 32 32
+         Tiling Wrap
+         Mask "Assets/BaconLoadoutEditor/gradientDiagonal256.edds"
+         "Transition width" 1
+         Progress 0.649
+         "Mask Mode" "Include Below"
+        }
+       }
+      }
+      ImageWidgetClass "{606EE37792C00179}" {
+       Name "BlockedPanel"
+       Slot OverlayWidgetSlot "{605EF7D98FADFA89}" {
+        HorizontalAlign 3
+        Padding 10 0 0 0
+       }
+       "Z Order" 3
+       "Is Visible" 0
+       Color 0.515 0.004 0 0.784
+       Texture "{DB6FEE404E1FBFBA}UI/Textures/InventoryIcons/Disabled_slot_V1a.edds"
+       Size 64 48
+       Tiling Wrap
+       "Flip Vertically" 1
+       Mask "{E12BB5C5BD00269E}UI/Textures/Common/gradientTexture_Dither_right_512.edds"
+       "Transition width" 1
+       Progress 0.502
+       "Mask Mode" "Include Below"
+      }
+      HorizontalLayoutWidgetClass "{606EE37792C00176}" {
+       Name "HorizontalLayout0"
+       Slot OverlayWidgetSlot "{605B59A5AA7FABBB}" {
+        HorizontalAlign 3
+       }
+       {
+        TextWidgetClass "{606EE37792C02F6C}" {
+         Name "SlotText"
+         Slot LayoutSlot "{605B59A435C2E7FA}" {
+          Padding 16 0 0 0
+          SizeMode Fill
+         }
+         "Z Order" 1
+         Color 0.678 0.678 0.678 1
+         "Font Size" 16
+         "Min Font Size" 16
+         "Vertical Alignment" Center
+         Wrap 1
+         FontProperties FontProperties "{605B59A218CE5E87}" {
+          Font "{E2CBA6F76AAA42AF}UI/Fonts/Roboto/Roboto_Regular.fnt"
+          DisabledColor 0.377 0.377 0.377 1
+         }
+         "Line Spacing" 4
+        }
+        SizeLayoutWidgetClass "{606EE37792C02F6D}" {
+         Name "SizeLayout0"
+         Slot LayoutSlot "{605C92795093913B}" {
+          HorizontalAlign 0
+          VerticalAlign 1
+          Padding 4 0 0 0
+         }
+         AllowWidthOverride 1
+         WidthOverride 64
+         AllowHeightOverride 1
+         HeightOverride 64
+         MaxDesiredWidth 96
+         MaxDesiredHeight 96
+         {
+          OverlayWidgetClass "{606EE37792C02F6E}" {
+           Name "Overlay0"
+           Slot AlignableSlot "{605B59A3A9EBD262}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           {
+            ImageWidgetClass "{606EE37792C189EF}" {
+             Name "SlotImage"
+             Slot OverlayWidgetSlot "{605AD3260D2FB133}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             "Is Visible" 0
+             Texture "{FDD5423E69D007F8}UI/Textures/Icons/icons_wrapperUI-128.imageset"
+             Image "careerCircleOutline"
+             Size 128 128
+            }
+            ItemPreviewWidgetClass "{606EE37792C189EE}" {
+             Name "SlotPreview"
+             Slot OverlayWidgetSlot "{605B59A5E5B430A9}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             "Is Visible" 0
+             Format LDR_sRGB
+             "Use clear color" 1
+             "Blend mode" Blend
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass "{606EE37792C11C4A}" {
+       Name "SlotBorder"
+       Slot OverlayWidgetSlot "{605EF7D98FADFA89}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.701 0.366 0.078 1
+       style full
+      }
+     }
+    }
+   }
+  }
+ }
+}

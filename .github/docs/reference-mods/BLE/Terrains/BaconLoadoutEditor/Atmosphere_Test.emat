@@ -1,0 +1,4 @@
+MatAtmosphere {
+ AerialPerspectiveStrength 5.735
+ DistanceFogStart 0.5
+}

@@ -1,0 +1,9 @@
+MatPBRBasic : "{81BBF66ACF821034}Prefabs/BaconLoadoutEditor/PreviewWorld/Ground.emat" {
+ Color 0.847 0.847 0.847 1
+ BCRMap "{10CF8623F332BD9B}Terrains/Common/Surfaces/Data/Concrete01_3x3_BCR.edds"
+ NMOMap "{37F8CD67F074FB8C}Terrains/Common/Surfaces/Data/Concrete01_3x3_NHO.edds"
+ DetailNormalPower 0.708
+ DetailNormalMap "{37F8CD67F074FB8C}Terrains/Common/Surfaces/Data/Concrete01_3x3_NHO.edds"
+ HeightMap "{37F8CD67F074FB8C}Terrains/Common/Surfaces/Data/Concrete01_3x3_NHO.edds"
+ ParallaxScale 0.011
+}

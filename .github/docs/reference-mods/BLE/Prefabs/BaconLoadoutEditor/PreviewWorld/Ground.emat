@@ -1,0 +1,21 @@
+MatPBRBasic {
+ Color 0.133 0.133 0.133 1
+ Sort translucent
+ AlphaTest 0.004
+ AlphaMul 0.999
+ BlendMode AlphaBlend
+ RoughnessScale 0.92
+ AOScale 0.775
+ DielectricReflectance 0.031
+ BCRMap "{93550F53CF86DDA6}Assets/_SharedData/Asphalt/ST_Asphalt_01_BCR.edds"
+ OpacityMap "{1804026ED0174F8B}Assets/BaconLoadoutEditor/gradientRadial.edds"
+ NMOMap "{AB8DB4C116F18F38}Assets/_SharedData/Asphalt/ST_Asphalt_01_NMO.edds"
+ DetailNormalPower 2
+ DetailNormalMap "{AB8DB4C116F18F38}Assets/_SharedData/Asphalt/ST_Asphalt_01_NMO.edds"
+ DetailNormalMapUVTransform MatUVTransform "{606A9B2664969843}" {
+  TilingU 2
+  TilingV 2
+ }
+ HeightMap "{93550F53CF86DDA6}Assets/_SharedData/Asphalt/ST_Asphalt_01_BCR.edds"
+ ParallaxScale 0.002
+}

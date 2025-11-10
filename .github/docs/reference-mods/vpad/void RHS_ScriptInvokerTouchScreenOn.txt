@@ -1,0 +1,217 @@
+void RHS_ScriptInvokerTouchScreenOnClickMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnClickMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnClickMethod> RHS_ScriptInvokerTouchScreenOnClick;
+
+void RHS_ScriptInvokerTouchScreenOnDoubleClickMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnDoubleClickMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnDoubleClickMethod> RHS_ScriptInvokerTouchScreenOnDoubleClick;
+
+void RHS_ScriptInvokerTouchScreenOnCursorDownMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnCursorDownMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnCursorDownMethod> RHS_ScriptInvokerTouchScreenOnCursorDown;
+
+void RHS_ScriptInvokerTouchScreenOnCursorUpMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnCursorUpMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnCursorUpMethod> RHS_ScriptInvokerTouchScreenOnCursorUp;
+
+void RHS_ScriptInvokerTouchScreenOnCursorDragMethod(Widget widget, RHS_TouchScreenWidgetHandler handler, vector drag);
+typedef func RHS_ScriptInvokerTouchScreenOnCursorDragMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnCursorDragMethod> RHS_ScriptInvokerTouchScreenOnCursorDrag;
+
+void RHS_ScriptInvokerTouchScreenOnWheelUpdateMethod(Widget widget, RHS_TouchScreenWidgetHandler handler, float value);
+typedef func RHS_ScriptInvokerTouchScreenOnWheelUpdateMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnWheelUpdateMethod> RHS_ScriptInvokerTouchScreenOnWheelUpdate;
+
+void RHS_ScriptInvokerTouchScreenOnCursorPositionChangeMethod(Widget widget, RHS_TouchScreenWidgetHandler handler, vector position);
+typedef func RHS_ScriptInvokerTouchScreenOnCursorPositionChangeMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnCursorPositionChangeMethod> RHS_ScriptInvokerTouchScreenOnCursorPositionChange;
+
+void RHS_ScriptInvokerTouchScreenOnHoverMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnHoverMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnHoverMethod> RHS_ScriptInvokerTouchScreenOnHover;
+
+void RHS_ScriptInvokerTouchScreenOnUnHoverMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnUnHoverMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnUnHoverMethod> RHS_ScriptInvokerTouchScreenOnUnHover;
+
+void RHS_ScriptInvokerTouchScreenOnCursorMethod(Widget widget, RHS_TouchScreenWidgetHandler handler);
+typedef func RHS_ScriptInvokerTouchScreenOnCursorMethod;
+typedef ScriptInvokerBase<RHS_ScriptInvokerTouchScreenOnCursorMethod> RHS_ScriptInvokerTouchScreenOnCursor;
+
+// Main widget for touch screen widgets
+// Handle input from RHS_TouchScreenHandler
+class RHS_TouchScreenWidgetHandler : ScriptedWidgetComponent
+{
+	protected Widget m_wRoot;
+
+	protected ref RHS_ScriptInvokerTouchScreenOnClick m_OnClick;
+	protected ref RHS_ScriptInvokerTouchScreenOnDoubleClick m_OnDoubleClick;
+	protected ref RHS_ScriptInvokerTouchScreenOnCursorDown m_OnCursorDown;
+	protected ref RHS_ScriptInvokerTouchScreenOnCursorUp m_OnCursorUp;
+	protected ref RHS_ScriptInvokerTouchScreenOnCursorDrag m_OnCursorDrag;
+	protected ref RHS_ScriptInvokerTouchScreenOnWheelUpdate m_OnWheelUpdate;
+	protected ref RHS_ScriptInvokerTouchScreenOnCursorPositionChange m_OnCursorPositionChange;
+	protected ref RHS_ScriptInvokerTouchScreenOnHover m_OnCursorHover;
+	protected ref RHS_ScriptInvokerTouchScreenOnUnHover m_OnCursorUnHover;
+	protected ref RHS_ScriptInvokerTouchScreenOnCursor m_OnCursorCursor;
+
+	//------------------------------------------------------------------------------------------------
+	override void HandlerAttached(Widget w)
+	{
+		m_wRoot = w;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	Widget GetRootWidget()
+	{
+		return m_wRoot;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnClick GetOnClick()
+	{
+		if (!m_OnClick)
+			m_OnClick = new RHS_ScriptInvokerTouchScreenOnClick();
+		return m_OnClick;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnDoubleClick GetOnDoubleClick()
+	{
+		if (!m_OnDoubleClick)
+			m_OnDoubleClick = new RHS_ScriptInvokerTouchScreenOnDoubleClick();
+		return m_OnDoubleClick;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnCursorDown GetOnCursorDown()
+	{
+		if (!m_OnCursorDown)
+			m_OnCursorDown = new RHS_ScriptInvokerTouchScreenOnCursorDown();
+		return m_OnCursorDown;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnCursorUp GetOnCursorUp()
+	{
+		if (!m_OnCursorUp)
+			m_OnCursorUp = new RHS_ScriptInvokerTouchScreenOnCursorUp();
+		return m_OnCursorUp;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnCursorDrag GetOnCursorDrag()
+	{
+		if (!m_OnCursorDrag)
+			m_OnCursorDrag = new RHS_ScriptInvokerTouchScreenOnCursorDrag();
+		return m_OnCursorDrag;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnWheelUpdate GetOnWheelUpdate()
+	{
+		if (!m_OnWheelUpdate)
+			m_OnWheelUpdate = new RHS_ScriptInvokerTouchScreenOnWheelUpdate();
+		return m_OnWheelUpdate;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnHover GetOnHover()
+	{
+		if (!m_OnCursorHover)
+			m_OnCursorHover = new RHS_ScriptInvokerTouchScreenOnHover();
+		return m_OnCursorHover;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnUnHover GetOnUnHover()
+	{
+		if (!m_OnCursorUnHover)
+			m_OnCursorUnHover = new RHS_ScriptInvokerTouchScreenOnUnHover();
+		return m_OnCursorUnHover;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	RHS_ScriptInvokerTouchScreenOnCursorPositionChange GetOnCursorPositionChange()
+	{
+		if (!m_OnCursorPositionChange)
+			m_OnCursorPositionChange = new RHS_ScriptInvokerTouchScreenOnCursorPositionChange();
+		return m_OnCursorPositionChange;
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnWidgetUpdate(float timeSlice)
+	{
+
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnHover()
+	{
+		if (m_OnCursorHover)
+			m_OnCursorHover.Invoke(m_wRoot, this);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnUnHover()
+	{
+		if (m_OnCursorUnHover)
+			m_OnCursorUnHover.Invoke(m_wRoot, this);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnCursorDown()
+	{
+		if (m_OnCursorDown)
+			m_OnCursorDown.Invoke(m_wRoot, this);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnCursorUp()
+	{
+		if (m_OnCursorUp)
+			m_OnCursorUp.Invoke(m_wRoot, this);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnCursorClick()
+	{
+		if (m_OnClick)
+			m_OnClick.Invoke(m_wRoot, this);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	void OnCursorDoubleClick()
+	{
+		if (m_OnDoubleClick)
+			m_OnDoubleClick.Invoke(m_wRoot, this);
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	void OnCursor(vector cursor)
+	{
+		
+	}
+
+	//------------------------------------------------------------------------------------------------
+	bool OnWheelUpdate(float value)
+	{
+		if (m_OnWheelUpdate)
+			m_OnWheelUpdate.Invoke(m_wRoot, this, value);
+		return false;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	void OnCursorPositionChange(vector cursorPosition)
+	{
+		if (m_OnCursorPositionChange)
+			m_OnCursorPositionChange.Invoke(m_wRoot, this, cursorPosition);
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	void OnCursorDrag(vector cursorDrag)
+	{
+		if (m_OnCursorDrag)
+			m_OnCursorDrag.Invoke(m_wRoot, this, cursorDrag);
+	}
+}

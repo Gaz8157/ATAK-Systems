@@ -1,0 +1,61 @@
+GenericWorldEntity {
+ ID "605CB4F3F192652D"
+ coords 0 0 0
+ boundMins 0 0 0
+ boundMaxs 0 0 0
+ blockSize 200 1500 200
+ SkyPreset "{71025B355B855044}UI/BaconLoadoutEditor/HDRi_GunBuilder.emat"
+ {
+  GenericWorldLightEntity {
+   ID "605CB4F3F1927A86"
+   coords 3.974 4.836 1.45
+   angleX -13.425
+   angleY -138.057
+   SunAngularSize 1
+   DirectLightLV 1
+   DirectLightColor 0.555 0.749 0.812 0
+   IndirectLightLV 0.5
+   IndirectLightColor 0.326 0.396 0.427 0
+   ProbeReflectionEV 1
+   ProbeDiffuseEV 1
+   "GlobalAOPower " 0.609
+   TargetEV 0
+   ManualHDRBrightness always
+   ManualHDRBrightnessLV 1
+  }
+  GenericEntity {
+   ID "60671A19AE302D47"
+   components {
+    MeshObject "{60671A19B4420132}" {
+     Object "{65C81DEBBC1362D3}Assets/BaconLoadoutEditor/plane.xob"
+     Materials {
+      MaterialAssignClass "{62C73080087257E4}" {
+       SourceMaterial "DefaultGeneratedMaterial"
+       AssignedMaterial "{81BBF66ACF821034}Prefabs/BaconLoadoutEditor/PreviewWorld/Ground.emat"
+      }
+     }
+     PixelSizeScale 10
+     CastShadow 0
+     CastFarShadow 0
+     RainOccluder 0
+     WetnessOccluder 0
+    }
+   }
+   coords 0 -0.01 0
+   scale 5
+  }
+  GameEntity : "{12A0241D8843F627}Prefabs/BaconLoadoutEditor/PreviewWorld/SkySphere.et" {
+   ID "60790D302B302426"
+   coords 0 0 0
+   scale 20
+  }
+  EnvironmentProbeEntity : "{B6B6A21399C5571B}Prefabs/World/DefaultWorld/EnvProbe_Default.et" {
+   ID "60671A1B6D31BDB5"
+   coords 0 0 0
+   Type Local
+   Refresh "Each frame"
+   Rendering 33
+   CaptureLights 1
+  }
+ }
+}

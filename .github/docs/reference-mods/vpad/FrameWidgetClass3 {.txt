@@ -1,0 +1,162 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ Slot FrameWidgetSlot "{58566B97C9A8357C}" {
+  SizeToContent 1
+ }
+ "Z Order" 1
+ Clipping False
+ components {
+  SCR_CampaignMapUIPlayerHighlight "{584E6C7513844B4B}" {
+  }
+ }
+ {
+  OverlayWidgetClass "{61E34A5E9095DFB7}" {
+   Name "Overlay"
+   Slot FrameWidgetSlot "{58848D6189A30D49}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 100
+    OffsetRight -100
+    SizeY 100
+    OffsetBottom -100
+    Alignment 0.5 0.5
+   }
+   {
+    SizeLayoutWidgetClass "{61E34A5E9095DFB6}" {
+     Name "SizeLayout0"
+     Slot OverlayWidgetSlot "{58848D61CEB50E99}" {
+     }
+     AllowWidthOverride 1
+     WidthOverride 100
+     AllowHeightOverride 1
+     HeightOverride 100
+     {
+      PanelWidgetClass "{61E437DBFC81D964}" {
+       Name "Panel0"
+       Slot AlignableSlot "{61E437DBFC81D917}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 1 1 1 0
+       {
+        RichTextWidgetClass "{61E34A5E90959F2F}" {
+         Name "DeployString"
+         Slot FrameWidgetSlot "{61E437DBD4A32A88}" {
+          Anchor 0 0 1 1
+          PositionX 100
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY 0
+          OffsetBottom 0
+          Alignment -1 0
+         }
+         Text "#AR-CampaignMapMarkerPlayerSpawn"
+         "Font Size" 32
+         "Min Font Size" 32
+         "Vertical Alignment" Center
+         FontProperties FontProperties "{588678EB95C44E76}" {
+          DisabledColor 0 0 0 1
+          OutlineSize 1
+          ShadowSize 14
+         }
+        }
+        ImageWidgetClass "{61E34A5E9095DFB1}" {
+         Name "Image"
+         Slot FrameWidgetSlot "{61E437DBFCB8B597}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY -70
+          OffsetBottom 0
+         }
+         Texture "{FDD5423E69D007F8}UI/Textures/Icons/icons_wrapperUI-128.imageset"
+         Image "up"
+         Size 128 128
+        }
+        ImageWidgetClass "{633913AD616E0430}" {
+         Name "Image_Back"
+         Slot FrameWidgetSlot "{61E437DBFCB8B597}" {
+          Anchor 0 0 1 1
+          PositionX 0
+          OffsetLeft 0
+          PositionY 0
+          OffsetTop 0
+          SizeX 0
+          OffsetRight 0
+          SizeY -70
+          OffsetBottom 0
+         }
+         "Z Order" -9
+         Color 0.192 0.192 0.192 1
+         Texture "{6980E83C053C9B5D}UI/Textures/Icons/icons_wrapperUI-128-glow.imageset"
+         Image "up"
+         Size 128 128
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass "{61E34A5E9095DFB0}" {
+   Name "TextFrame"
+   Slot FrameWidgetSlot "{58848D6226495D39}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 80
+    OffsetRight -80
+    SizeY 50
+    OffsetBottom -50
+    Alignment 0 0.5
+   }
+   {
+    VerticalLayoutWidgetClass "{61E34A5E9095DFB3}" {
+     Name "TextLayout"
+     Slot FrameWidgetSlot "{58848D63C6FD27ED}" {
+      Anchor 0.5 0.5 0.5 0.5
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 112.864
+      OffsetRight -112.864
+      SizeY 40
+      OffsetBottom -40
+      Alignment 0 0.5
+      SizeToContent 1
+     }
+     "Z Order" 1
+     {
+      RichTextWidgetClass "{61E34A5E90959F2E}" {
+       Name "TimeString"
+       Slot LayoutSlot "{58848D632E2B9B9D}" {
+        HorizontalAlign 1
+        VerticalAlign 2
+       }
+       Color 0 0 0 1
+       Text ""
+       "Font Size" 32
+       "Min Font Size" 32
+       FontProperties FontProperties "{588678EA47A0B231}" {
+        Italic 1
+        Bold 1
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

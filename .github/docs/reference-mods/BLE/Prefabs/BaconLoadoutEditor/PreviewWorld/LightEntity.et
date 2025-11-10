@@ -1,0 +1,25 @@
+LightEntity {
+ ID "656EAA88E2D0A322"
+ components {
+  GunBuilderUI_EditorOptionLightColorComponent "{656EAA88CF5ED3D2}" {
+   m_sIconName "careerCircleSelected"
+   m_sOptionName "Light Color"
+   m_sOptionDefaultValue "1"
+  }
+  Hierarchy "{656EAA88CF5ED3D0}" {
+  }
+ }
+ coords 1.889 1.791 -2.187
+ angleX -13.132
+ angleY -19.496
+ angleZ -0.229
+ Color 0.657 0.893 1 0
+ LV 8
+ CastShadow 0
+ Type Point
+ Radius 45
+ SpotAngle 47.354
+ Dynamic 1
+ Visualization Disabled
+ SourceSize 1.612
+}

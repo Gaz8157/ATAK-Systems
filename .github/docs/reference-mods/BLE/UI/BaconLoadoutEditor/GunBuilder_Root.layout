@@ -1,0 +1,594 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  HorizontalLayoutWidgetClass "{64FAFD0AD837A87D}" : "{E85F289A143E2D0A}UI/BaconLoadoutEditor/GunBuilder_CurrentRankAndSupplyInfo.layout" {
+   Name "RankAndSupplyInfo"
+   Slot FrameWidgetSlot "{64FAFD0AD837A860}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -464
+    OffsetLeft -464
+    PositionY -510
+    OffsetTop -510
+    SizeX 400
+    OffsetRight 64
+    SizeY 36
+    OffsetBottom 474
+    Alignment 1 0
+    SizeToContent 1
+   }
+   "Z Order" 10
+   {
+    OverlayWidgetClass "{64FAFD0A24623688}" {
+     Prefab "{64FAFD0A24623688}"
+     "Is Visible" 0
+    }
+    OverlayWidgetClass "{64FAFD0A211A5945}" {
+     Prefab "{64FAFD0A211A5945}"
+     "Is Visible" 0
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{61C876C32C169EFB}" {
+   Name "Note"
+   Slot FrameWidgetSlot "{61C876C32C169EE2}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -400
+    OffsetLeft -400
+    PositionY 348
+    OffsetTop 348
+    SizeX 1300
+    OffsetRight -900
+    SizeY 64
+    OffsetBottom -412
+   }
+   "Z Order" 10
+   "Is Enabled" 0
+   {
+    TextWidgetClass "{61C876C3C7FC5445}" {
+     Name "Text0"
+     Slot LayoutSlot "{61C876C3C7FC5425}" {
+      HorizontalAlign 2
+      SizeMode Fill
+     }
+     "Z Order" 1
+     Color 1 0.588 0.219 1
+     Text "Before reporting bugs and issues with the editor, make sure you reproduce without any other mods loaded"
+     "Horizontal Alignment" Right
+    }
+    TextWidgetClass "{631D1E942F93373A}" {
+     Name "XboxNote"
+     Slot LayoutSlot "{61C876C3C7FC5425}" {
+      HorizontalAlign 2
+      SizeMode Fill
+     }
+     "Is Visible" 0
+     Color 1 0.049 0.044 1
+     components {
+      GunBuilderUI_XboxNoteComponent "{631D1E9542877FB9}" {
+      }
+     }
+     Text "Loadouts cannot be persisted on console in single-player mode"
+     "Horizontal Alignment" Right
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{60731279937AF912}" : "{3E8047D2C5A9DAC2}UI/BaconLoadoutEditor/GunBuilderUI_InventoryPanelMain.layout" {
+   Name "InventoryPanelMain"
+   Slot FrameWidgetSlot "{606D14789E14E79F}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -392
+    OffsetLeft -392
+    PositionY -476
+    OffsetTop -476
+    SizeX 1288
+    OffsetRight -896
+    SizeY 888
+    OffsetBottom -412
+   }
+   "Is Visible" 0
+   {
+    SizeLayoutWidgetClass "{60731279194A4EE2}" {
+     Prefab "{60731279194A4EE2}"
+     Slot LayoutSlot "{60731279194A4ECD}" {
+     }
+    }
+    OverlayWidgetClass "{606EE34A357E1FAD}" {
+     Prefab "{606EE34A357E1FAD}"
+     Slot LayoutSlot "{606F35EA78E497AB}" {
+      SizeMode Fill
+     }
+     {
+      ScrollLayoutWidgetClass "{606739BB1D537C5D}" {
+       Prefab "{606739BB1D537C5D}"
+       Slot OverlayWidgetSlot "{606D147B83585339}" {
+       }
+       {
+        SizeLayoutWidgetClass "{606739BB29E38933}" {
+         Prefab "{606739BB29E38933}"
+         {
+          WrapLayoutWidgetClass "{606739BA6D981DF3}" {
+           Prefab "{606739BA6D981DF3}"
+           Slot AlignableSlot "{606739BB1D5B6C07}" {
+           }
+           {
+            ButtonWidgetClass "{607312661242DC1D}" : "{8F6B3BF38DC59A48}UI/BaconLoadoutEditor/GunBuilder_SlotItem_ArsenalItem.layout" {
+             Name "Button2"
+             Slot WrapLayoutWidgetSlot "{607312661242DC04}" {
+             }
+            }
+            ButtonWidgetClass "{6073127B897760D3}" : "{8F6B3BF38DC59A48}UI/BaconLoadoutEditor/GunBuilder_SlotItem_ArsenalItem.layout" {
+             Name "Button1"
+             Slot WrapLayoutWidgetSlot "{6073127B897760B8}" {
+             }
+            }
+            ButtonWidgetClass "{6073127B871F387A}" : "{8F6B3BF38DC59A48}UI/BaconLoadoutEditor/GunBuilder_SlotItem_ArsenalItem.layout" {
+             Name "Button0"
+             Slot WrapLayoutWidgetSlot "{6073127B871F3864}" {
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{605F6B262EF3F479}" {
+   Name "Slots"
+   Slot FrameWidgetSlot "{605F6B262EF3F46E}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -864
+    OffsetLeft -864
+    PositionY -476
+    OffsetTop -476
+    SizeX 400
+    OffsetRight 464
+    SizeY 952
+    OffsetBottom -476
+   }
+   "Z Order" 5
+   Clipping False
+   {
+    SizeLayoutWidgetClass "{60712765BA943BAF}" : "{89C5D23FC4C4D44A}UI/BaconLoadoutEditor/GunBuilderUI_MenuCategories.layout" {
+     Name "CategorySelector"
+     Slot LayoutSlot "{60712765BA943B99}" {
+     }
+     "Is Visible" 0
+    }
+    OverlayWidgetClass "{605F6B2ADDA7C024}" {
+     Name "EditedSlotInfoContainer"
+     Slot LayoutSlot "{605F6B2ADDA7C002}" {
+     }
+     "Z Order" 5
+     {
+      PanelWidgetClass "{605F6B2AFADE4C3C}" {
+       Name "Panel1"
+       Slot OverlayWidgetSlot "{605B59A73AC8369E}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.018 0.018 0.018 1
+       style full
+      }
+      ButtonWidgetClass "{605F6B26E5C9D30C}" : "{3EA30E5EA8768F73}UI/BaconLoadoutEditor/GunBuilder_SlotItem.layout" {
+       Name "EditedSlotInfo"
+       Slot OverlayWidgetSlot "{605F6B2B15654A80}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Z Order" 2
+       "Ignore Cursor" 1
+       "no focus" 1
+       {
+        SizeLayoutWidgetClass "{605AD320311FE4C3}" {
+         Prefab "{605AD320311FE4C3}"
+         {
+          OverlayWidgetClass "{605AD3203219A543}" {
+           Prefab "{605AD3203219A543}"
+           {
+            HorizontalLayoutWidgetClass "{605B59A5AA7FABDE}" {
+             Prefab "{605B59A5AA7FABDE}"
+             Slot OverlayWidgetSlot "{605B59A5AA7FABBB}" {
+              Padding 12 0 0 0
+             }
+             {
+              SizeLayoutWidgetClass "{605B59A3A78B105C}" {
+               Prefab "{605B59A3A78B105C}"
+               {
+                OverlayWidgetClass "{605B59A5B8CE6876}" {
+                 Prefab "{605B59A5B8CE6876}"
+                 {
+                  ImageWidgetClass "{605AD32238A2E155}" {
+                   Prefab "{605AD32238A2E155}"
+                   Slot OverlayWidgetSlot "{605AD3260D2FB133}" {
+                    Padding 8 8 8 8
+                   }
+                  }
+                  ItemPreviewWidgetClass "{605AD3223FA395F0}" {
+                   Prefab "{605AD3223FA395F0}"
+                   Slot OverlayWidgetSlot "{605B59A5E5B430A9}" {
+                    Padding 8 8 8 8
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{606EE36506EDB8A3}" {
+     Name "Overlay1"
+     Slot LayoutSlot "{606081703E286497}" {
+      SizeMode Fill
+     }
+     "Z Order" 6
+     {
+      SizeLayoutWidgetClass "{606EE36506EDCD48}" {
+       Name "SizeLayout2"
+       Slot LayoutSlot "{6073126513E580EC}" {
+        VerticalAlign 0
+        SizeMode Fill
+       }
+       "Z Order" 1
+       AllowMaxDesiredWidth 1
+       MaxDesiredWidth 400
+       MaxDesiredHeight 1080
+       {
+        OverlayWidgetClass "{606EE36506EDCD4B}" {
+         Name "ListBoxSlotChoices"
+         Slot AlignableSlot "{605D76A57672ABFA}" {
+         }
+         "Z Order" 1
+         components {
+          GunBuilderUI_SlotsUIComponent "{606EE36513385412}" {
+           m_slotsWidgetName "List"
+          }
+         }
+         "Up target" "BackButton"
+         "Down target" "ListBoxAttachmentChoices"
+         {
+          PanelWidgetClass "{606EE36506EDCD4A}" {
+           Name "Panel0"
+           Slot OverlayWidgetSlot "{605B59A73AC8369E}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Color 0.018 0.018 0.018 1
+           style full
+          }
+          ScrollLayoutWidgetClass "{606EE36506EDD095}" {
+           Name "ScrollLayout0"
+           Slot OverlayWidgetSlot "{605AD321ED874AFC}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding 12 12 0 12
+           }
+           "Z Order" 1
+           Color 0.761 0.392 0.078 1
+           {
+            VerticalLayoutWidgetClass "{606EE36506EDD092}" {
+             Name "List"
+             Slot AlignableSlot "{605AD321F1E1A96C}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             "Z Order" 1
+             "Down target" "ListBoxAttachmentChoices"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{607312649D16743A}" {
+       Name "Separator"
+       Slot LayoutSlot "{6073126513E58096}" {
+       }
+       Color 0.701 0.366 0.078 1
+       Size 4 3
+      }
+     }
+    }
+   }
+  }
+  HorizontalLayoutWidgetClass "{605EF7ED155E0022}" {
+   Name "Footer"
+   Slot FrameWidgetSlot "{605EF7ED155E000A}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -400
+    OffsetLeft -400
+    PositionY 412
+    OffsetTop 412
+    SizeX 1300
+    OffsetRight -900
+    SizeY 64
+    OffsetBottom -476
+   }
+   "Z Order" 5
+   "Fill Origin" Right
+   {
+    ButtonWidgetClass "{606A9B225947B05B}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "ButtonPanCamera"
+     Slot LayoutSlot "{606A9B225947B044}" {
+      Padding 16 0 16 0
+     }
+     "Z Order" 1
+     "Ignore Cursor" 1
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_sActionName "PanHint"
+       m_sLabel "Camera"
+       m_bIsMouseInput 1
+      }
+     }
+    }
+    ButtonWidgetClass "{605EF7EDE5050A99}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "SwapButton"
+     Slot LayoutSlot "{605EF7EDE5050A86}" {
+      HorizontalAlign 1
+      VerticalAlign 1
+      Padding 16 0 16 0
+     }
+     "Z Order" 5
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_sActionName "ButtonPrimary"
+       m_sLabel "Swap"
+      }
+     }
+    }
+    ButtonWidgetClass "{605EF7EDFCD18F16}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "EditButton"
+     Slot LayoutSlot "{605EF7EDE5050A86}" {
+      HorizontalAlign 1
+      VerticalAlign 1
+      Padding 16 0 16 0
+     }
+     "Z Order" 5
+     "Is Enabled" 0
+     "Is Visible" 0
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_fAnimationTime 0.01
+       m_sActionName "EditButton"
+       m_sLabel "Edit"
+      }
+     }
+    }
+    ButtonWidgetClass "{606A9B227D44A56D}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "ButtonPanSpotlight"
+     Slot LayoutSlot "{606A9B225947B044}" {
+      Padding 16 0 16 0
+     }
+     "Z Order" 1
+     "Ignore Cursor" 1
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_sActionName "Panning_ModifierA"
+       m_sLabel "Spotlight"
+       m_bIsMouseInput 1
+      }
+     }
+    }
+    ButtonWidgetClass "{6076E0609D8D469C}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "RemoveItemButton"
+     Slot LayoutSlot "{605EF7EDE5050A86}" {
+      HorizontalAlign 1
+      VerticalAlign 1
+      Padding 16 0 16 0
+     }
+     "Z Order" 5
+     "Is Enabled" 0
+     "Is Visible" 0
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_fAnimationTime 0.01
+       m_sActionName "ButtonSecondary"
+       m_sLabel "Remove"
+      }
+     }
+    }
+    ButtonWidgetClass "{6094ED2EB7455497}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "SaveLoadoutButton"
+     Slot LayoutSlot "{605EF7EDE5050A86}" {
+      HorizontalAlign 1
+      VerticalAlign 1
+      Padding 16 0 16 0
+     }
+     "Z Order" 5
+     "Is Enabled" 0
+     "Is Visible" 0
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_fAnimationTime 0.01
+       m_sActionName "ButtonSecondary"
+       m_sLabel "Save Loadout"
+      }
+     }
+    }
+    ButtonWidgetClass "{6094ED23ACEBD440}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+     Name "ClearLoadoutButton"
+     Slot LayoutSlot "{605EF7EDE5050A86}" {
+      HorizontalAlign 1
+      VerticalAlign 1
+      Padding 16 0 16 0
+     }
+     "Z Order" 5
+     "Is Enabled" 0
+     "Is Visible" 0
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_fAnimationTime 0.01
+       m_sActionName "ButtonArsenalClear"
+       m_sLabel "Clear Slot"
+      }
+     }
+    }
+   }
+  }
+  ImageWidgetClass "{605ED6514C37498C}" {
+   Name "ImageOverlay"
+   Slot FrameWidgetSlot "{605ED6518FA81C8F}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+   "Z Order" 1
+   Color 0 0 0 1
+   Size 256 256
+   Mask "{0747752FEF37CCFA}UI/Textures/ScreenEffects/Suppression/supressionVignette9.edds"
+   "Transition width" 0.678
+   Progress 0.267
+  }
+  VerticalLayoutWidgetClass "{605CB4F718894B50}" {
+   Name "BackLayout"
+   Slot FrameWidgetSlot "{605CB4F718894B76}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -960
+    OffsetLeft -960
+    PositionY -540
+    OffsetTop -540
+    SizeX 96
+    OffsetRight 864
+    SizeY 1080
+    OffsetBottom -540
+   }
+   "Z Order" 10
+   {
+    VerticalLayoutWidgetClass "{605CB4F7A3CF2C59}" {
+     Name "VerticalLayout0"
+     Slot LayoutSlot "{605CB4F7A3CF2C76}" {
+      HorizontalAlign 1
+      VerticalAlign 1
+      SizeMode Fill
+     }
+     "Fill Origin" Center
+     {
+      ButtonWidgetClass "{605CB4F81248D15C}" : "{C42847838185932E}UI/layouts/WidgetLibrary/Buttons/WLib_InputButton.layout" {
+       Name "BackButton"
+       Slot LayoutSlot "{605AC50772A411FE}" {
+       }
+       "Z Order" 1
+       components {
+        SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+         m_sActionName "MenuBack"
+         m_sLabel ""
+        }
+       }
+       {
+        HorizontalLayoutWidgetClass "{5DB89B776AA9CEFF}" {
+         Prefab "{5DB89B776AA9CEFF}"
+         {
+          HorizontalLayoutWidgetClass "{5D8A71797D491473}" {
+           Prefab "{5D8A71797D491473}"
+           Slot LayoutSlot "{5DB89B74C13DF965}" {
+            HorizontalAlign 1
+           }
+          }
+          RichTextWidgetClass "{5DB89B776317E2A7}" {
+           Prefab "{5DB89B776317E2A7}"
+           "Is Visible" 0
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{605CB4F79EA73B7F}" {
+       Name "Image0"
+       Slot LayoutSlot "{605D006B45118016}" {
+        VerticalAlign 1
+        Padding 8 0 8 0
+       }
+       Color 0.701 0.366 0.078 0.487
+       Texture "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+       Image "move"
+       Size 64 64
+       Filter 0
+      }
+     }
+    }
+   }
+  }
+  OverlayWidgetClass "{60636E58402B6F6D}" {
+   Name "ItemPreviewContainer"
+   Slot FrameWidgetSlot "{60636E58402B6F39}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   "Ignore Cursor" 0
+   components {
+    GunBuilderUI_PreviewUIComponent "{60636E580D3E4804}" {
+    }
+   }
+   {
+    RenderTargetWidgetClass "{605ACC06FD6D7ACA}" {
+     Name "ItemPreview"
+     Slot OverlayWidgetSlot "{60636E580BE00FB2}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 0 0 -200 0
+     }
+     Format "HDR High"
+    }
+   }
+  }
+  HorizontalLayoutWidgetClass "{605AC507665CFB5D}" {
+   Name "Statusbar"
+   Slot FrameWidgetSlot "{605AC507665CFB3E}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -960
+    OffsetLeft -960
+    PositionY -540
+    OffsetTop -540
+    SizeX 1920
+    OffsetRight -960
+    SizeY 64
+    OffsetBottom 476
+   }
+   "Z Order" 10
+   {
+    SizeLayoutWidgetClass "{605EAD17547DCF18}" {
+     Name "SizeLayout0"
+     Slot LayoutSlot "{605EAD17547DCF05}" {
+      SizeMode Fill
+     }
+     AllowMaxDesiredWidth 1
+     MaxDesiredWidth 500
+     {
+      HorizontalLayoutWidgetClass "{605EAD169EC38EEC}" : "{A94F3310B9827EF9}UI/BaconLoadoutEditor/GunBuilder_StatusMessage.layout" {
+       Name "StatusMessage"
+       Slot AlignableSlot "{605EAD1755B8074B}" {
+       }
+       "Is Visible" 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,128 @@
+VerticalLayoutWidgetClass {
+ Name "InventoryPanelMain"
+ Slot FrameWidgetSlot "{606D14789E14E79F}" {
+  Anchor 0 0 1 1
+  PositionX 568
+  OffsetLeft 568
+  PositionY 64
+  OffsetTop 64
+  SizeX -632
+  OffsetRight 64
+  SizeY -192
+  OffsetBottom 128
+ }
+ "Z Order" 5
+ Clipping False
+ components {
+  GunBuilderUI_InventoryPanelUIComponent "{606D147BB4523991}" {
+   m_slotsWidgetName "InventoryWrap"
+  }
+ }
+ {
+  SizeLayoutWidgetClass "{60731279194A4EE2}" : "{89C5D23FC4C4D44A}UI/BaconLoadoutEditor/GunBuilderUI_MenuCategories.layout" {
+   Name "CategorySelectorInventory"
+   Slot LayoutSlot "{60731279194A4ECD}" {
+    HorizontalAlign 0
+   }
+   components {
+    GunBuilderUI_CategoryButtonsUIComponent "{607127665D40090E}" {
+     m_eCategoryMode ARSENAL
+    }
+   }
+   {
+    OverlayWidgetClass "{60712764742C29BE}" {
+     Prefab "{60712764742C29BE}"
+     {
+      ButtonWidgetClass "{607312677CE817D8}" {
+       Prefab "{607312677CE817D8}"
+       components {
+        SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+         m_sActionName "MenuTabLeft"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  OverlayWidgetClass "{606EE34A357E1FAD}" {
+   Name "ItemListOverlay"
+   Slot LayoutSlot "{606F35EA78E497AB}" {
+   }
+   Clipping True
+   {
+    PanelWidgetClass "{606D1446079ABF9B}" {
+     Name "InventoryPanelBackground"
+     Slot OverlayWidgetSlot "{606D1446079ABFFE}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.018 0.018 0.018 1
+     style full
+    }
+    ScrollLayoutWidgetClass "{606739BB1D537C5D}" {
+     Name "ScrollLayout0"
+     Slot OverlayWidgetSlot "{606D147B83585339}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" 1
+     Color 0.761 0.392 0.078 1
+     {
+      SizeLayoutWidgetClass "{606739BB29E38933}" {
+       Name "InventoryWrapSize"
+       Slot AlignableSlot "{606739BB29E3890A}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        WrapLayoutWidgetClass "{606739BA6D981DF3}" {
+         Name "InventoryWrap"
+         Slot AlignableSlot "{606739BB1D5B6C07}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding 12 15 12 12
+         }
+        }
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{60E13D2B9A0EC0E3}" {
+     Name "SlotsWidgetPopup"
+     Slot OverlayWidgetSlot "{60E13D2F2778538A}" {
+     }
+     "Z Order" 2
+     components {
+      GunBuilderUI_SlotsUIComponent "{60E13D2F678359CD}" {
+       m_slotsWidgetName "Slots"
+      }
+     }
+     {
+      ScrollLayoutWidgetClass "{60E13D2F5526A59F}" {
+       Name "ScrollLayout0"
+       Slot LayoutSlot "{60E13D2F5526A587}" {
+       }
+       {
+        VerticalLayoutWidgetClass "{60E13D2F7DAB6A36}" {
+         Name "Slots"
+         Slot AlignableSlot "{60E13D2F7DAB6A19}" {
+         }
+        }
+       }
+      }
+     }
+    }
+    ImageWidgetClass "{60731264ED960973}" {
+     Name "Border"
+     Slot OverlayWidgetSlot "{607312648900139E}" {
+      HorizontalAlign 3
+      VerticalAlign 0
+     }
+     Color 0.701 0.366 0.078 1
+     Size 4 3
+    }
+   }
+  }
+ }
+}

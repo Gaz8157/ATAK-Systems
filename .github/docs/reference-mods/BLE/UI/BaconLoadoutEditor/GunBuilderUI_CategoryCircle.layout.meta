@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{FEF4C810C60C2731}UI/BaconLoadoutEditor/GunBuilderUI_CategoryCircle.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass PS5 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

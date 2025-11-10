@@ -1,0 +1,130 @@
+SizeLayoutWidgetClass {
+ Name "MenuCategoriesWidget"
+ Slot FrameWidgetSlot "{60712764E6996450}" {
+  Anchor 0 0 1 1
+  PositionX 0
+  OffsetLeft 0
+  PositionY 0
+  OffsetTop 0
+  SizeX 0
+  OffsetRight 0
+  SizeY 0
+  OffsetBottom 0
+ }
+ Clipping False
+ components {
+  GunBuilderUI_CategoryButtonsUIComponent "{607127665D40090E}" {
+  }
+ }
+ WidthOverride 400
+ AllowHeightOverride 1
+ HeightOverride 64
+ {
+  OverlayWidgetClass "{60712764742C29BE}" {
+   Name "Overlay0"
+   Slot AlignableSlot "{60712764742C29A4}" {
+    VerticalAlign 3
+   }
+   {
+    ButtonWidgetClass "{607312677CE817D8}" : "{87037226B1A2064B}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButtonSuperSmall.layout" {
+     Name "NavigationButtonLeft"
+     Slot OverlayWidgetSlot "{607312677CE817D6}" {
+      HorizontalAlign 0
+      VerticalAlign 3
+      Padding -30 0 0 0
+     }
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_sActionName "MenuTabLeft"
+       m_sLabel ""
+      }
+     }
+     {
+      HorizontalLayoutWidgetClass "{5DB89B776AA9CEFF}" {
+       Prefab "{5DB89B776AA9CEFF}"
+       {
+        HorizontalLayoutWidgetClass "{5D8A71797D491473}" {
+         Prefab "{5D8A71797D491473}"
+         Slot LayoutSlot "{5DB89B74C13DF965}" {
+          Padding -10 -10 -10 -10
+         }
+        }
+        RichTextWidgetClass "{5DB89B776317E2A7}" {
+         Prefab "{5DB89B776317E2A7}"
+         "Is Visible" 0
+        }
+       }
+      }
+     }
+    }
+    ButtonWidgetClass "{607312671684EACF}" : "{87037226B1A2064B}UI/layouts/WidgetLibrary/Buttons/WLib_NavigationButtonSuperSmall.layout" {
+     Name "NavigationButtonRight"
+     Slot OverlayWidgetSlot "{607312677CE817D6}" {
+      HorizontalAlign 2
+      VerticalAlign 3
+      Padding 0 0 -40 0
+     }
+     components {
+      SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+       m_sActionName "MenuTabRight"
+       m_sLabel ""
+      }
+     }
+     {
+      HorizontalLayoutWidgetClass "{5DB89B776AA9CEFF}" {
+       Prefab "{5DB89B776AA9CEFF}"
+       {
+        HorizontalLayoutWidgetClass "{5D8A71797D491473}" {
+         Prefab "{5D8A71797D491473}"
+         Slot LayoutSlot "{5DB89B74C13DF965}" {
+          Padding -10 -10 -10 -10
+         }
+        }
+        RichTextWidgetClass "{5DB89B776317E2A7}" {
+         Prefab "{5DB89B776317E2A7}"
+         "Is Visible" 0
+        }
+       }
+      }
+     }
+    }
+    OverlayWidgetClass "{60731271658647E9}" {
+     Name "Overlay0"
+     Slot OverlayWidgetSlot "{60731271658647CA}" {
+      VerticalAlign 2
+     }
+     {
+      PanelWidgetClass "{607127626DEA0151}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{6073127E6D3A781D}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.018 0.018 0.018 1
+       style full
+      }
+      HorizontalLayoutWidgetClass "{6073127161642613}" {
+       Name "HorizontalLayout0"
+       Slot OverlayWidgetSlot "{60731271616425F2}" {
+        HorizontalAlign 3
+        VerticalAlign 2
+       }
+       "Z Order" 1
+       {
+        HorizontalLayoutWidgetClass "{607127647639CE6B}" {
+         Name "ButtonContainer"
+         Slot LayoutSlot "{6073127E6D3A7FE2}" {
+          HorizontalAlign 1
+          VerticalAlign 2
+         }
+         "Z Order" 3
+         "Fill Origin" Center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

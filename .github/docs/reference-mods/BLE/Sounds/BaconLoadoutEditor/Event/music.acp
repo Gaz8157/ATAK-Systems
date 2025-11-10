@@ -1,0 +1,65 @@
+AudioClass {
+ sounds {
+  SoundClass {
+   id 5129
+   name "MUSIC"
+   version 5
+   tl 54.594 -285.875
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 6148
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -12
+  }
+ }
+ mixers {
+  MixerClass {
+   id 4107
+   name "OutputState"
+   version 4
+   tl 294.764 94.749
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 22535
+     links {
+      ConnectionClass connection {
+       id 5129
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    512 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 6148
+   name "Forest Positive"
+   version 7
+   tl -262.22 -281.232
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{924FD9597D05D8BD}Sounds/BaconLoadoutEditor/Event/silent_night.wav"
+    }
+   }
+  }
+ }
+ version 1
+}

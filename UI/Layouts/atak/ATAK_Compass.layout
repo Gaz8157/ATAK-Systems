@@ -1,0 +1,97 @@
+FrameWidgetClass {
+ Name "ATAKCompass"
+ Slot FrameWidgetSlot "{ATK_CMP_ROOT}" {
+  Anchor 0.5 1 0.5 1
+  PositionX -60
+  OffsetLeft -60
+  PositionY -45
+  OffsetTop -45
+  SizeX 120
+  OffsetRight -220
+  SizeY 60
+  OffsetBottom -45
+ }
+ "Is Visible" 0
+ Color 0 0 0 0.7
+ {
+  // Compass frame for direction and bearing
+  FrameWidgetClass "{ATK_CMP_001}" {
+   Name "CompassFrame"
+   Slot FrameWidgetSlot "{ATK_CMP_002}" {
+    Anchor 0.5 1 0.5 1
+    PositionX -35
+    OffsetLeft -35
+    PositionY -37
+    OffsetTop -37
+    SizeX 70
+    OffsetRight -35
+    SizeY 40
+    OffsetBottom -3
+   }
+   "Is Visible" 1
+   Color 0 0 0 0.8
+   {
+    // Direction text (N, NE, E, etc.)
+    TextWidgetClass "{ATK_CMP_003}" {
+     Name "DirectionText"
+     Slot FrameWidgetSlot "{ATK_CMP_004}" {
+      Anchor 0.5 1 0.5 1
+      PositionX -10
+      OffsetLeft -10
+      PositionY -35
+      OffsetTop -35
+      SizeX 20
+      OffsetRight -10
+      SizeY 20
+      OffsetBottom 15
+     }
+     Text "SE"
+     "Font Size" 15
+     "Min Font Size" 15
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Bottom
+     Color 0 1 0 1
+    }
+    
+    // Bearing text (0-360)
+    TextWidgetClass "{ATK_CMP_005}" {
+     Name "BearingText"
+     Slot FrameWidgetSlot "{ATK_CMP_006}" {
+      Anchor 0.5 1 0.5 1
+      PositionX -16
+      OffsetLeft -16
+      PositionY -20
+      OffsetTop -20
+      SizeX 32
+      OffsetRight -16
+      SizeY 20
+      OffsetBottom 0
+     }
+     Text "045"
+     "Font Size" 15
+     "Min Font Size" 15
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Bottom
+     Color 0 1 0 0.9
+    }
+   }
+  }
+  
+  // Compass indicator (yellow arrow pointing up)
+  FrameWidgetClass "{ATK_CMP_007}" {
+   Name "CompassIndicator"
+   Slot FrameWidgetSlot "{ATK_CMP_008}" {
+    Anchor 0.5 0 0.5 0
+    PositionX -3
+    OffsetLeft -3
+    PositionY -12
+    OffsetTop -12
+    SizeX 6
+    OffsetRight -3
+    SizeY 8
+    OffsetBottom -4
+   }
+   Color 1 0.8 0 0.9
+  }
+ }
+}

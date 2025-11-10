@@ -1,0 +1,30 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ Slot FrameWidgetSlot "{65C8EC0D231B7447}" {
+  OffsetLeft 0
+  OffsetTop 0
+  SizeX 50
+  OffsetRight -50
+  SizeY 50
+  OffsetBottom -50
+ }
+ {
+  ImageWidgetClass "{65C8F9D25E4821D5}" {
+   Name "Image0"
+   Slot FrameWidgetSlot "{65C8F9D25E4821AE}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 50
+    OffsetRight 0
+    SizeY -20
+    OffsetBottom 0
+   }
+   Color 0.1373 0.1373 1 1
+   Texture "{9CA3B0D577B1F0D2}UI/layouts/TAC_Friendly.edds"
+   Size 50 50
+  }
+ }
+}

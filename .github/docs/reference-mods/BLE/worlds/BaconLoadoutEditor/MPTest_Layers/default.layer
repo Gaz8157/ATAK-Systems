@@ -1,0 +1,53 @@
+$grp GenericEntity : "{2F17BFBCDB329CCA}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Weapons.et" {
+ {
+  coords 136.837 1 120.392
+  angleY 0
+ }
+ {
+  components {
+   ActionsManagerComponent "{56F2C6D1431ADB12}" {
+    additionalActions {
+     Bacon_GunBuilderOpenAction "{606B12191E111053}" {
+      ParentContextList {
+       ""
+      }
+     }
+    }
+   }
+  }
+  coords 136.486 1 110.853
+  angleY 0
+ }
+}
+$grp BaconLoadoutEditor_LightEntities : "{336AC58F7064BACD}Prefabs/BaconLoadoutEditor/PreviewWorld/LightEntities.et" {
+ {
+  coords 140.509 1 120.405
+ }
+ {
+  coords 143.585 1 121.542
+ }
+}
+GenericEntity : "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" {
+ coords 140.103 1.551 119.336
+ angleY -4.954
+}
+GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+ coords 138.692 1 120.371
+}
+GenericEntity : "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et" {
+ components {
+  UniversalInventoryStorageComponent "{5222CB03A40528FA}" {
+   InitialStorageSlots {
+    LoadoutSlotInfo Derp {
+     Prefab "{B74A4FF0DD8BB116}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01.et"
+     AreaType LoadoutHeadCoverArea "{658A6CCC1298138D}" {
+     }
+    }
+   }
+  }
+ }
+ coords 141.025 1 117.44
+}
+GenericEntity : "{9CEA24A1A9CC2675}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_sniper.et" {
+ coords 142.017 1 116.84
+}

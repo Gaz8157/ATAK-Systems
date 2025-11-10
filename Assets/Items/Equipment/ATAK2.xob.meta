@@ -1,0 +1,81 @@
+MetaFileClass {
+ Name "{9B9CF836FB7B23FD}Assets/Items/Equipment/ATAK2.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   ExportMorphs 1
+   MaterialAssigns {
+    MaterialAssignClass "{66A73366762D07BA}" {
+     SourceMaterial "GALAXY_S20_OPERATORS_KIT"
+     AssignedMaterial "{8BA63AF73C31BF5D}Assets/Items/Equipment/Data/GALAXY_S20_OPERATORS_KIT.emat"
+    }
+   }
+   MeshParams {
+    MeshParam ATAK {
+    }
+    MeshParam "Bracket_1_low.001" {
+    }
+    MeshParam "Bracket_2_low.001" {
+    }
+    MeshParam Wire_low {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_ATAK {
+     LayerPreset "CharNoCollide"
+     SurfaceProperties {
+      "{3DC7C8A918E3F4A5}Common/Materials/Game/glass.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_Bracket_1_low {
+     LayerPreset "CharNoCollide"
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_Bracket_2_low {
+     LayerPreset "CharNoCollide"
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_Wire_low {
+     LayerPreset "CharNoCollide"
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{66A733667637CA15}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{66A733667637CAAA}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{66A733667637CAE7}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{66A733667637CB01}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{66A733667637CB22}" : "{F62AA8E7B8EA9D26}configs/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{66A733667637CB70}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

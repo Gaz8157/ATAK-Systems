@@ -1,0 +1,10 @@
+MatSkyBox {
+ ColorBottom 1 1 1 0
+ ColorZenith 1 1 1 0
+ ColorUp 1 1 1 0
+ IntensityLV -7
+ ApplySunSpot 1
+ SunSpotColor 0.479 0.642 0.75 0.329
+ SunSpotIntensityLV 3
+ SunSpotSize 1
+}

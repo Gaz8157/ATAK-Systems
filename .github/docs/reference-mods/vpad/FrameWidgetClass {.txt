@@ -1,0 +1,725 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ components {
+  SCR_WidgetExportRuleRoot "{5C7C8C0350F07A24}" {
+   DestinationPath "{EC9B6EE4FCC71C2E}Scripts/Game/UI/HUD"
+   ScriptAddon "$hcatest:"
+  }
+ }
+ {
+  FrameWidgetClass "{5EBC39E646FD3FBD}" {
+   Name "m_Frame_HitUI"
+   Slot FrameWidgetSlot "{5EBC39E6315A25CB}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+  }
+  OverlayWidgetClass "{5EAECB2A22AB3C76}" {
+   Name "Frame0"
+   Slot FrameWidgetSlot "{5C7C83F7655D5F15}" {
+    Anchor 0 0 0.25 0.75
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 270
+    OffsetBottom 0
+   }
+   "Is Enabled" 0
+   "Is Visible" 0
+   Color 1 0 0 1
+   {
+    ImageWidgetClass "{5EAECB2A22AB3C73}" {
+     Name "Image0"
+     Slot OverlayWidgetSlot "{5C7D31AC64CD0502}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" -1
+     Opacity 0.061
+     Color 0 1 0.027 1
+    }
+    TextWidgetClass "{5EAECB2A22AB3C7D}" {
+     Name "Text0"
+     Slot OverlayWidgetSlot "{5C7C8C0372A38541}" {
+     }
+     Text "2Left2"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+    }
+    OverlayWidgetClass "{5EAECB2A22AB0B65}" {
+     Name "Overlay0"
+     Slot OverlayWidgetSlot "{5C7C8C0372A38567}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 1 0 0 1
+    }
+   }
+  }
+  OverlayWidgetClass "{5EAECB2A22AB0B67}" {
+   Name "LeftSide"
+   Slot FrameWidgetSlot "{5C7C83F55FEEC7ED}" {
+    Anchor 0.15 0 0.5 0.75
+    PositionX -288
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -480
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   "Is Enabled" 0
+   "Is Visible" 0
+   {
+    VerticalLayoutWidgetClass "{5EAECB2A22AB0B61}" {
+     Name "VerticalLayout0"
+     Slot OverlayWidgetSlot "{5E8B31C2026B82C3}" {
+      HorizontalAlign 0
+      VerticalAlign 0
+     }
+    }
+    TextWidgetClass "{5EAECB2A22A83E61}" {
+     Name "Text0"
+     Slot OverlayWidgetSlot "{5C7D31AC64CD1AFA}" {
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Left"
+    }
+    SizeLayoutWidgetClass "{5EAECB2A22A83E62}" {
+     Name "Frame1"
+     Slot OverlayWidgetSlot "{5C7D6DAF0612FCE3}" {
+      HorizontalAlign 0
+      VerticalAlign 2
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     {
+      OverlayWidgetClass "{5EAECB2A22A81EA1}" {
+       Name "Overlay0"
+       Slot AlignableSlot "{5C7D6DAE72DE9DC7}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        ImageWidgetClass "{5EAECB2A22A81EA0}" {
+         Name "Image0"
+         Slot OverlayWidgetSlot "{5C7F520C7133E081}" {
+         }
+         Color 0 0 0 1
+         Texture "{9E74AD4977AD3D47}UI/Textures/hca_hud_walking_circle_main.edds"
+         Size 256 256
+         Mask "{EBB5D32AE43FA177}UI/layouts/Menus/Inventory/HCA_HUD_MASK_WEIRD.edds"
+         "Transition width" 0
+         Progress 0.364
+        }
+        ImageWidgetClass "{5EAECB2A22A81EA7}" {
+         Name "Image1"
+         Slot OverlayWidgetSlot "{5C7D6DAE7567B2A6}" {
+         }
+         "Z Order" -1
+         Opacity 0.5
+         Color 0.192 0.192 0.192 1
+         Image "veh_speed_limiter"
+         Size 4 64
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  OverlayWidgetClass "{5EAECB2A22A84D82}" {
+   Name "Middle"
+   Slot FrameWidgetSlot "{5C7C83F55FEEC7ED}" {
+    Anchor 0.25 0 0.75 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 0
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+    Alignment 0 0
+   }
+   {
+    TextWidgetClass "{5EAECB2A22A84D80}" {
+     Name "Text0"
+     Slot OverlayWidgetSlot "{5E9085356671C738}" {
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Mid"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+    }
+    TextWidgetClass "{5EAECB2A22A84D81}" {
+     Name "Text1"
+     Slot OverlayWidgetSlot "{5E9085356671C4D7}" {
+     }
+     "Is Visible" 0
+     Text "Mid"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+    }
+    VerticalLayoutWidgetClass "{5EAECB2A22A84D9E}" {
+     Name "VerticalLayout0"
+     Slot OverlayWidgetSlot "{5E9085356671C4DA}" {
+      HorizontalAlign 1
+      VerticalAlign 2
+     }
+     "Is Visible" 0
+     {
+      OverlayWidgetClass "{5EAECB2A22A9FCA8}" {
+       Name "Overlay0"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+       }
+      }
+     }
+    }
+   }
+  }
+  OverlayWidgetClass "{5EAECB2A22A9FCA1}" {
+   Name "RightSide"
+   Slot FrameWidgetSlot "{5C7C83F55FEEC7ED}" {
+    Anchor 0.25 0 0.75 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 480
+    OffsetRight 0
+    SizeY 0
+    OffsetBottom 0
+   }
+   "Is Visible" 0
+   {
+    VerticalLayoutWidgetClass "{6228A9E8A1118AB2}" {
+     Name "RadUI_m_Buttons"
+     Slot OverlayWidgetSlot "{6228A9E8A1118AAF}" {
+      HorizontalAlign 0
+      VerticalAlign 2
+     }
+     {
+      ButtonWidgetClass "{6228A9E88B7FF0CE}" : "{B92108C433627D5C}UI/layouts/Editor/Buttons/Button_Hud.layout" {
+       Name "AttributeButton0"
+       Slot LayoutSlot "{6228A9E88B7FF0F3}" {
+        HorizontalAlign 0
+        VerticalAlign 3
+        Padding 24 0 24 0
+       }
+       "Z Order" 5
+       components {
+        SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+         m_sSoundHovered ""
+         m_sSoundClicked ""
+         m_sSoundContainerClosed ""
+         m_sActionName "HCA_RadUI_Interact_Choose"
+         m_sLabel "Left/Right"
+        }
+       }
+      }
+      ButtonWidgetClass "{6228B051688FF126}" : "{B92108C433627D5C}UI/layouts/Editor/Buttons/Button_Hud.layout" {
+       Name "AttributeButton1"
+       Slot LayoutSlot "{6228A9E88B7FF0F3}" {
+        HorizontalAlign 0
+        VerticalAlign 3
+        Padding 24 0 24 0
+       }
+       "Z Order" 2
+       components {
+        SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+         m_sSoundHovered ""
+         m_sSoundClicked ""
+         m_sSoundContainerClosed ""
+         m_sActionName "HCA_RadUI_Interact_Confirm"
+         m_sLabel "Select"
+        }
+       }
+      }
+      ButtonWidgetClass "{6228B0513655E70B}" : "{B92108C433627D5C}UI/layouts/Editor/Buttons/Button_Hud.layout" {
+       Name "AttributeButton2"
+       Slot LayoutSlot "{6228A9E88B7FF0F3}" {
+        HorizontalAlign 0
+        VerticalAlign 3
+        Padding 24 0 24 0
+       }
+       "Z Order" 4
+       components {
+        SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+         m_sSoundHovered ""
+         m_sSoundClicked ""
+         m_sSoundContainerClosed ""
+         m_sActionName "HCA_RadUI_Interact_Cancel"
+         m_sLabel "Back"
+        }
+       }
+      }
+     }
+    }
+    TextWidgetClass "{5EAECB2A22A9FCA2}" {
+     Name "Text0"
+     Slot OverlayWidgetSlot "{5E908534BD7CA345}" {
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Right"
+    }
+    VerticalLayoutWidgetClass "{5EAECB2A22A9FCA3}" {
+     Name "m_Layout_RadUI"
+     Slot OverlayWidgetSlot "{5E908534BD7CA34A}" {
+      VerticalAlign 2
+     }
+     "Fill Origin" Top
+     {
+      OverlayWidgetClass "{5EAECB2A22A9FCA4}" {
+       Name "Overlay0"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+        Padding 0 16 0 0
+        FillWeight 1
+       }
+       {
+        SizeLayoutWidgetClass "{5EAECB2A22A9FCA5}" {
+         Name "m_Size_RadUI_Grid"
+         Slot OverlayWidgetSlot "{5E9548759CFC0199}" {
+          HorizontalAlign 2
+          VerticalAlign 3
+         }
+         WidthOverride 576
+         AllowHeightOverride 1
+         HeightOverride 256
+         {
+          ScrollLayoutWidgetClass "{5EAECB2A22A9FCA6}" {
+           Name "ScrollLayout0"
+           Slot AlignableSlot "{5E9548759CE9EACA}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           "Ignore Cursor" 1
+           style Small
+           "Scrollbar Always Visible" 1
+           {
+            VerticalLayoutWidgetClass "{5EAECB2A22A9FCA7}" {
+             Name "m_RadUI_Grid"
+             Slot AlignableSlot "{5E95487691DAADDA}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              FrameWidgetClass "{5EAECB2A22A9FC98}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+               Name "Overlay00"
+               Slot LayoutSlot "{5E908534BD7CA311}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22A9FC9A}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+               Name "Overlay01"
+               Slot LayoutSlot "{5E908534BD7CA31A}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22A9FC9E}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+               Name "Overlay02"
+               Slot LayoutSlot "{5E908534BD7CA31A}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22A9FC90}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+               Name "Overlay03"
+               Slot LayoutSlot "{5E908534BD7CA31A}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22A9FC92}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+               Name "Overlay04"
+               Slot LayoutSlot "{5E908534BD7CA31A}" {
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        OverlayWidgetClass "{5EAECB2A22A9FC94}" {
+         Name "m_RadUI_Grid_Count"
+         Slot OverlayWidgetSlot "{5EAEB7C9C1F998AC}" {
+          HorizontalAlign 2
+          VerticalAlign 0
+          Padding 0 -32 0 0
+         }
+         "Z Order" -26
+         Clipping False
+         {
+          BlurWidgetClass "{5EAECB2A22A9FC95}" {
+           Name "Blur0"
+           Slot OverlayWidgetSlot "{5EAEB7C9F34173D0}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding -9 -9 -9 -9
+           }
+           "Z Order" -5
+          }
+          PanelWidgetClass "{5EAECB2A22A9FC96}" {
+           Name "Panel0"
+           Slot OverlayWidgetSlot "{5EAEB7C9652136B2}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding -4 -4 -4 -4
+           }
+           "Z Order" -35
+           "Is Visible" 0
+           Clipping False
+           Color 0.11 0.125 0.114 1
+           style rover_sim_colorable
+          }
+          SizeLayoutWidgetClass "{5EB35C10476C18A4}" {
+           Name "SizeLayout0"
+           Slot OverlayWidgetSlot "{5EB35C10476C184A}" {
+           }
+           AllowWidthOverride 1
+           WidthOverride 34
+           AllowHeightOverride 1
+           HeightOverride 34
+           {
+            TextWidgetClass "{5EAECB2A22A92624}" {
+             Name "m_Text_RadUI_Grid_Count"
+             Slot AlignableSlot "{5EB35C10479D4C41}" {
+             }
+             Clipping False
+             Text "+2"
+             "Font Size" 34
+             "Min Font Size" 34
+             "Horizontal Alignment" Center
+             "Vertical Alignment" Center
+             FontProperties FontProperties "{5EAEB7C99DABC204}" {
+              Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+              OutlineSize 2
+              ShadowSize 15
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{5EB30DDA4C1CD45A}" {
+       Name "Overlay1_2"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+        Padding 32 16 0 -4
+       }
+       "Z Order" 5
+       Clipping False
+       {
+        SizeLayoutWidgetClass "{5EB30DDA15BF5572}" {
+         Name "SizeLayout0"
+         Slot OverlayWidgetSlot "{5EB30DDA15BF5518}" {
+         }
+         AllowWidthOverride 1
+         WidthOverride 540
+         AllowHeightOverride 1
+         HeightOverride 128
+         {
+          RichTextWidgetClass "{5EB30DDA4C1CD444}" {
+           Name "m_Text_RadUI_Grid_Desc"
+           Slot AlignableSlot "{5EB30DDA15AA17D6}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           "Z Order" 1
+           Clipping True
+           Text "a1231 123et aset643set64367aset64367aset64367aset64367aset64367 aset64367 aset64367a6aset64367aset64aset64367367aset64367aset643674367 aset64367aset64367"
+           "Font Size" 22
+           "Min Font Size" 22
+           Wrap 1
+           "No Localization" 1
+           FontProperties FontProperties "{5EB30DD578D0BC45}" {
+            OutlineSize 2
+           }
+          }
+         }
+        }
+        PanelWidgetClass "{5EB30DDA4C1CD447}" {
+         Name "Panel0"
+         Slot OverlayWidgetSlot "{5EAEB7C9652136B2}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding -12 -12 -12 -12
+         }
+         "Z Order" -35
+         Clipping False
+         Color 0 0 0 1
+         style rover_sim_colorable
+        }
+        BlurWidgetClass "{5EB30DDA4C1CD446}" {
+         Name "Blur0"
+         Slot OverlayWidgetSlot "{5EAEB7C9F34173D0}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding -16 -16 -16 -16
+         }
+         "Z Order" -5
+        }
+       }
+      }
+      OverlayWidgetClass "{5EAECB2A22A92625}" {
+       Name "Overlay1"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+        Padding 32 16 0 8
+       }
+       "Z Order" 5
+       Clipping False
+       {
+        SizeLayoutWidgetClass "{5EB30DDAF3220BF7}" {
+         Name "SizeLayout0"
+         Slot OverlayWidgetSlot "{5EB30DDAF3220B93}" {
+         }
+         AllowWidthOverride 1
+         WidthOverride 540
+         AllowHeightOverride 1
+         HeightOverride 64
+         {
+          TextWidgetClass "{5EAECB2A22A9263A}" {
+           Name "m_Text_RadUI_Grid_Selection"
+           Slot AlignableSlot "{5EB30DDAF3515408}" {
+           }
+           "Z Order" 1
+           Text "a1231 123et aset64367"
+           "Font Size" 48
+           "Min Font Size" 48
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+           FontProperties FontProperties "{5EB30DD578D0BC45}" {
+            OutlineSize 2
+           }
+          }
+         }
+        }
+        PanelWidgetClass "{5EB30DCA1D0AAACF}" {
+         Name "Panel0"
+         Slot OverlayWidgetSlot "{5EAEB7C9652136B2}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding -12 -12 -12 -12
+         }
+         "Z Order" -35
+         Clipping False
+         Color 0 0 0 1
+         style rover_sim_colorable
+        }
+        BlurWidgetClass "{5EB30DCA1D0AAA89}" {
+         Name "Blur0"
+         Slot OverlayWidgetSlot "{5EAEB7C9F34173D0}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding -16 -16 -16 -16
+         }
+         "Z Order" -5
+        }
+       }
+      }
+      OverlayWidgetClass "{5EAECB2A22A9502E}" {
+       Name "Overlay2"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+        FillWeight 0.5
+       }
+       "Z Order" 10
+       {
+        SizeLayoutWidgetClass "{5EAECB2A22A9502F}" {
+         Name "m_Size_RadUI_List"
+         Slot OverlayWidgetSlot "{5E954874048F4B54}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding 0 0 -4 0
+         }
+         "Is Visible" 0
+         AllowHeightOverride 1
+         HeightOverride 192
+         {
+          ScrollLayoutWidgetClass "{5EAECB2A22AEF49D}" {
+           Name "ScrollLayout0"
+           Slot AlignableSlot "{5E95487404BBC838}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           "Ignore Cursor" 1
+           style Small
+           {
+            VerticalLayoutWidgetClass "{5EAECB2A22AEF49E}" {
+             Name "m_RadUI_List"
+             Slot AlignableSlot "{5E9548744D8E210E}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             "Fill Origin" Bottom
+             {
+              FrameWidgetClass "{5EAECB2A22AEF49F}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+               Name "Overlay02"
+               Slot LayoutSlot "{5CA88B42538E94EB}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22AEF49A}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+               Name "Overlay01"
+               Slot LayoutSlot "{5CA88B42538E94EB}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22AEF494}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+               Name "Overlay00"
+               Slot LayoutSlot "{5CA88B42538E94EB}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22AEF496}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+               Name "Overlay03"
+               Slot LayoutSlot "{5CA88B42538E94EB}" {
+               }
+              }
+              FrameWidgetClass "{5EAECB2A22AEF490}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+               Name "Overlay04"
+               Slot LayoutSlot "{5CA88B42538E94EB}" {
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{5EAECB2A22AEF492}" {
+       Name "m_Section_1"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+       }
+       "Z Order" 50
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        GridLayoutWidgetClass "{5EAECB2A22AEF493}" {
+         Name "m_Actions"
+         Slot OverlayWidgetSlot "{5CAE7BA38D81BD66}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         RowFill {
+         }
+         ColumnFill {
+         }
+         {
+          FrameWidgetClass "{5EAECB2A22AEF56C}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay00"
+           Slot GridWidgetSlot "{5E95487316871311}" {
+            Column 0
+            ColumnSpan 1
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AEF56E}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay01"
+           Slot GridWidgetSlot "{5E95487316871303}" {
+            Column -1
+            RowSpan 1
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AEF568}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay02"
+           Slot GridWidgetSlot "{5E954876712562C6}" {
+            Column -2
+            RowSpan 1
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AEF569}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay03"
+           Slot GridWidgetSlot "{5E95487671D25C8B}" {
+            Row -1
+           }
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{5EAECB2A22AEF56B}" {
+       Name "Overlay0_Back"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        HorizontalLayoutWidgetClass "{5EAECB2A22AEF564}" {
+         Name "m_Actions"
+         Slot OverlayWidgetSlot "{5CAE7BA38D81BD66}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         "Fill Origin" Right
+         {
+          FrameWidgetClass "{5EAECB2A22AEC6F3}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay00"
+           Slot LayoutSlot "{5E908534BD7CA311}" {
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AEC6F1}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay01"
+           Slot LayoutSlot "{5E908534BD7CA31A}" {
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AEC6F7}" : "{A36A6955A83F9B28}UI/dbg/HCA_HUD_Grid_Item.layout" {
+           Name "Overlay02"
+           Slot LayoutSlot "{5E908534BD7CA31A}" {
+           }
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{5EAECB2A22AEC6F5}" {
+       Name "Overlay2_Back"
+       Slot LayoutSlot "{5CAE7BA24AAB83AC}" {
+       }
+       "Z Order" 10
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        VerticalLayoutWidgetClass "{5EAECB2A22AEC6F4}" {
+         Name "m_List"
+         Slot OverlayWidgetSlot "{5CAE7BA38D81BD66}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          FrameWidgetClass "{5EAECB2A22AE0720}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+           Name "Overlay02"
+           Slot LayoutSlot "{5CA88B42538E94EB}" {
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AE073E}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+           Name "Overlay01"
+           Slot LayoutSlot "{5CA88B42538E94EB}" {
+           }
+          }
+          FrameWidgetClass "{5EAECB2A22AE073C}" : "{581237ED8A4E4B93}UI/dbg/HCA_HUD_List_Item.layout" {
+           Name "Overlay00"
+           Slot LayoutSlot "{5CA88B42538E94EB}" {
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

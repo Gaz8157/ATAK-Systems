@@ -1,0 +1,564 @@
+HorizontalLayoutWidgetClass {
+ Name "gOS_GameplaySettings"
+ components {
+  gOS_SCR_SettingsSubMenu "{60C8E2E47E52272B}" {
+  }
+ }
+ {
+  ScrollLayoutWidgetClass "{60C8D4276D256842}" {
+   Name "ScrollLayout0"
+   Slot LayoutSlot "{54890CCF086F1BB3}" {
+    Padding -2 72 2 0
+    SizeMode Fill
+    FillWeight 1.433
+   }
+   Color 0.761 0.392 0.078 1
+   components {
+    SCR_GamepadScrollComponent "{5DE87ED7DB61D5F7}" {
+    }
+   }
+   style Small
+   {
+    VerticalLayoutWidgetClass "{60C8D4276D25684E}" {
+     Name "Content"
+     Slot AlignableSlot "{54890CCE26EF3FDE}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding -4 0 10 0
+     }
+     {
+      VerticalLayoutWidgetClass "{60C8D4276D25684B}" : "{FEEEB639F2735BA1}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsTitle.layout" {
+       Name "TitleGeneral"
+       Slot LayoutSlot "{58B32278C99818F2}" {
+       }
+       components {
+        SCR_LabelComponent "{58B30C1A8E56F0FF}" {
+         m_sLabel "gOS settings"
+         m_fPaddingTop 4
+        }
+       }
+       {
+        TextWidgetClass "{58B30C1F77EC7B4E}" {
+         Prefab "{58B30C1F77EC7B4E}"
+         Slot LayoutSlot "{58B30C1F77EC7B76}" {
+          Padding 39 4 39 20
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25684A}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "Language"
+       Slot LayoutSlot "{54890CCF086F16D6}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_Language"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-Settings_Language_English" "#AR-Settings_Language_French" "#AR-Settings_Language_Italian" "#AR-Settings_Language_German" "#AR-Settings_Language_Spanish" "#AR-Settings_Language_Czech" "#AR-Settings_Language_Polish" "#AR-Settings_Language_Russian" "#AR-Settings_Language_Japanese" "#AR-Settings_Language_Korean" "#AR-Settings_Language_PortugeseBrazil" "#AR-Settings_Language_Chinese"
+         }
+         m_iSelectedItem 0
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256872}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "Metrics"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_UnitSystem"
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8EA5CEA025930}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "wSetting_BlockConfclits"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "Block Conflicts"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256879}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "wTestSetting1"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "Test Setting 1"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8F88C353F36CB}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "wTestSetting2"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "Test Setting 2"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25687A}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "RadioProtocolSubtitles"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_RadioSubtitles"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256867}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "ContextHints"
+       Slot LayoutSlot "{54890CCD613ED416}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_ShowContextHints"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256860}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "ControlHints"
+       Slot LayoutSlot "{54890CCD613ED416}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_ShowControlsHints"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25686C}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "HeadBob"
+       Slot LayoutSlot "{54890CCC1E6DF11D}" {
+        Padding 4 4 4 4
+       }
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_Head_Bob_Intensity"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_fShownValueMultiplier 100
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{60C8D4276D256869}" : "{FEEEB639F2735BA1}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsTitle.layout" {
+       Name "TitleControls"
+       Slot LayoutSlot "{58B32278C99818F2}" {
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_LabelComponent "{58B30C1A8E56F0FF}" {
+         m_sLabel "#AR-Settings_Title_Controls"
+        }
+       }
+       {
+        TextWidgetClass "{58B30C1F77EC7B4E}" {
+         Prefab "{58B30C1F77EC7B4E}"
+         Slot LayoutSlot "{58B30C1F77EC7B76}" {
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256868}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "AimMouse"
+       Slot LayoutSlot "{54890CCC1E6DF11D}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_MouseSensitivity"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_fShownValueMultiplier 100
+         m_bRoundValue 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25686A}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "AimGamepad"
+       Slot LayoutSlot "{54890CCC1E6DF11D}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_GamepadSensitivity"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_fShownValueMultiplier 100
+         m_bRoundValue 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256815}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "AimADS"
+       Slot LayoutSlot "{54890CCC1E6DF11D}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_ADSSensitivity"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_fShownValueMultiplier 100
+         m_bRoundValue 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256816}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "MouseY"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_InvertMouse"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256813}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "GamepadY"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_InvertGamepad"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25681C}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "CursorMode"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_UseSoftwareCursor"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256819}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "FocusOnRaise"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_WeaponReadyStance_Focus"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25681A}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "StickyGadgets"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_StickyGadgets"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256807}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "StickyADS"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_StickyADS"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256800}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "MouseControlAircraft"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_MouseAircraftControl"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256802}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "DrivingAssistance"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_VehicleDrivingAssistance"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-Settings_VehicleDrivingAssistance_None" "#AR-Settings_VehicleDrivingAssistance_Partial" "#AR-Settings_VehicleDrivingAssistance_Full"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25680F}" : "{C9DF0E6590F6C388}UI/layouts/WidgetLibrary/SpinBox/WLib_SpinBox.layout" {
+       Name "MaxZoomADS"
+       Slot LayoutSlot "{54890CCD61050681}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SpinBoxComponent "{5472C6CBC0640458}" {
+         m_sLabel "#AR-Settings_MaximumZoom"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_aElementNames {
+          "#AR-UI_No" "#AR-UI_Yes"
+         }
+         m_bUseLightArrows 1
+         m_bCycleMode 1
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{60C8D4276D256808}" : "{FEEEB639F2735BA1}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsTitle.layout" {
+       Name "TitleFOV"
+       Slot LayoutSlot "{58B32278C99818F2}" {
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_LabelComponent "{58B30C1A8E56F0FF}" {
+         m_sLabel "#AR-Settings_Title_FOV"
+        }
+       }
+       {
+        TextWidgetClass "{58B30C1F77EC7B4E}" {
+         Prefab "{58B30C1F77EC7B4E}"
+         Slot LayoutSlot "{58B30C1F77EC7B76}" {
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25680B}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "1PP"
+       Slot LayoutSlot "{54890CCF086F1638}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_FOV_FirstPerson"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_sFormatText "#AR-ValueUnit_Degrees"
+         m_bRoundValue 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D25680A}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "3PP"
+       Slot LayoutSlot "{54890CCC1E0B7317}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_FOV_ThirdPerson"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_sFormatText "#AR-ValueUnit_Degrees"
+         m_bRoundValue 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256834}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "VehicleFOV"
+       Slot LayoutSlot "{54890CCC1E6DF11D}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_FOV_Vehicle"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_sFormatText "#AR-ValueUnit_Degrees"
+         m_bRoundValue 1
+        }
+       }
+      }
+      ButtonWidgetClass "{60C8D4276D256837}" : "{4A41296C0E9A889F}UI/layouts/WidgetLibrary/WLib_Slider.layout" {
+       Name "FocusIntensityADS"
+       Slot LayoutSlot "{54890CCC1E6DF11D}" {
+        Padding 4 4 4 4
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+       components {
+        SCR_SliderComponent "{548294960C7399D9}" {
+         m_sLabel "#AR-Settings_FocusIntensityInSights"
+         m_sLabelLayout "{F003823FF141983C}UI/layouts/Menus/SettingsMenu/CustomWidgets/SettingsLabel.layout"
+         m_fShownValueMultiplier 100
+         m_bRoundValue 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{60C8D4276D256831}" {
+   Name "Description"
+   Slot LayoutSlot "{54890CCD7A457969}" {
+    SizeMode Fill
+   }
+   {
+    RichTextWidgetClass "{60C8EA5CB35CA896}" {
+     Name "m_wText_Desc"
+     Slot LayoutSlot "{60C8EA5CB35CA883}" {
+      Padding 12 120 12 12
+      SizeMode Fill
+     }
+     Text "Text widget test"\
+     "<br/>"\
+     "test 123"\
+     "test 123"
+     "Font Size" 32
+     "Min Font Size" 32
+     Wrap 1
+     "No Localization" 1
+     FontProperties FontProperties "{60C8EA5CAC463D67}" {
+      Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+      OutlineSize 1
+      ShadowSize 10
+     }
+    }
+   }
+  }
+ }
+}

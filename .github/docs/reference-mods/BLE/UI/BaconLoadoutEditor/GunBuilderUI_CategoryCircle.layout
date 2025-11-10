@@ -1,0 +1,16 @@
+ImageWidgetClass {
+ Name "CategoryCircle"
+ Slot FrameWidgetSlot "{606EE34B2BB18DF7}" {
+  Anchor 0.5 1 0.5 1
+  OffsetLeft 0
+  OffsetTop 0
+  SizeX 20
+  OffsetRight -20
+  SizeY 20
+  OffsetBottom -20
+ }
+ "Inherit Color" 1
+ Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+ Image "careerCircleOutline"
+ Size 20 20
+}

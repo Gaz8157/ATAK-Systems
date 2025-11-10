@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3E8047D2C5A9DAC2}UI/BaconLoadoutEditor/GunBuilderUI_InventoryPanelMain.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass PS5 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,384 @@
+FrameWidgetClass {
+ Name "RadialMenu"
+ {
+  OverlayWidgetClass "{5DDC8EC6A059B207}" {
+   Name "OverlayWrap"
+   Slot FrameWidgetSlot "{55DE89D7A2C5CD71}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 580
+    OffsetRight -580
+    SizeY 580
+    OffsetBottom -580
+    Alignment 0.5 0.5
+    SizeToContent 0
+   }
+   {
+    OverlayWidgetClass "{5DDC8EC6A059B205}" {
+     Name "OverlayMenuBase"
+     Slot OverlayWidgetSlot "{55DC7B26E4FD7595}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      SizeLayoutWidgetClass "{5DDC8EC6A059B204}" {
+       Name "SizeBreadCrumbs"
+       Slot OverlayWidgetSlot "{5C90B5DE6EBACEBD}" {
+        HorizontalAlign 3
+        Padding 0 -240 0 0
+       }
+       AllowHeightOverride 1
+       HeightOverride 30
+       {
+        HorizontalLayoutWidgetClass "{5DDC8EC6A059B20B}" {
+         Name "BreadCrumbs"
+         Slot AlignableSlot "{5C90B5DE6EB65C1F}" {
+          VerticalAlign 3
+         }
+         "Is Visible" 0
+         components {
+          SCR_BreadCrumbsComponent "{5C90B5DE0376E60F}" {
+           m_sElementLayout "{ED8EB8EFFFCFC05E}UI/layouts/Common/RadialMenu/RadialBreadcrumbElement.layout"
+           m_sSeparatorLayout "{738B05DF60427D78}UI/layouts/Common/RadialMenu/RadialBreadcrumbSeparator.layout"
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{5DDC8EC6A059B209}" {
+       Name "OverlayCross"
+       Slot OverlayWidgetSlot "{5C767284CE4E7F4B}" {
+       }
+       "Is Visible" 0
+       {
+        ImageWidgetClass "{5DDC8EC6A059F23F}" {
+         Name "ImgCross"
+         Slot OverlayWidgetSlot "{5C52A0B787A506EC}" {
+         }
+         Opacity 0.6
+         Texture "{3262679C50EF4F01}UI/Textures/Icons/icons_wrapperUI.imageset"
+         Image "radialCross"
+         Size 48 48
+        }
+        ImageWidgetClass "{5DDC8EC6A059F239}" {
+         Name "ImgCrossShadow"
+         Slot OverlayWidgetSlot "{5C52A0B787A506EC}" {
+         }
+         Opacity 0.6
+         Color 0 0 0 1
+         Texture "{00FE3DBDFD15227B}UI/Textures/Icons/icons_wrapperUI-glow.imageset"
+         Image "radialCross"
+         Size 48 48
+        }
+       }
+      }
+      ImageWidgetClass "{5DDC8EC6A059F238}" {
+       Name "ImgCircleBackground"
+       Slot OverlayWidgetSlot "{55DC7B07D6E4CC5D}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Opacity 0.6
+       Color 0 0 0 1
+       Texture "{F06C630DF3153364}UI/Textures/RadialMenu/radialWheel_8bit.edds"
+       Size 1160 1160
+       Mask "{CADA905387E4FAE7}UI/Textures/RadialMenu/radialDistress2.edds"
+       "Transition width" 0
+       Progress 0.5
+       "Mask Mode" "Include Below"
+      }
+      OverlayWidgetClass "{5DDC8EC6A059F23B}" {
+       Name "OverlaySegments"
+       Slot OverlayWidgetSlot "{5C527D49AAB30524}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+      ImageWidgetClass "{5DDC8EC6A059F23A}" {
+       Name "CurrentSelected"
+       Slot OverlayWidgetSlot "{55DC7B07D6E4CC5D}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Opacity 0.386
+       "Inherit Color" 1
+       Rotation 0
+       Texture "{A1CC980AAE9A7D51}UI/Textures/RadialMenu/radialWheelHighlight.edds"
+       Size 1160 1160
+       Mask "{632BED9EB21C131B}UI/Textures/ProgressMasks/ConicMask.edds"
+       "Transition width" 0
+       Progress 0.25
+       Range 0.117
+      }
+      ImageWidgetClass "{5DDC8EC6A059F225}" {
+       Name "CurrentSelectedFeedback"
+       Slot OverlayWidgetSlot "{55DC7B07D6E4CC5D}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Is Visible" 0
+       "Inherit Color" 1
+       Rotation 0
+       Texture "{D4FAC3CE148BCDD1}UI/Textures/RadialMenu/radialWheelHighlight_White.edds"
+       Size 72 72
+       Mask "{632BED9EB21C131B}UI/Textures/ProgressMasks/ConicMask.edds"
+       "Transition width" 0
+       Progress 0.25
+       Range 0.117
+      }
+      FrameWidgetClass "{5DDC8EC6A059F224}" {
+       Name "OverlayContent"
+       Slot OverlayWidgetSlot "{55DE89D59D46254A}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+      FrameWidgetClass "{5DDC8EC6A059F227}" {
+       Name "OverlayDividers"
+       Slot OverlayWidgetSlot "{5C52885FBD1181AD}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+      FrameWidgetClass "{5DDC8EC6A059F226}" {
+       Name "OverlayCategories"
+       Slot OverlayWidgetSlot "{5C52885FBD1181AD}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+      FrameWidgetClass "{5DDC8EC6A059F221}" {
+       Name "FrameSelector"
+       Slot OverlayWidgetSlot "{55DC7B29C42BDD61}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        ImageWidgetClass "{5DDC8EC6A059F220}" {
+         Name "ImgSelector"
+         Slot FrameWidgetSlot "{55DC7B29C42340E3}" {
+          Anchor 0.5 0.5 0.5 0.5
+          PositionX 0
+          OffsetLeft 0
+          PositionY -282
+          OffsetTop -282
+          SizeX 20
+          OffsetRight -20
+          SizeY 12
+          OffsetBottom 270
+          Alignment 0.5 0.5
+         }
+         Color 0.561 0.071 0.071 1
+         Texture "{99C201BC8EDC49F8}UI/Textures/RadialMenu/centreArrow.edds"
+         Size 20 12
+         "Flip Vertically" 1
+        }
+       }
+      }
+      FrameWidgetClass "{5DDC8EC6A059F223}" {
+       Name "FrameInnerSelector"
+       Slot OverlayWidgetSlot "{55DC7B29C42BDD61}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        ImageWidgetClass "{5DDC8EC6A059F222}" {
+         Name "ImgInnerSelector"
+         Slot FrameWidgetSlot "{55DC7B29C42340E3}" {
+          Anchor 0.5 0.5 0.5 0.5
+          OffsetLeft 0
+          OffsetTop 0
+          SizeX 320
+          OffsetRight -320
+          SizeY 320
+          OffsetBottom -320
+          Alignment 0.5 0.5
+         }
+         Opacity 0.6
+         Color 0.561 0.071 0.071 1
+         Rotation 0
+         Texture "{757A5F6DF968D319}UI/Textures/RadialMenu/extraHlCircle.edds"
+         Size 636 636
+        }
+       }
+      }
+      FrameWidgetClass "{5DDC8EC6A059F22D}" {
+       Name "FrameNumberHints"
+       Slot OverlayWidgetSlot "{5C52885FBD1181AD}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+      }
+     }
+    }
+    ImageWidgetClass "{5DDC8EC6A0597799}" {
+     Name "SelectorLine"
+     Slot OverlayWidgetSlot "{55DC7B07D6E4CC5D}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.561 0.071 0.071 1
+     "Inherit Color" 1
+     Rotation 0
+     Texture "{C7252993E2C4BC69}UI/Textures/RadialMenu/radialOutline.edds"
+     Size 72 72
+     Mask "{632BED9EB21C131B}UI/Textures/ProgressMasks/ConicMask.edds"
+     "Transition width" 0.125
+     Progress 0.5
+     "Mask Mode" "Include Range"
+     Range 0.125
+    }
+    SizeLayoutWidgetClass "{5DDC8EC6A0597798}" {
+     Name "SizeInfo"
+     Slot OverlayWidgetSlot "{55F48BAC2E802FE2}" {
+      VerticalAlign 3
+     }
+     AllowWidthOverride 1
+     WidthOverride 300
+     {
+      OverlayWidgetClass "{5DDC8EC6A059779B}" {
+       Name "VInfo"
+       Slot OverlayWidgetSlot "{55DC7B211062EFA0}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        RichTextWidgetClass "{5DDC8EC6A059779D}" : "{AEC49C2DC9E1F106}UI/layouts/WidgetLibrary/RichTextWidgets/RichText_Heading5.layout" {
+         Name "ActionHint"
+         Slot OverlayWidgetSlot "{5C8F00000DDFE15F}" {
+          Padding 0 -140 0 0
+         }
+         "Is Enabled" 0
+         "Is Visible" 0
+         Color 0.761 0.386 0.08 1
+         Text ""
+        }
+       }
+      }
+     }
+    }
+    BlurWidgetClass "{5DDC8EC6A059779F}" : "{352322057FD78AE1}UI/layouts/WidgetLibrary/BaseElements/WLib_Blur.layout" {
+     Name "Blur"
+     Slot OverlayWidgetSlot "{5C9EBEFBA6453EBA}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Opacity 0
+     Color 1 1 1 1
+    }
+   }
+  }
+  SizeLayoutWidgetClass "{5DDC8EC6A059779E}" {
+   Name "Hint"
+   Slot FrameWidgetSlot "{5CB8F26ED84CB639}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 300
+    OffsetRight -300
+    SizeY 300
+    OffsetBottom -300
+    Alignment 0.5 0.5
+   }
+   {
+    OverlayWidgetClass "{5DDC8EC6A05977E1}" {
+     Name "Overlay"
+     Slot AlignableSlot "{5CB8F26E956E7ACA}" {
+     }
+     {
+      ImageWidgetClass "{5DDC8EC6A05977E0}" {
+       Name "Background"
+       Slot OverlayWidgetSlot "{5CB8F26E92AF072C}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Is Visible" 0
+       Opacity 0.6
+       Color 0 0 0 1
+       Size 256 256
+       Mask "{DF3A44D900B056C4}UI/Textures/FlashlightLens/flashlightLens_effect0_ca.edds"
+       "Transition width" 0.11
+       Progress 0.08
+       "Mask Mode" "Exclude Range"
+       Range 0.45
+      }
+      RichTextWidgetClass "{5DDC8EC6A05977E3}" : "{B537936D5B7E2BA1}UI/layouts/WidgetLibrary/TextWidgets/Text_BodySmall.layout" {
+       Name "InfoDescription"
+       Slot OverlayWidgetSlot "{5CB8F26EAC6887D5}" {
+        Padding 8 8 8 8
+       }
+       "Min Font Size" 8
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+       FontProperties FontProperties "{552CF630AEFD33AF}" {
+        ShadowSize 20
+        ShadowOpacity 0.7
+       }
+       "Line Spacing" 15
+      }
+     }
+    }
+   }
+  }
+  HorizontalLayoutWidgetClass "{5DDC8EC6A05977E2}" {
+   Name "HPages"
+   Slot FrameWidgetSlot "{55EE744585355E13}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY -85
+    OffsetTop -85
+    SizeX 500
+    OffsetRight -500
+    SizeY 100
+    OffsetBottom -15
+    Alignment 0.5 0.5
+    SizeToContent 1
+   }
+   "Is Visible" 0
+   {
+    RichTextWidgetClass "{5DDC8EC6A058A88C}" {
+     Name "ActionPagePrev"
+     Slot LayoutSlot "{55EA7CD1A7CBD8A4}" {
+      Padding 0 0 0 0
+      SizeMode Fill
+     }
+     Color 0.761 0.386 0.078 1
+     Text "<action name=\"MenuTabLeft\"/>"
+     "Font Size" 32
+     "Min Font Size" 32
+     "Vertical Alignment" Center
+     Offset 0 5
+     "Line Spacing" 0
+     "Shadow Offset" 0 0
+     "Shadow Color" 0 0 0 0.502
+    }
+    HorizontalLayoutWidgetClass "{5DDC8EC6A058A88B}" {
+     Name "HPageIndications"
+     Slot LayoutSlot "{55EA7CD1E7F0097F}" {
+      Padding 5 0 5 0
+     }
+    }
+    RichTextWidgetClass "{5DDC8EC6A058A88A}" {
+     Name "ActionPageNext"
+     Slot LayoutSlot "{55EA7CD1A7CBD8A4}" {
+      Padding 0 0 0 0
+      SizeMode Fill
+     }
+     Color 0.761 0.386 0.078 1
+     Text "<action name=\"MenuTabRight\"/>"
+     "Font Size" 32
+     "Min Font Size" 32
+     "Vertical Alignment" Center
+     Offset 0 5
+     "Line Spacing" 0
+     "Shadow Offset" 0 0
+     "Shadow Color" 0 0 0 0.502
+    }
+   }
+  }
+ }
+}

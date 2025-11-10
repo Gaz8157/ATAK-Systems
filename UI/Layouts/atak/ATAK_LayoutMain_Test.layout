@@ -1,0 +1,26 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  OverlayWidgetClass "OverlayRoot" {
+   Name "OverlayRoot"
+   Slot FrameWidgetSlot "{ROOT_SLOT}" {
+    Anchor 0 0 1 1
+   }
+   Color 0.05 0.05 0.05 0.98
+   {
+    TextWidgetClass "TestText" {
+     Name "TestText"
+     Slot OverlayWidgetSlot "{TEXT_SLOT}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Text "ATAK MENU ACTIVE - PRESS N TO CLOSE"
+     "Font Size" 72
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     Color 0 1 0 1
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,5 @@
+MatCommon {
+ Color 0.421 0.105 0 1
+ Emissive 1 0.211 0.029 1
+ EmissiveLV 0.25
+}

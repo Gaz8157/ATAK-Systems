@@ -1,0 +1,36 @@
+HorizontalLayoutWidgetClass {
+ Name "StatusMessage"
+ Slot LayoutSlot "{605EAD1746D528DC}" {
+  HorizontalAlign 1
+ }
+ components {
+  GunBuilderUI_StatusMessageUIComponent "{605EAD120F833682}" {
+  }
+ }
+ {
+  ImageWidgetClass "{605EAD1636D3990A}" {
+   Name "Icon"
+   Slot LayoutSlot "{605EAD1636D398F5}" {
+    HorizontalAlign 0
+    VerticalAlign 1
+   }
+   "Inherit Color" 1
+   Texture "{FDD5423E69D007F8}UI/Textures/Icons/icons_wrapperUI-128.imageset"
+   Image "update"
+   Size 64 64
+  }
+  TextWidgetClass "{605EAD1736942945}" {
+   Name "Text"
+   Slot LayoutSlot "{605EAD1736942922}" {
+    VerticalAlign 1
+    Padding 10 0 0 0
+   }
+   "Z Order" 1
+   "Font Size" 20
+   "Min Font Size" 20
+   FontProperties FontProperties "{605EAD17CA275EF3}" {
+    Font "{CD2634D279AB011A}UI/Fonts/Roboto/Roboto_Bold.fnt"
+   }
+  }
+ }
+}

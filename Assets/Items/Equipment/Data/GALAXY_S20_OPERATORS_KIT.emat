@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{F65AE57E11877784}Assets/Items/Equipment/Data/GALAXY_S20_OPERATORS_KIT_BCR.edds"
+ NMOMap "{CE825EECC8F0251A}Assets/Items/Equipment/Data/GALAXY_S20_OPERATORS_KIT_NMO.edds"
+}

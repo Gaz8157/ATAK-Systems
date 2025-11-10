@@ -1,0 +1,50 @@
+SCR_KeyBindingMenuConfig {
+ m_KeyBindingCategories {
+  SCR_KeyBindingCategory "{6337211B418FF377}" {
+   m_sName "HCA_RadUI_KeyBindings"
+   m_sDisplayName "HCA RadUI"
+   m_KeyBindingEntries {
+    SCR_KeyBindingEntry "{6337211B418FF36D}" {
+     m_sActionName "HCA_RadUI_Interact_Hold"
+     m_sDisplayName "(not used) Hold"
+     m_sPreset "hold"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF312}" {
+     m_sActionName "HCA_RadUI_Interact_Toggle"
+     m_sDisplayName "Toggle"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF301}" {
+     m_sActionName "HCA_RadUI_Interact_Choose"
+     m_sDisplayName "Choose:Up"
+     m_sPreset "up"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF335}" {
+     m_sActionName "HCA_RadUI_Interact_Choose"
+     m_sDisplayName "Choose:Down"
+     m_sPreset "down"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF338}" {
+     m_sActionName "HCA_RadUI_Interact_Choose_Up"
+     m_sDisplayName "(not used) Choose2:Left/Up"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF32F}" {
+     m_sActionName "HCA_RadUI_Interact_Choose_Down"
+     m_sDisplayName "(not used) Choose:Right/Down"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF0D3}" {
+     m_sActionName "HCA_RadUI_Interact_Confirm"
+     m_sDisplayName "Confirm"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{6337211B418FF0C6}" {
+     m_sActionName "HCA_RadUI_Interact_Cancel"
+     m_sDisplayName "Cancel"
+     m_sPreset "click"
+    }
+   }
+  }
+ }
+}

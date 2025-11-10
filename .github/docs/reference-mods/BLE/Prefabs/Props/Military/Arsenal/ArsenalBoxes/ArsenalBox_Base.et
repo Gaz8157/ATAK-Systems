@@ -1,0 +1,17 @@
+GenericEntity {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  ActionsManagerComponent "{56F2C6D1431ADB12}" {
+   additionalActions {
+    Bacon_GunBuilderOpenAction "{66C68CA68858B192}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{66C68CA68D03DEB1}" {
+      Name "Loadout Editor"
+     }
+    }
+   }
+  }
+ }
+}

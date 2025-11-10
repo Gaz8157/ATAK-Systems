@@ -1,0 +1,321 @@
+AudioClass {
+ sounds {
+  SoundClass {
+   id 46089
+   name "BACON_SOUND_BLOCKED"
+   version 5
+   tl 479.167 -4370.599
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 79876
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 189449
+   name "BACON_SOUND_LOADOUT"
+   version 5
+   tl 482.5 -4223.75
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 188420
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 191497
+   name "BACON_SOUND_WEAPON"
+   version 5
+   tl 475 -4087.5
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 190468
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 193545
+   name "BACON_SOUND_EQUIPMENT"
+   version 5
+   tl 475 -3946.25
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 192516
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 195593
+   name "BACON_SOUND_ATTACHMENT"
+   version 5
+   tl 470 -3798.75
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 194564
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 197641
+   name "BACON_SOUND_MAGAZINE"
+   version 5
+   tl 460 -3647.5
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 196612
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 199689
+   name "BACON_SOUND_CONFIRM"
+   version 5
+   tl 465 -3481.25
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 198660
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+  SoundClass {
+   id 201737
+   name "BACON_SOUND_VELCRO"
+   version 5
+   tl 457.5 -3318.75
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 200708
+       port 65
+      }
+     }
+    }
+   }
+   outState 37899
+   outStatePort 26631
+  }
+ }
+ mixers {
+  MixerClass {
+   id 37899
+   name "OutputState 37"
+   version 4
+   tl 761.167 -4365.118
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 26631
+     links {
+      ConnectionClass connection {
+       id 46089
+       port 65
+      }
+      ConnectionClass connection {
+       id 189449
+       port 65
+      }
+      ConnectionClass connection {
+       id 191497
+       port 65
+      }
+      ConnectionClass connection {
+       id 193545
+       port 65
+      }
+      ConnectionClass connection {
+       id 195593
+       port 65
+      }
+      ConnectionClass connection {
+       id 197641
+       port 65
+      }
+      ConnectionClass connection {
+       id 199689
+       port 65
+      }
+      ConnectionClass connection {
+       id 201737
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    16777216 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 79876
+   name "Workshop_Button_Fail"
+   version 7
+   tl 143.5 -4360.914
+   "Pitch variance" 0.2
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{C97850E4341F0CF9}Sounds/UI/Samples/Menu/UI_Button_Fail.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 188420
+   name "Bank 184"
+   version 7
+   tl 132.5 -4222.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{B07341E25EBDF99F}Sounds/Items/_SharedData/Equip/Samples/Backpacks/Items_Equip_GenericBackpack_02.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 190468
+   name "Bank 186"
+   version 7
+   tl 128.75 -4091.25
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{260F0D3FFD828137}Sounds/Weapons/_SharedData/PickUp/Samples/Weapons/Weapons_PickUp_Rifle_Plastic_01.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 192516
+   name "Bank 188"
+   version 7
+   tl 143.75 -3937.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{47D9797F7C0A4ECB}Sounds/Items/_SharedData/PickUp/Samples/Radio_BackPack/Items_PickUp_RadioBackpack_01.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 194564
+   name "Bank 190"
+   version 7
+   tl 135 -3775
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{77825D9B98E1EED0}Sounds/Weapons/_SharedData/PickUp/Samples/Magazines/Weapons_PickUp_Magazine_Handgun_01.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 196612
+   name "Bank 192"
+   version 7
+   tl 140 -3658.75
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{41435EA7CB79EE9C}Sounds/Weapons/_SharedData/PickUp/Samples/Magazines/Weapons_PickUp_Magazine_Rifle_01.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 198660
+   name "Bank 194"
+   version 7
+   tl 142.5 -3472.5
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AC4149A069A91112}Sounds/UI/Samples/Menu/UI_Button_Confirm.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 200708
+   name "Bank 196"
+   version 7
+   tl 151.25 -3302.5
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{577DA5AB457FBF9F}Sounds/BaconLoadoutEditor/UI/velcro_1.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{CE631C3258988E0F}Sounds/BaconLoadoutEditor/UI/velcro_2.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B96974BAAC3A617F}Sounds/BaconLoadoutEditor/UI/velcro_3.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BEAE8EEBCABCDBBC}Sounds/BaconLoadoutEditor/UI/velcro_4.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C9A4E6633E1E34CC}Sounds/BaconLoadoutEditor/UI/velcro_5.wav"
+     Index 4
+    }
+   }
+  }
+ }
+ version 1
+ sourcesLimit 1
+}

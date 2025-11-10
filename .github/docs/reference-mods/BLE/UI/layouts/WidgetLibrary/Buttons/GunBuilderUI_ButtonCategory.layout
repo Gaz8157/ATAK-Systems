@@ -1,0 +1,137 @@
+ButtonWidgetClass {
+ Name "Button"
+ Slot LayoutSlot "{60731277A9C25427}" {
+  HorizontalAlign 1
+  VerticalAlign 2
+ }
+ Color 1 1 1 0
+ components {
+  GunBuilderUI_CategoryButtonUIComponent "{60712766A960ACDB}" {
+   m_BackgroundDefault 1 1 1 0
+   m_BackgroundHovered 1 1 1 0.196
+   m_BackgroundSelected 0.761 0.386 0.08 1
+   m_BackgroundSelectedHovered 0.896 0.539 0.184 1
+   m_BackgroundClicked 0.761 0.386 0.08 1
+   m_bShowBorderOnFocus 0
+   m_sTexture "{2EFEA2AF1F38E7F0}UI/Textures/Icons/icons_wrapperUI-64.imageset"
+   m_sImageName "favourite"
+  }
+ }
+ style blank
+ {
+  OverlayWidgetClass "{60788C00F29EC824}" {
+   Name "MainOverlay"
+   Slot ButtonWidgetSlot "{60788C00F29EC80F}" {
+   }
+   {
+    ImageWidgetClass "{6071276605B95CF7}" {
+     Name "Background"
+     Slot OverlayWidgetSlot "{5548E6E7DF4EE313}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" 1
+     Color 1 1 1 0
+     Size 4 4
+    }
+    ImageWidgetClass "{6071276735EC0C83}" {
+     Name "ActivePanel"
+     Slot OverlayWidgetSlot "{5548E6E7DF4EE313}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" 2
+     Color 0.701 0.366 0.078 1
+     Size 32 32
+     Mask "Assets/BaconLoadoutEditor/gradientTabHighlight.edds"
+     "Transition width" 1
+     Progress 0.359
+     "Mask Mode" "Include Below"
+    }
+    PanelWidgetClass "{60731270E77B02DE}" {
+     Name "DarkBackground"
+     Slot OverlayWidgetSlot "{607312745ADFC2FF}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.018 0.018 0.018 1
+     style full
+    }
+    HorizontalLayoutWidgetClass "{60788C00E29B1EF5}" {
+     Name "HorizontalLayout"
+     Slot OverlayWidgetSlot "{60788C01C7572269}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" 5
+     {
+      TextWidgetClass "{60788C00D762AEEB}" {
+       Name "CategoryLabel"
+       Slot LayoutSlot "{60788C01C7572253}" {
+        Padding 0 0 20 0
+       }
+       "Z Order" 1
+       Text "Something"
+       "Font Size" 16
+       "Min Font Size" 16
+       "Vertical Alignment" Center
+       FontProperties FontProperties "{60788C01E4C2E3CF}" {
+        Font "{CD2634D279AB011A}UI/Fonts/Roboto/Roboto_Bold.fnt"
+       }
+      }
+      SizeLayoutWidgetClass "{6071276605B95CF2}" {
+       Name "SizeLayout"
+       Slot LayoutSlot "{60788C01C7572214}" {
+       }
+       Clipping False
+       AllowWidthOverride 1
+       WidthOverride 52
+       AllowHeightOverride 1
+       HeightOverride 64
+       {
+        OverlayWidgetClass "{6071276605B95CF3}" {
+         Name "Overlay"
+         Slot ButtonWidgetSlot "{5548E6E7F213FB11}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          PanelWidgetClass "{6071276605B95CE8}" {
+           Name "Border"
+           Slot OverlayWidgetSlot "{5548E6E7D859FCD2}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding -4 -4 -4 -4
+           }
+           "Z Order" 1
+           Color 0.761 0.392 0.078 1
+           style outline_2px
+          }
+          ScaleWidgetClass "{6071276605B9A8DF}" {
+           Name "Scale0"
+           Slot OverlayWidgetSlot "{55589476C896A0BB}" {
+            Padding 8 8 8 8
+           }
+           "Z Order" 2
+           {
+            ImageWidgetClass "{6071276605B9A8DD}" {
+             Name "Image"
+             Slot AlignableSlot "{55589476CBD910FF}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             Image ""
+             Size 48 48
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,292 @@
+FrameWidgetClass {
+ Name "GPSMap"
+ Slot FrameWidgetSlot "{61D769716C8C9F7A}" {
+  Anchor 0 0 1 1
+  PositionX 0
+  OffsetLeft 0
+  PositionY 0
+  OffsetTop 0
+  SizeX 0
+  OffsetRight 0
+  SizeY 0
+  OffsetBottom 0
+ }
+ components {
+  RHS_GPSMapWidgetComponent "{622EA6A703174009}" {
+  }
+ }
+ {
+  ImageWidgetClass "{622EA6A7EB32723D}" {
+   Name "ImageMap"
+   Slot FrameWidgetSlot "{61E9453BAE0D1B5C}" {
+    PositionX 0
+    OffsetLeft 0
+    PositionY -1
+    OffsetTop -1
+    SizeX 1080
+    OffsetRight -1080
+    SizeY 1080
+    OffsetBottom -1079
+   }
+   Texture "{D673E0ED60B75002}UI/Textures/GPSMaps/NoMapRast.edds"
+   Size 600 518
+   "Flip Vertically" 1
+  }
+  CanvasWidgetClass "{622EA6A7EB32723F}" {
+   Name "Canvas"
+   Slot FrameWidgetSlot "{622D57AF5879D49A}" {
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 1920
+    OffsetRight -1920
+    SizeY 1080
+    OffsetBottom -1080
+   }
+   Clipping True
+   SizeInUnits 1 1
+   OffsetPixels 0 0
+  }
+  OverlayWidgetClass "{6230B28B016BA3F6}" {
+   Name "Fade"
+   Slot FrameWidgetSlot "{6230B28B016BA3DF}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY -1
+    SizeX -840
+    OffsetRight 0
+    SizeY -1048
+    OffsetBottom 0
+   }
+   "Is Visible" 0
+   {
+    ImageWidgetClass "{6230B28B48E0EC61}" {
+     Name "Bottom"
+     Slot OverlayWidgetSlot "{6230B675C50DD7D9}" {
+      HorizontalAlign 3
+      VerticalAlign 2
+     }
+     Color 0 0 0 1
+     Texture "{E3EE15C5D1B5A7FB}UI/Textures/Common/gradient_transparent_black_linear_photoshop_vertical.edds"
+     Size 256 16
+     "Flip Vertically" 1
+    }
+    ImageWidgetClass "{6230B28BAB359FE2}" {
+     Name "Top"
+     Slot OverlayWidgetSlot "{6230B675C50DD700}" {
+      HorizontalAlign 3
+      VerticalAlign 0
+     }
+     Color 0 0 0 1
+     Texture "{E3EE15C5D1B5A7FB}UI/Textures/Common/gradient_transparent_black_linear_photoshop_vertical.edds"
+     Size 256 16
+    }
+    ImageWidgetClass "{6230B28B1881FEBC}" {
+     Name "Left"
+     Slot OverlayWidgetSlot "{6230B28B1881FD50}" {
+      HorizontalAlign 0
+      VerticalAlign 3
+     }
+     Color 0 0 0 1
+     Texture "{D2B8A2573F095A5E}UI/Textures/Common/gradient_transparent_black_linear_photoshop.edds"
+     Size 16 256
+     "Flip Horizontally" 1
+    }
+    ImageWidgetClass "{6230B28B1F71270D}" {
+     Name "Right"
+     Slot OverlayWidgetSlot "{6230B28B1881FD50}" {
+      HorizontalAlign 2
+      VerticalAlign 3
+     }
+     Color 0 0 0 1
+     Texture "{D2B8A2573F095A5E}UI/Textures/Common/gradient_transparent_black_linear_photoshop.edds"
+     Size 16 256
+    }
+   }
+  }
+  TextWidgetClass "{622EA6A7EB327200}" {
+   Name "PointsCountText"
+   Slot FrameWidgetSlot "{622E62C8011B4841}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+   "Is Visible" 0
+   Text "Points count:"
+  }
+  CanvasWidgetClass "{622EAB4C8DA1ED9A}" {
+   Name "CanvasFull"
+   Slot FrameWidgetSlot "{622D57AF5879D49A}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1920
+    OffsetRight 0
+    SizeY -1080
+    OffsetBottom 0
+   }
+   Clipping True
+   SizeInUnits 1 1
+   OffsetPixels 0 0
+  }
+  CanvasWidgetClass "{62B4F9C09B5645FC}" {
+   Name "CanvasDraw"
+   Slot FrameWidgetSlot "{622D57AF5879D49A}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1920
+    OffsetRight 0
+    SizeY -1080
+    OffsetBottom 0
+   }
+   Clipping True
+   SizeInUnits 1 1
+   OffsetPixels 0 0
+  }
+  FrameWidgetClass "{6230DC9FB195B59B}" {
+   Name "DescriptorsFrame"
+   Slot FrameWidgetSlot "{6230DC9FB195B5EF}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+   Clipping True
+  }
+  FrameWidgetClass "{6230D5FA7D67101B}" {
+   Name "MarkersFrame"
+   Slot FrameWidgetSlot "{6230D5FA7D67106F}" {
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 1920
+    OffsetRight -1920
+    SizeY 1080
+    OffsetBottom -1080
+   }
+   Clipping True
+  }
+  HorizontalLayoutWidgetClass "{622EAB4588CF79D9}" : "{6380743F533D3733}UI/layouts/Map/CursorCrosshair.layout" {
+   Name "GPSCursor"
+   Slot FrameWidgetSlot "{55A2A2EE2E39E9FB}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1792
+    OffsetRight 0
+    SizeY -952
+    OffsetBottom 0
+   }
+   "Z Order" 0
+   Clipping False
+  }
+  PanelWidgetClass "{623121CBA3FEED7D}" {
+   Name "CoordsPanel"
+   Slot FrameWidgetSlot "{623121CBA3FEED51}" {
+    PositionX 14
+    OffsetLeft 14
+    PositionY 12
+    OffsetTop 12
+    SizeX 307
+    OffsetRight -321
+    SizeY 68
+    OffsetBottom -80
+   }
+   Clipping True
+   Color 1 1 1 0
+   style full
+   {
+    ImageWidgetClass "{623121C8A637B18D}" {
+     Name "Image"
+     Slot FrameWidgetSlot "{61E9453BAE0D1B5C}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     Clipping True
+     Color 0.38 0.38 0.38 1
+     Size 600 518
+     "Flip Vertically" 1
+     "Shadow Offset" 1 1
+     "Shadow Size Increase" 2 2
+     "Shadow Color" 0 0 0 0.251
+    }
+    FrameWidgetClass "{623121CBB2199F6F}" {
+     Name "Frame"
+     Slot FrameWidgetSlot "{623121CBB2199F44}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     {
+      TextWidgetClass "{623121CB40496CEE}" {
+       Name "CortesianCoordsText"
+       Slot FrameWidgetSlot "{623121CB40496CC0}" {
+        PositionX 4
+        OffsetLeft 4
+        PositionY 4
+        OffsetTop 4
+        SizeX 298
+        OffsetRight -302
+        SizeY 33
+        OffsetBottom -37
+       }
+       Color 0 0 0 1
+       Text "X = 4555 Y = 34440"
+       "Font Size" 34
+       "Min Font Size" 34
+      }
+      TextWidgetClass "{623121C8D0CC3504}" {
+       Name "PolarCoordsText"
+       Slot FrameWidgetSlot "{623121CB40496CC0}" {
+        PositionX 4
+        OffsetLeft 4
+        PositionY 39
+        OffsetTop 39
+        SizeX 298
+        OffsetRight -302
+        SizeY 24
+        OffsetBottom -63
+       }
+       Color 0.039 0.092 0.251 1
+       Text "39.5111079Â° N 115.957712Â° W"
+      }
+     }
+    }
+   }
+  }
+ }
+}

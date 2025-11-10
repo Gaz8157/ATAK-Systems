@@ -1,0 +1,43 @@
+SCR_MapConfig : "{32913D3C51D7736C}Configs/Map/MapFullscreenCoop.conf" {
+ m_iMapMode MINIMAP
+ m_aModules {
+  SCR_MapCursorModule "{58ECED62053B9098}" {
+   m_bDisableModule 1
+  }
+ }
+ m_aUIComponents {
+  SCR_MapRadialUI "{5F18861442E72E88}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapUIElementContainer "{5F18861442E72E83}" {
+  }
+  SCR_MapLightUI "{5F18861442E72E9C}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapToolInteractionUI "{5F18861442E72E9D}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapWatchUI "{5F18861442E72E9E}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapDebugUI "{5F18861442E72E99}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapRulerUI "{5EB0852B02C40995}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapToolMenuUI "{5F18861442E72E9A}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapTaskListUI "{5F18861442E72E9B}" {
+   m_bDisableComponent 1
+  }
+  SCR_MapDrawingUI "{5F18861442E72E94}" {
+  }
+  SCR_MapMarkersUI "{5F18861442E72E95}" {
+  }
+  SCR_MapCompassUI "{5E88A0BAA9983F29}" {
+   m_bDisableComponent 1
+  }
+ }
+}

@@ -1,0 +1,9 @@
+SCR_EditorAttributeCategory {
+ m_UIInfo SCR_UIInfo "{61F0C1B7376FAF4B}" {
+  Name "vPad settings"
+  Description "vPad Options"
+  Icon "{0E394621271B080B}UI/Textures/Editor/Attributes/FreeRoamBuilding/HQ_Tab-64.edds"
+ }
+ m_iPriority 5
+ m_bIsGlobalAttributeCategory 1
+}

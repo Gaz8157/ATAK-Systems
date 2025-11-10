@@ -1,0 +1,9 @@
+SystemSettings : "{45C53F06BA17238D}configs/Systems/SystemsConfig.conf" {
+ Systems {
+  gOS_Sys_Markers "{61E03E73B75934CD}" {
+  }
+  gOS_Sys_Main "{61F0C2C4609BDF71}" {
+   SystemPoints 0
+  }
+ }
+}

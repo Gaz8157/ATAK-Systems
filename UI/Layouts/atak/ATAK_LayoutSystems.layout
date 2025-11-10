@@ -1,0 +1,269 @@
+FrameWidgetClass {
+ Name "ATAK_Systems_Root"
+ {
+  OverlayWidgetClass "{SYS_ROOT}" {
+   Name "SystemsOverlay"
+   Slot FrameWidgetSlot "{SYS_SLOT}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft -400
+    OffsetTop -300
+    SizeX 800
+    OffsetRight 400
+    SizeY 600
+    OffsetBottom 300
+   }
+   Color 0 0 0 0
+   "Ignore Cursor" 0
+   {
+    // ========== STATUS DISPLAY (Left Side) ==========
+    TextWidgetClass "{STATUS_DISPLAY}" {
+     Name "StatusDisplay"
+     Slot FrameWidgetSlot "{SD_SLOT}" {
+      Anchor 0 0.5 0 0.5
+      OffsetLeft 10
+      OffsetTop -50
+      SizeX 130
+      OffsetRight 140
+      SizeY 100
+      OffsetBottom 50
+     }
+     Text "RADIO: ONLINE\nGPS: LOCKED\nMISSION: ACTIVE"
+     "Font Size" 11
+     "Horizontal Alignment" Left
+     "Vertical Alignment" Top
+     Color 0.2 1.0 0.2 1.0
+    }
+    
+    // ========== FRIENDLY DISPLAY (Left Side, below Status) ==========
+    TextWidgetClass "{FRIENDLY_DISPLAY}" {
+     Name "FriendlyDisplay"
+     Slot FrameWidgetSlot "{FD_SLOT}" {
+      Anchor 0 1 0 1
+      OffsetLeft 10
+      OffsetTop -130
+      SizeX 150
+      OffsetRight 160
+      SizeY 80
+      OffsetBottom -50
+     }
+     Text "FRIENDLIES: 3\nRANGE: 1.2KM\nSTATUS: ACTIVE"
+     "Font Size" 10
+     "Horizontal Alignment" Left
+     "Vertical Alignment" Top
+     Color 0.4 0.8 1.0 1.0
+    }
+    
+    // ========== SCALE BAR (Bottom Left) ==========
+    TextWidgetClass "{SCALE_BAR}" {
+     Name "ScaleBar"
+     Slot FrameWidgetSlot "{SB_SLOT}" {
+      Anchor 0 1 0 1
+      OffsetLeft 10
+      OffsetTop -25
+      SizeX 120
+      OffsetRight 130
+      SizeY 25
+      OffsetBottom 0
+     }
+     Text "1.33 mi"
+     "Font Size" 12
+     "Horizontal Alignment" Left
+     Color 0.9 0.9 0.9 0.9
+    }
+    
+    // ========== TACTICAL DATA OVERLAY (Top Center, above map) ==========
+    FrameWidgetClass "{TACTICAL_OVERLAY}" {
+     Name "TacticalOverlay"
+     Slot FrameWidgetSlot "{TO_SLOT}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft -100
+      OffsetTop -210
+      SizeX 200
+      OffsetRight 100
+      SizeY 40
+      OffsetBottom 170
+     }
+     Color 0 0 0 0
+     "Ignore Cursor" 1
+     {
+      TextWidgetClass "{TACTICAL_DATA_1}" {
+       Name "TacticalData1"
+       Slot FrameWidgetSlot "{TD1_SLOT}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft -90
+        OffsetTop -15
+        SizeX 40
+        OffsetRight 50
+        SizeY 20
+        OffsetBottom 15
+       }
+       Text "012008"
+       "Font Size" 11
+       "Horizontal Alignment" Center
+       Color 0.9 0.9 0.9 1.0
+      }
+      
+      TextWidgetClass "{TACTICAL_DATA_2}" {
+       Name "TacticalData2"
+       Slot FrameWidgetSlot "{TD2_SLOT}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft -40
+        OffsetTop -15
+        SizeX 40
+        OffsetRight 100
+        SizeY 20
+        OffsetBottom 15
+       }
+       Text "156"
+       "Font Size" 11
+       "Horizontal Alignment" Center
+       Color 0.9 0.9 0.9 1.0
+      }
+      
+      TextWidgetClass "{TACTICAL_DATA_3}" {
+       Name "TacticalData3"
+       Slot FrameWidgetSlot "{TD3_SLOT}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft 10
+        OffsetTop -15
+        SizeX 40
+        OffsetRight 150
+        SizeY 20
+        OffsetBottom 15
+       }
+       Text "51m"
+       "Font Size" 11
+       "Horizontal Alignment" Center
+       Color 0.9 0.9 0.9 1.0
+      }
+      
+      TextWidgetClass "{TACTICAL_DATA_4}" {
+       Name "TacticalData4"
+       Slot FrameWidgetSlot "{TD4_SLOT}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft 60
+        OffsetTop -15
+        SizeX 40
+        OffsetRight 200
+        SizeY 20
+        OffsetBottom 15
+       }
+       Text "78m"
+       "Font Size" 11
+       "Horizontal Alignment" Center
+       Color 0.9 0.9 0.9 1.0
+      }
+      
+      TextWidgetClass "{TACTICAL_BEARING}" {
+       Name "TacticalBearing"
+       Slot FrameWidgetSlot "{TB_SLOT}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft -20
+        OffsetTop 5
+        SizeX 40
+        OffsetRight 20
+        SizeY 20
+        OffsetBottom -5
+       }
+       Text "271° W"
+       "Font Size" 10
+       "Horizontal Alignment" Center
+       Color 0.8 0.8 0.8 1.0
+      }
+     }
+    }
+    
+    // ========== NAVIGATION MENU (Hidden initially) ==========
+    FrameWidgetClass "{NAV_MENU}" {
+     Name "NavigationMenu"
+     Slot FrameWidgetSlot "{NM_SLOT}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft -200
+      OffsetTop -150
+      SizeX 400
+      OffsetRight 200
+      SizeY 300
+      OffsetBottom 150
+     }
+     Color 0.10 0.12 0.14 0.95
+     "Is Visible" 0
+     "Ignore Cursor" 0
+     {
+      // Menu header
+      TextWidgetClass "{MENU_HEADER}" {
+       Name "MenuHeader"
+       Slot FrameWidgetSlot "{MH_SLOT}" {
+        OffsetLeft 0
+        OffsetTop -140
+        SizeX 400
+        OffsetRight 0
+        SizeY 30
+        OffsetBottom 110
+       }
+       Text "ATAK NAVIGATION MENU"
+       "Font Size" 17
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+       Color 1.0 1.0 1.0 1.0
+      }
+      
+      // Close menu button
+      ButtonWidgetClass "{CLOSE_MENU_BTN}" {
+       Name "BtnCloseMenu"
+       Slot FrameWidgetSlot "{CM_SLOT}" {
+        Anchor 1 0 1 0
+        OffsetLeft 0
+        OffsetTop -140
+        SizeX 35
+        OffsetRight 365
+        SizeY 30
+        OffsetBottom 110
+       }
+       Color 0.25 0.15 0.15 0.9
+       "Ignore Cursor" 0
+       components {
+        SCR_InputButtonComponent "{5D346C3DD81D95D4}" {
+         m_sActionName "ATAK_CloseMenu"
+         m_sLabel ""
+        }
+       }
+       {
+        TextWidgetClass "{CLOSE_TEXT}" {
+         Name "CloseText"
+         Slot FrameWidgetSlot "{CT_SLOT}" {
+          Anchor 0.5 0.5 0.5 0.5
+          OffsetLeft -12
+          OffsetTop -12
+          SizeX 24
+          OffsetRight 12
+          SizeY 24
+          OffsetBottom 12
+         }
+         Text "✕"
+         "Font Size" 18
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+         Color 1.0 0.3 0.3 1.0
+        }
+       }
+      }
+      
+      // Menu content area (placeholder for future menu items)
+      FrameWidgetClass "{MENU_CONTENT}" {
+       Name "MenuContent"
+       Slot FrameWidgetSlot "{MC_SLOT}" {
+        OffsetLeft 20
+        OffsetTop -110
+        SizeX 360
+        OffsetRight -20
+        SizeY 260
+        OffsetBottom 110
+       }
+       Color 0.08 0.10 0.12 0.8
+      }
+     }
+    }
+   }
+  }
+ }
+}

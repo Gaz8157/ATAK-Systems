@@ -1,0 +1,156 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  VerticalLayoutWidgetClass "{64B8E064DDD5E8F4}" {
+   Name "Overlay1"
+   Slot FrameWidgetSlot "{64B8E064DDD455C1}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+   "Z Order" 6
+   {
+    SizeLayoutWidgetClass "{64B8E064DDD5E8F5}" {
+     Name "SizeLayout2"
+     Slot LayoutSlot "{6073126513E580EC}" {
+      SizeMode Fill
+     }
+     "Z Order" 1
+     AllowMaxDesiredWidth 1
+     MaxDesiredWidth 400
+     MaxDesiredHeight 1080
+     {
+      OverlayWidgetClass "{64B8E064DDD5E8F7}" {
+       Name "ListBoxSlotChoices"
+       Slot AlignableSlot "{605D76A57672ABFA}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Z Order" 1
+       "Up target" "BackButton"
+       "Down target" "ListBoxAttachmentChoices"
+       {
+        PanelWidgetClass "{64B8E064DDD5E8E8}" {
+         Name "Panel0"
+         Slot OverlayWidgetSlot "{605B59A73AC8369E}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Color 0.018 0.018 0.018 1
+         style full
+        }
+        ScrollLayoutWidgetClass "{64B8E064DDD53558}" {
+         Name "ScrollLayout0"
+         Slot OverlayWidgetSlot "{605AD321ED874AFC}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding 12 12 0 12
+         }
+         "Z Order" 1
+         Color 0.761 0.392 0.078 1
+         "Scrollbar Always Visible" 1
+         {
+          VerticalLayoutWidgetClass "{64B8E064DDD5355A}" {
+           Name "List"
+           Slot AlignableSlot "{605AD321F1E1A96C}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           "Z Order" 1
+           "Down target" "ListBoxAttachmentChoices"
+           {
+            ImageWidgetClass "{64B8E064DDD57177}" {
+             Name "Separator0"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD57176}" {
+             Name "Separator1"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD57171}" {
+             Name "Separator2"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4E640}" {
+             Name "Separator3"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4E641}" {
+             Name "Separator4"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4D0C5}" {
+             Name "Separator5"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4229F}" {
+             Name "Separator6"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4229C}" {
+             Name "Separator7"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4229D}" {
+             Name "Separator8"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+            ImageWidgetClass "{64B8E064DDD4451D}" {
+             Name "Separator9"
+             Slot LayoutSlot "{6073126513E58096}" {
+             }
+             Color 1 1 1 0
+             Size 100 32
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    ImageWidgetClass "{64B8E064DDD44512}" {
+     Name "Separator"
+     Slot LayoutSlot "{6073126513E58096}" {
+     }
+     Color 0.701 0.366 0.078 1
+     Size 4 3
+    }
+   }
+  }
+ }
+}

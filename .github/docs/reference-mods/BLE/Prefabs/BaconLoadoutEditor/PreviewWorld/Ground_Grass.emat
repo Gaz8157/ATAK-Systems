@@ -1,0 +1,23 @@
+MatPBRBasic {
+ Sort translucent
+ AlphaTest 0.004
+ AlphaMul 0.999
+ BlendMode AlphaBlend
+ RoughnessScale 0.92
+ AOScale 0.775
+ DielectricReflectance 0.031
+ BCRMap "{640A83C1DA73248A}Terrains/Common/Surfaces/Data/GrassLawn_01_BCR.edds"
+ NMOMap "{433DC885D935629D}Terrains/Common/Surfaces/Data/GrassLawn_01_NHO.edds"
+ GlobalMapsUVTransform MatUVTransform "{62BAC865649CE945}" {
+  TilingU 50
+  TilingV 50
+ }
+ DetailNormalPower 0.536
+ DetailNormalMap "{433DC885D935629D}Terrains/Common/Surfaces/Data/GrassLawn_01_NHO.edds"
+ DetailNormalMapUVTransform MatUVTransform "{606A9B2664969843}" {
+  TilingU 15
+  TilingV 15
+ }
+ HeightMap "{93550F53CF86DDA6}Assets/_SharedData/Asphalt/ST_Asphalt_01_BCR.edds"
+ ParallaxScale 0.002
+}

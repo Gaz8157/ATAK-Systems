@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3E0F063F43E3CEE6}Prefabs/BaconLoadoutEditor/PreviewWorld/LightEntitiesPS5.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,820 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  FrameWidgetClass "{65D645543C1097DC}" {
+   Name "CameraFeedSlot"
+   Slot FrameWidgetSlot "{65D8364CCA070D0F}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 217.162
+    OffsetLeft 217.162
+    PositionY 134.68
+    OffsetTop 134.68
+    SizeX 200
+    OffsetRight -417.162
+    SizeY 120
+    OffsetBottom -254.68
+    Alignment 0.5 0.5
+   }
+  }
+  ImageWidgetClass "{65D8563E5516BD3C}" {
+   Name "CameraBorderOverlay"
+   Slot FrameWidgetSlot "{65D8364CCA070D0F}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 217.162
+    OffsetLeft 217.162
+    PositionY 134.7
+    OffsetTop 134.7
+    SizeX 200
+    OffsetRight -417.162
+    SizeY 120
+    OffsetBottom -254.7
+    Alignment 0.5 0.5
+   }
+   Color 0.3569 0.9137 0.6235 1
+   Texture "{4B64CC078C24BE38}UI/layouts/tdl_cameraborder.edds"
+   Size 200 200
+   "Blend Mode" Additive
+  }
+  OverlayWidgetClass "{65C76214FC301F3F}" {
+   Name "Overlay0"
+   Slot FrameWidgetSlot "{65C76214FC301F22}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 659.266
+    OffsetRight -659.266
+    SizeY 400
+    OffsetBottom -400
+    Alignment 0.5 0.5
+   }
+   {
+    FrameWidgetClass "{65C762156FCDB1ED}" {
+     Name "TacticalOverlay"
+     Slot OverlayWidgetSlot "{65C762156FCDB1D7}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      TextWidgetClass "{65B24CF2FA5E2507}" {
+       Name "HeadingText"
+       Slot FrameWidgetSlot "{65F57CE1D0F5C39A}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft 0
+        PositionY -175.542
+        OffsetTop -175.5
+        SizeX 100
+        OffsetRight -100
+        SizeY 18.744
+        OffsetBottom 156.8
+        Alignment 0.5 0
+       }
+       Clipping False
+       Color 0.2902 0.8078 0.9412 1
+       Text "0Â°M"
+       "Font Size" 14
+       "Min Font Size" 14
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      ImageWidgetClass "{65F60A69C677A70A}" {
+       Name "Arrow"
+       Slot FrameWidgetSlot "{65F57CE1D0F5C39A}" {
+        Anchor 0.5 0.5 0.5 0.5
+        PositionX 0
+        OffsetLeft 0
+        PositionY -155
+        OffsetTop -155
+        SizeX 23.68
+        OffsetRight -23.7
+        SizeY 20.517
+        OffsetBottom 134.5
+        Alignment 0.5 0
+       }
+       Clipping False
+       Color 0.2902 0.8078 0.9412 1
+       Texture "{A554FD27410F41A8}UI/layouts/down_arrow.edds"
+       Size 100 100
+      }
+      TextWidgetClass "{65F57CE4F2476AF9}" {
+       Name "TimeText"
+       Slot FrameWidgetSlot "{65F57CE1D0F5C39A}" {
+        Anchor 0.5 0.5 0.5 0.5
+        PositionX 267.427
+        OffsetLeft 267.427
+        PositionY -197.403
+        OffsetTop -197.403
+        SizeX 100
+        OffsetRight -367.427
+        SizeY 18.7
+        OffsetBottom 178.703
+        Alignment 0.5 0
+       }
+       Clipping False
+       Color 0.9412 0.698 0.2902 1
+       Text "00:00"
+       "Font Size" 14
+       "Min Font Size" 14
+       "Horizontal Alignment" Right
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      VerticalLayoutWidgetClass "{65C914C5C7CF2617}" {
+       Name "VerticalLayout0"
+       Slot FrameWidgetSlot "{65C914C5C7CF26FA}" {
+        Anchor 0.35 0.9 0.65 1
+        PositionX -0.213
+        OffsetLeft -0.213
+        PositionY 26.767
+        OffsetTop 26.767
+        SizeX 0.426
+        OffsetRight -0.213
+        SizeY -26.767
+        OffsetBottom 0
+        Alignment 0 0
+       }
+       {
+        TextWidgetClass "{65C914C58DF44552}" {
+         Name "StatusText"
+         Slot LayoutSlot "{65D645542DC6FC8F}" {
+          VerticalAlign 2
+         }
+         Color 0.9412 0.698 0.2902 1
+         Text "STATUS"
+         "Font Size" 12
+         "Min Font Size" 12
+         "Horizontal Alignment" Center
+         FontProperties FontProperties "{65C914C419592E92}" {
+          Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{65F75001674EB886}" {
+       Name "CaptureGate"
+       Slot FrameWidgetSlot "{65F57CE1D0F5C39A}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft 0
+        OffsetTop 0
+        SizeX 50
+        OffsetRight -50
+        SizeY 50
+        OffsetBottom -50
+        Alignment 0.5 0.5
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Texture "{095BDCF3B9DAF7FB}UI/layouts/tak_capture_gate.edds"
+       Size 200 200
+      }
+      TextWidgetClass "{65F86DDFCE64A620}" {
+       Name "MarkerIdentityText"
+       Slot FrameWidgetSlot "{65F57CE1D0F5C39A}" {
+        Anchor 0.5 0.5 0.5 0.5
+        OffsetLeft 0
+        PositionY 30
+        OffsetTop 30
+        SizeX 100
+        OffsetRight -100
+        SizeY 16
+        OffsetBottom -46
+        Alignment 0.5 0
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Text "ORP"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Horizontal Alignment" Center
+       "Vertical Alignment" Center
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+     }
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{65F57CE691F4A1E2}" {
+   Name "I2GainStatus"
+   Slot FrameWidgetSlot "{65F57CE6F4813DA9}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -327.6
+    OffsetLeft -327.6
+    PositionY 0
+    OffsetTop 0
+    SizeX 60.671
+    OffsetRight 266.929
+    SizeY 274.5
+    OffsetBottom -274.5
+    Alignment 0 0.5
+   }
+   {
+    TextWidgetClass "{65F57CE73D1299D4}" {
+     Name "I2Gain"
+     Slot LayoutSlot "{E71CA6D02553CB5B}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 5
+     }
+     Clipping False
+     Color 0.9412 0.698 0.2902 1
+     Text "I2 Gain"
+     "Font Size" 14
+     "Min Font Size" 14
+     "Vertical Alignment" Center
+     "No Localization" 1
+     FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      Italic 0
+      Bold 0
+      OutlineSize 0
+      OutlineColor 0 0 0 1
+      ShadowSize 1
+      ShadowOffset 2 2
+     }
+    }
+    FrameWidgetClass "{65F57CE70105F9DC}" {
+     Name "I2Frame"
+     Slot LayoutSlot "{65F57CE70105F9BD}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+     }
+     {
+      ProgressBarWidgetClass "{65F57CE69764068A}" {
+       Name "I2GainBar"
+       Slot FrameWidgetSlot "{65F57CE71599FB92}" {
+        Anchor 0 0 0 0
+        PositionX 0
+        OffsetLeft 0
+        PositionY 0
+        OffsetTop 0
+        SizeX 18.2
+        OffsetRight -18.2
+        SizeY 235
+        OffsetBottom -235
+       }
+       Color 0.9412 0.698 0.2902 1
+       style SimpleWithBackground
+       "no focus" 1
+       Vertical 1
+       Flipped 1
+      }
+     }
+    }
+    TextWidgetClass "{65F57CE7382856CA}" {
+     Name "I2StandBy"
+     Slot LayoutSlot "{E71CA6D02553CB5B}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 5 0 0
+     }
+     Clipping False
+     Color 0.9412 0.698 0.2902 1
+     Text "I2 Standby"
+     "Font Size" 14
+     "Min Font Size" 14
+     "Vertical Alignment" Center
+     "No Localization" 1
+     FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      Italic 0
+      Bold 0
+      OutlineSize 0
+      OutlineColor 0 0 0 1
+      ShadowSize 1
+      ShadowOffset 2 2
+     }
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{65B24CF2906B5129}" {
+   Name "VerticalLayout0"
+   Slot FrameWidgetSlot "{428266E0976574C4}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -326.772
+    OffsetLeft -326.772
+    PositionY -196.7
+    OffsetTop -196.7
+    SizeX 90
+    OffsetRight 236.772
+    SizeY 53.1
+    OffsetBottom 143.6
+    SizeToContent 1
+   }
+   {
+    TextWidgetClass "{65B24CF29068CC7E}" {
+     Name "GridText"
+     Slot LayoutSlot "{E71CA6D02553CB5B}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 10
+     }
+     Clipping False
+     Color 0.9412 0.698 0.2902 1
+     Text "0000 0000"
+     "Font Size" 14
+     "Min Font Size" 14
+     "Vertical Alignment" Center
+     "No Localization" 1
+     FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      Italic 0
+      Bold 0
+      OutlineSize 0
+      OutlineColor 0 0 0 1
+      ShadowSize 1
+      ShadowOffset 2 2
+     }
+    }
+    TextWidgetClass "{65F57CE66B59D9D8}" {
+     Name "ElevationText"
+     Slot LayoutSlot "{E71CA6D02553CB5B}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+     }
+     Clipping False
+     Color 0.9412 0.698 0.2902 1
+     Pivot 0.5 0.5
+     Text "45 m"
+     "Font Size" 14
+     "Min Font Size" 14
+     "Vertical Alignment" Center
+     "No Localization" 1
+     FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      Italic 0
+      Bold 0
+      OutlineSize 0
+      OutlineColor 0 0 0 1
+      ShadowSize 1
+      ShadowOffset 2 2
+     }
+    }
+   }
+  }
+  VerticalLayoutWidgetClass "{65F75003170F8D6F}" {
+   Name "MemberInfoContainers"
+   Slot FrameWidgetSlot "{428266E0976574C4}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -258.125
+    OffsetLeft -258.125
+    PositionY -138.064
+    OffsetTop -138.064
+    SizeX 90
+    OffsetRight 168.125
+    SizeY 53.1
+    OffsetBottom 84.964
+    SizeToContent 1
+   }
+   {
+    VerticalLayoutWidgetClass "{65F7502BC13AA7CD}" {
+     Name "MemberInfoContainer1"
+     Slot LayoutSlot "{65F7502BFC9733A0}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 5
+     }
+     {
+      TextWidgetClass "{65F7502BC13AA7CC}" {
+       Name "MemberNameText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Text "UNKNOWN"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BC13AA7C3}" {
+       Name "MemberGridText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0000 0000"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BC13AA7C2}" {
+       Name "MemberDistanceText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0 m"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BC13916CF}" {
+       Name "MemberTypeText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "FRIENDLY"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{65F7502BD32B5E33}" {
+     Name "MemberInfoContainer2"
+     Slot LayoutSlot "{65F7502BFC9733A0}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 5
+     }
+     {
+      TextWidgetClass "{65F7502BD32B5E30}" {
+       Name "MemberNameText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Text "UNKNOWN"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BD32B5E3E}" {
+       Name "MemberGridText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0000 0000"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BD32B11D3}" {
+       Name "MemberDistanceText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0 m"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BD32B11D0}" {
+       Name "MemberTypeText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "FRIENDLY"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{65F7502BDADADAB1}" {
+     Name "MemberInfoContainer3"
+     Slot LayoutSlot "{65F7502BFC9733A0}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 5
+     }
+     {
+      TextWidgetClass "{65F7502BDADADAB0}" {
+       Name "MemberNameText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Text "UNKNOWN"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BDADADAB7}" {
+       Name "MemberGridText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0000 0000"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BDADADAB6}" {
+       Name "MemberDistanceText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0 m"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502BDADA51DF}" {
+       Name "MemberTypeText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "FRIENDLY"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+     }
+    }
+    VerticalLayoutWidgetClass "{65F7502A14F8459E}" {
+     Name "MemberInfoContainer4"
+     Slot LayoutSlot "{65F7502BFC9733A0}" {
+      HorizontalAlign 0
+      VerticalAlign 1
+      Padding 0 0 0 5
+     }
+     {
+      TextWidgetClass "{65F7502A14F8459F}" {
+       Name "MemberNameText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Text "UNKNOWN"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502A14F8459C}" {
+       Name "MemberGridText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0000 0000"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502A14F8459D}" {
+       Name "MemberDistanceText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "0 m"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+      TextWidgetClass "{65F7502A14F9BA91}" {
+       Name "MemberTypeText"
+       Slot LayoutSlot "{E71CA6D02553CB5B}" {
+        HorizontalAlign 0
+        VerticalAlign 1
+       }
+       Clipping False
+       Color 0.3569 0.9137 0.6235 1
+       Pivot 0.5 0.5
+       Text "FRIENDLY"
+       "Font Size" 12
+       "Min Font Size" 12
+       "Vertical Alignment" Center
+       "No Localization" 1
+       FontProperties FontProperties "{C9D3A6D12DA893AF}" {
+        Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+        Italic 0
+        Bold 0
+        OutlineSize 0
+        OutlineColor 0 0 0 1
+        ShadowSize 1
+        ShadowOffset 2 2
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,51 @@
+SCR_AvailableActionsDisplay {
+ m_aActions {
+  SCR_AvailableActionContext "{620A59E25DFF1190}" {
+   m_bEnabled 0
+   m_aConditions {
+    HCA_RadUI_SCR_Condition "{620A59E24888B7DB}" {
+     m_bIsActive 1
+     m_sVarName "HCA_RadUI_IsOpen"
+    }
+   }
+   m_sTag "HCA_RADUI_CHOOSE"
+   m_sAction "HCA_RadUI_Interact_Choose"
+   m_sName "Next/Prev"
+  }
+  SCR_AvailableActionContext "{620A59E2E3A046E9}" {
+   m_bEnabled 0
+   m_aConditions {
+    HCA_RadUI_SCR_Condition "{620A59E24888B7DB}" {
+     m_bIsActive 1
+     m_sVarName "HCA_RadUI_IsOpen"
+    }
+   }
+   m_sTag "HCA_RADUI_CONFIRM"
+   m_sAction "HCA_RadUI_Interact_Confirm"
+   m_sName "Confirm"
+  }
+  SCR_AvailableActionContext "{620A59E2C7F385A3}" {
+   m_bEnabled 0
+   m_aConditions {
+    HCA_RadUI_SCR_Condition "{620A59E24888B7DB}" {
+     m_bIsActive 1
+     m_sVarName "HCA_RadUI_IsOpen"
+    }
+   }
+   m_sTag "HCA_RADUI_BACK"
+   m_sAction "HCA_RadUI_Interact_Cancel"
+   m_sName "Back"
+  }
+  SCR_AvailableActionContext "{620A59E2AB771299}" {
+   m_aConditions {
+    HCA_RadUI_SCR_Condition "{620A59E24888B7DB}" {
+     m_bIsActive 1
+     m_sVarName "HCA_RadUI_IsOpen"
+    }
+   }
+   m_sTag "HCA_RADUI_TOGGLE"
+   m_sAction "HCA_RadUI_Interact_Toggle"
+   m_sName "Toggle Menu"
+  }
+ }
+}

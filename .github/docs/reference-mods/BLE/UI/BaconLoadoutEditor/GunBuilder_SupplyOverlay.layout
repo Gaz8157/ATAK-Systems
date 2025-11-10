@@ -1,0 +1,50 @@
+OverlayWidgetClass {
+ Name "SupplyOverlay"
+ Slot OverlayWidgetSlot "{64FAAA142BBAE508}" {
+  HorizontalAlign 2
+  VerticalAlign 0
+  Padding 0 6 6 0
+ }
+ "Is Visible" 0
+ {
+  PanelWidgetClass "{64FAAA143B14C6D8}" {
+   Name "BG"
+   Slot OverlayWidgetSlot "{64FAAA143B14C6C3}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   Color 1 1 1 0.0813
+  }
+  HorizontalLayoutWidgetClass "{64FAAA140A451751}" {
+   Name "SupplyInfo"
+   Slot OverlayWidgetSlot "{64FAAA140A451721}" {
+    HorizontalAlign 2
+    VerticalAlign 0
+    Padding 2 0 6 0
+   }
+   {
+    ImageWidgetClass "{64FAAA1402721DAA}" {
+     Name "SupplyIcon"
+     Slot LayoutSlot "{64FAAA119E20470A}" {
+     }
+     "Z Order" 1
+     Color 1 1 1 0.788
+     Texture "{FDD5423E69D007F8}UI/Textures/Icons/icons_wrapperUI-128.imageset"
+     Image "supplies"
+     Size 24 24
+    }
+    TextWidgetClass "{64FAAA14A1B95B1F}" {
+     Name "SupplyText"
+     Slot LayoutSlot "{64FAAA14A1B95AFC}" {
+     }
+     "Z Order" 1
+     Text "100"
+     "Font Size" 10
+     "Min Font Size" 10
+     "Horizontal Alignment" Right
+     "Vertical Alignment" Center
+    }
+   }
+  }
+ }
+}

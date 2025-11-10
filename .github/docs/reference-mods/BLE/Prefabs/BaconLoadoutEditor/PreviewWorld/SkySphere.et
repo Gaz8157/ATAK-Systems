@@ -1,0 +1,28 @@
+GameEntity {
+ ID "6076AE0614DCFF77"
+ components {
+  GunBuilderUI_EditorOptionBackgroundComponent "{6076D3A70528D1B1}" {
+   m_sOptionName "Background Color"
+   m_sOptionDefaultValue "2"
+  }
+  MeshObject "{6076AE0603D2BCA1}" {
+   Object "{1C9289F3F08D96F4}Assets/BaconLoadoutEditor/sphere.xob"
+   Materials {
+    MaterialAssignClass "{62C730806C1C4933}" {
+     SourceMaterial "DefaultGeneratedMaterial"
+     AssignedMaterial "{3BE17D0B7A25DC3A}Prefabs/BaconLoadoutEditor/PreviewWorld/SphereSky.emat"
+    }
+   }
+   PixelSizeScale 10
+   CastShadow 0
+   CastFarShadow 0
+   RainOccluder 0
+   WetnessOccluder 0
+   ReceiveLight 0
+  }
+  ParametricMaterialInstanceComponent "{6076AE06350F95FD}" {
+  }
+ }
+ coords 0 1 0
+ scale 8
+}

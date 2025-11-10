@@ -1,0 +1,204 @@
+FrameWidgetClass {
+ Name "Overlay0"
+ Slot LayoutSlot "{5CA88B42538E94EB}" {
+ }
+ Clipping True
+ {
+  ScaleWidgetClass "{5EACE9CA52B03ECC}" {
+   Name "m_ScaleItem"
+   Slot FrameWidgetSlot "{5EACE9CA52B03E94}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1
+    OffsetRight 1
+    SizeY -1
+    OffsetBottom 1
+    Alignment 0 0
+    SizeToContent 1
+   }
+   "Scale Mode" "User defined"
+   {
+    SizeLayoutWidgetClass "{5E904A6783AF6B00}" {
+     Name "m_SizeMain"
+     Slot AlignableSlot "{5EACE9CA52AF9211}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Clipping True
+     "Inherit Color" 1
+     AllowWidthOverride 1
+     WidthOverride 384
+     AllowHeightOverride 1
+     HeightOverride 64
+     {
+      OverlayWidgetClass "{5E904A6783AF6B06}" {
+       Name "Overlay1"
+       Slot AlignableSlot "{5CB0F899AE745D55}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       "Inherit Color" 1
+       {
+        SizeLayoutWidgetClass "{5E904A6783AED1FB}" {
+         Name "SizeLayout3"
+         Slot OverlayWidgetSlot "{5E95487744801509}" {
+          HorizontalAlign 0
+         }
+         "Z Order" 5
+         "Inherit Color" 1
+         AllowWidthOverride 1
+         WidthOverride 64
+         AllowHeightOverride 1
+         HeightOverride 64
+         {
+          ImageWidgetClass "{5E904A6783AEB20E}" {
+           Name "m_Icon"
+           Slot AlignableSlot "{5CA88B42A3C67468}" {
+            HorizontalAlign 0
+            Padding 4 4 4 4
+           }
+           "Inherit Color" 1
+           Texture "{EF1F445746A3391A}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_MachineGunner.edds"
+           Size 128 128
+           "Shadow Offset" 0 0
+           "Shadow Color" 0 0 0 0.518
+          }
+         }
+        }
+        SizeLayoutWidgetClass "{5E904A6783AF1D7F}" {
+         Name "m_SizeText"
+         Slot OverlayWidgetSlot "{5E95487744802AFC}" {
+          HorizontalAlign 0
+          Padding 64 0 0 0
+         }
+         "Z Order" 6
+         Clipping True
+         AllowWidthOverride 1
+         WidthOverride 320
+         AllowHeightOverride 1
+         HeightOverride 128
+         {
+          TextWidgetClass "{5E904A6783AF1D7E}" {
+           Name "m_Text"
+           Slot AlignableSlot "{5CA88B42A3C67468}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           Clipping False
+           Text "1234567 1234567"
+           "Font Size" 22
+           "Min Font Size" 22
+           "Vertical Alignment" Center
+           Wrap 1
+           "No Localization" 1
+           FontProperties FontProperties "{5CA8763C50F35771}" {
+            Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+            ForceFont 1
+            OutlineSize 2
+            ShadowSize 32
+           }
+           "Line Spacing" 2
+          }
+         }
+        }
+        BlurWidgetClass "{5E904A6783AF1155}" {
+         Name "Blur0"
+         Slot OverlayWidgetSlot "{5CB0F8909E1B9CC6}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         "Z Order" -4
+         Opacity 0.5
+         "Inherit Color" 1
+         Intensity 0.5
+         "Smooth Border" 12 12 12 12
+        }
+        PanelWidgetClass "{5E904A6783AF1156}" {
+         Name "Panel0"
+         Slot OverlayWidgetSlot "{5CB0F31A72AA5453}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding 6 6 6 6
+         }
+         "Z Order" -5
+         Opacity 0.75
+         Clipping False
+         Color 0 0 0 1
+         style rover_sim_colorable
+         "no focus" 1
+        }
+        PanelWidgetClass "{5EAEB7C9DDE21B70}" {
+         Name "m_PanelGold"
+         Slot OverlayWidgetSlot "{5CB0F31A72AA5453}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         "Z Order" -2
+         "Is Visible" 0
+         Clipping False
+         Color 0 1 0.251 1
+         style rover_sim_colorable
+         "no focus" 1
+        }
+        PanelWidgetClass "{5EAEB7C9DDE21B19}" {
+         Name "m_PanelGold_2"
+         Slot OverlayWidgetSlot "{5CB0F31A72AA5453}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         "Z Order" -2
+         "Is Visible" 0
+         Clipping False
+         Color 1 0.395 0.02 1
+         style pixel_outline
+         "no focus" 1
+        }
+        PanelWidgetClass "{5EAF57D95B975D37}" {
+         Name "Panel1"
+         Slot OverlayWidgetSlot "{5CB0F31A72AA5453}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+          Padding -6 -6 -6 -6
+         }
+         "Z Order" -3
+         Opacity 0.25
+         Color 0 0 0 1
+         style full
+         "no focus" 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ButtonWidgetClass "{5E904A6783AEB210}" {
+   Name "m_ListItemButton"
+   Slot FrameWidgetSlot "{5CAE7BA89A346A28}" {
+    Anchor 0 0 1 1
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX -1820
+    OffsetRight 0
+    SizeY -1050
+    OffsetBottom 0
+   }
+   "Is Enabled" 0
+   "Is Visible" 0
+   Color 0.019 0.521 0.054 0.392
+   components {
+    HoverButtonComponent "{5CA8763B8EDFE1FC}" {
+     m_ColorButtonDefault 0 0 0 0.49
+     m_ColorButtonHovered 0.73 0.392 0.095 1
+     m_ColorButtonDisabled 0.216 0.216 0.216 0
+     m_ColorChildHovered 0.075 0.204 1 1
+    }
+   }
+  }
+ }
+}

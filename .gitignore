@@ -1,0 +1,62 @@
+# Arma Reforger / Enfusion Workbench
+# Generated resource databases
+resourceDatabase.rdb
+*.rdb
+
+# Compiled resources (can be regenerated)
+*.xob
+*.edds_data
+
+# Workbench temporary files
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+*.log.*
+
+# User-specific settings
+*.user
+*.userprefs
+UserMaps.desc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Build artifacts
+build/
+dist/
+*.zip
+
+# Node.js (if using any tools)
+node_modules/
+npm-debug.log*
+
+# Python (if using any tools)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# Backup files
+*.backup
+*_backup.*
+*_old.*
+
+# Meta files are generally tracked, but exclude generated ones
+# Uncomment if you have auto-generated meta files:
+# *.meta
+
+# API Documentation (external reference, not project source)
+.github/docs/api/
+.github/docs/BaseGameScripts/

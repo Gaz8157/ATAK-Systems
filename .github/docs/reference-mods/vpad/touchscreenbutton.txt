@@ -1,0 +1,40 @@
+OverlayWidgetClass {
+ Name "ButtonF1"
+ Slot FrameWidgetSlot "{6050013B8AD1C18D}" {
+  Anchor 0 0 0 0
+  PositionX 13
+  OffsetLeft 13
+  PositionY 13
+  OffsetTop 13
+  SizeX 119
+  OffsetRight -132
+  SizeY 166
+  OffsetBottom -179
+ }
+ "Ignore Cursor" 0
+ components {
+  RHS_TouchScreenButtonPMFHandler "{605163DA5A0FEBA7}" {
+  }
+ }
+ {
+  ImageWidgetClass "{6050FA85195C8C48}" {
+   Name "SubMenu"
+   Slot OverlayWidgetSlot "{6050FA85195C8DB6}" {
+   }
+   Texture "{01BB749A03311F2B}UI/layouts/Vehicles/RU_SHARED/images/pmf5/pmf5_sub_menus.imageset"
+   Image "otherOff"
+   Size 120 166
+  }
+  ImageWidgetClass "{604F6188773717EB}" {
+   Name "Highlight"
+   Slot OverlayWidgetSlot "{6050013BB3A86C34}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   "Is Visible" 0
+   Color 0.761 0.386 0.078 1
+   Texture "{7E07ADDAEE2F1D37}UI/layouts/Vehicles/RU_SHARED/images/ButtonHighlight.edds"
+   Size 119 166
+  }
+ }
+}

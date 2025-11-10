@@ -1,0 +1,1008 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  RTTextureWidgetClass "{5D38A41C6F9E780E}" {
+   Name "RTTexture0"
+   Slot FrameWidgetSlot "{5D38A41C6F9E79C5}" {
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 1024
+    OffsetRight -1024
+    SizeY 1024
+    OffsetBottom -1024
+   }
+   format LDR
+   allowAlpha 1
+   useDepth lowQuality
+   {
+    ImageWidgetClass "{60B92B3D143B0012}" {
+     Name "Image0"
+     Slot FrameWidgetSlot "{60B92B3D143B0007}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX -924
+      OffsetRight 0
+      SizeY -994
+      OffsetBottom 0
+     }
+     "Z Order" 8
+     "Is Enabled" 0
+     "Is Visible" 0
+     Texture "{A1CF8EA0D48560FF}Assets/AR_Item_vPad_Screen.edds"
+     Size 2048 2048
+     "Blend Mode" Opaque
+    }
+    FrameWidgetClass "{5D38A41C64EA669F}" {
+     Name "Frame0"
+     Slot FrameWidgetSlot "{5D38A41C64EA6654}" {
+      Anchor 0 0.19 1 0.81
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     Clipping True
+     {
+      OverlayWidgetClass "{5D389BF89D96B0E9}" {
+       Name "Overlay0"
+       Slot FrameWidgetSlot "{5CA8005E9F011DCE}" {
+        Anchor 0 0 1 1
+        PositionX 0
+        OffsetLeft 0
+        PositionY 0
+        OffsetTop 0
+        SizeX -1920
+        OffsetRight 0
+        SizeY -1080
+        OffsetBottom 0
+       }
+       {
+        OverlayWidgetClass "{5D389BF89D96B0E8}" {
+         Name "OverlayMissionSelection"
+         Slot OverlayWidgetSlot "{5CA80056414EED51}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         {
+          FrameWidgetClass "{5D389BF89D9689F3}" {
+           Name "Frame0"
+           Slot OverlayWidgetSlot "{5CA8756751954B6A}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           {
+            FrameWidgetClass "{5D389BF89D9689F1}" {
+             Name "VerticalLayout0"
+             Slot FrameWidgetSlot "{5CA875675E5BC8B9}" {
+              Anchor 0 0 1 1
+              PositionX 0
+              OffsetLeft 0
+              PositionY 0
+              OffsetTop 0
+              SizeX 0
+              OffsetRight 0
+              SizeY -94
+              OffsetBottom 0
+             }
+             Clipping True
+             {
+              OverlayWidgetClass "{5D389BF89D96898E}" {
+               Name "Overlay0"
+               Slot FrameWidgetSlot "{60D0A38285C6984B}" {
+               }
+               "Is Enabled" 0
+               "Is Visible" 0
+               {
+                SizeLayoutWidgetClass "{5D389BF89D96898F}" {
+                 Name "SizeLayout0"
+                 Slot OverlayWidgetSlot "{5CA88B4040E22A9D}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                 }
+                 AllowHeightOverride 1
+                 HeightOverride 42
+                 {
+                  TextWidgetClass "{5D389BF89D96898C}" {
+                   Name "Text0"
+                   Slot AlignableSlot "{5CA88B40471182E6}" {
+                    HorizontalAlign 3
+                    VerticalAlign 3
+                   }
+                   Color 1 0.51 0.102 1
+                   Text "Minimap"
+                   "Font Size" 32
+                   "Min Font Size" 32
+                   "Horizontal Alignment" Center
+                   "Vertical Alignment" Center
+                   FontProperties FontProperties "{5CA88B406D2996DD}" {
+                    Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+                    OutlineSize 1
+                    ShadowSize 7
+                   }
+                  }
+                 }
+                }
+               }
+              }
+              OverlayWidgetClass "{5D389BF89D950B4E}" {
+               Name "Overlay1"
+               Slot FrameWidgetSlot "{60D0A38285C69872}" {
+                PositionX 16
+                OffsetLeft 16
+                PositionY 16
+                OffsetTop 16
+                OffsetRight -116
+                OffsetBottom -46
+               }
+               "Is Enabled" 0
+               "Is Visible" 0
+               {
+                OverlayWidgetClass "{5D389BF89D950B4F}" {
+                 Name "Overlay0"
+                 Slot OverlayWidgetSlot "{5CA8D58140B616DA}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 4 0 14 0
+                 }
+                 {
+                  PanelWidgetClass "{5D389BF89D950B48}" {
+                   Name "Panel0"
+                   Slot OverlayWidgetSlot "{5CA8763BBA0E6565}" {
+                    HorizontalAlign 3
+                    VerticalAlign 3
+                    Padding 1 1 1 1
+                   }
+                   "Z Order" 1
+                   Clipping False
+                   Color 1 0.51 0.102 1
+                   style pixel_corners
+                  }
+                  ButtonWidgetClass "{5D389BF89D95B5C5}" {
+                   Name "Button0"
+                   Slot OverlayWidgetSlot "{5CA8C2CC6718531E}" {
+                    HorizontalAlign 3
+                    VerticalAlign 3
+                    Padding 2 2 2 2
+                   }
+                   "Is Enabled" 0
+                   "Ignore Cursor" 1
+                   Color 0.019 0.521 0.054 0.392
+                   components {
+                    HoverButtonComponent "{5CA8763B8EDFE1FC}" {
+                     m_ColorButtonDefault 0 0 0 0.49
+                     m_ColorButtonHovered 0.73 0.392 0.095 1
+                     m_ColorButtonDisabled 0.216 0.216 0.216 0
+                     m_ColorChildHovered 0.075 0.204 1 1
+                    }
+                   }
+                   "no focus" 1
+                   {
+                    OverlayWidgetClass "{5D389BF89D95B5C4}" {
+                     Name "Overlay1"
+                     Slot ButtonWidgetSlot "{5CA8763B1418DE56}" {
+                      HorizontalAlign 3
+                     }
+                     {
+                      HorizontalLayoutWidgetClass "{5D389BF89D95B5C7}" {
+                       Name "HorizontalLayout1"
+                       Slot OverlayWidgetSlot "{5CA876391BF84620}" {
+                        HorizontalAlign 3
+                        VerticalAlign 3
+                        Padding 2 0 2 0
+                       }
+                       {
+                        SizeLayoutWidgetClass "{5D389BF89D95A1AB}" {
+                         Name "SizeLayout0"
+                         Slot LayoutSlot "{5CA88B42A3CF4D75}" {
+                          SizeMode Fill
+                          FillWeight 0.2
+                         }
+                         AllowHeightOverride 1
+                         HeightOverride 40
+                         {
+                          TextWidgetClass "{5D389BF89D95A1AA}" {
+                           Name "m_TextLeft"
+                           Slot AlignableSlot "{5CA88B42A3C67468}" {
+                            HorizontalAlign 3
+                            VerticalAlign 3
+                           }
+                           Text "#"
+                           "Min Font Size" 24
+                           "Horizontal Alignment" Center
+                           "Vertical Alignment" Center
+                           "No Localization" 1
+                           FontProperties FontProperties "{5CA8763C50F35771}" {
+                            Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+                            ForceFont 1
+                            Bold 1
+                            OutlineSize 1
+                            ShadowSize 7
+                           }
+                          }
+                         }
+                        }
+                        SizeLayoutWidgetClass "{5D389BF89D95A1A5}" {
+                         Name "SizeLayout1"
+                         Slot LayoutSlot "{5CA88B42A3CF4D75}" {
+                          SizeMode Fill
+                         }
+                         AllowHeightOverride 1
+                         HeightOverride 40
+                         {
+                          TextWidgetClass "{5D389BF89D959CDB}" {
+                           Name "m_TextMid"
+                           Slot AlignableSlot "{5CA88B42A3C67468}" {
+                            HorizontalAlign 3
+                            VerticalAlign 3
+                           }
+                           Text "Action"
+                           "Min Font Size" 24
+                           "Horizontal Alignment" Center
+                           "Vertical Alignment" Center
+                           "No Localization" 1
+                           FontProperties FontProperties "{5CA8763C50F35771}" {
+                            Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+                            ForceFont 1
+                            Bold 1
+                            OutlineSize 1
+                            ShadowSize 7
+                           }
+                          }
+                         }
+                        }
+                        SizeLayoutWidgetClass "{5D389BF89D959CDA}" {
+                         Name "SizeLayout2"
+                         Slot LayoutSlot "{5CA88B42A3CF4D75}" {
+                          SizeMode Fill
+                         }
+                         AllowHeightOverride 1
+                         HeightOverride 40
+                         {
+                          TextWidgetClass "{5D389BF89D959CD9}" {
+                           Name "m_TextRight"
+                           Slot AlignableSlot "{5CA88B42A3C67468}" {
+                            HorizontalAlign 3
+                            VerticalAlign 3
+                           }
+                           Text "Value"
+                           "Min Font Size" 24
+                           "Horizontal Alignment" Center
+                           "Vertical Alignment" Center
+                           "No Localization" 1
+                           FontProperties FontProperties "{5CA8763C50F35771}" {
+                            Font "{DE4B66C39B62E39B}UI/Fonts/Purista/Purista Medium.fnt"
+                            ForceFont 1
+                            Bold 1
+                            OutlineSize 1
+                            ShadowSize 7
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+              FrameWidgetClass "{5D389BF89D95DD10}" {
+               Name "MapFrame_old"
+               Slot FrameWidgetSlot "{60D0A38285C69867}" {
+                PositionX 32
+                OffsetLeft 32
+                PositionY 32
+                OffsetTop 32
+                OffsetRight -132
+                OffsetBottom -62
+               }
+               "Is Enabled" 0
+               "Is Visible" 0
+               Clipping False
+               {
+                FrameWidgetClass "{5DA2921AEE419105}" {
+                 Name "Panel0"
+                 Slot FrameWidgetSlot "{5DA2921AEE4191EC}" {
+                  Anchor 0 0 1 0.4
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY -188
+                  OffsetBottom 0
+                  SizeToContent 1
+                 }
+                 "Z Order" 7
+                 Color 0.051 0.701 0.036 1
+                 {
+                  OverlayWidgetClass "{5DA2921B3FD3F02A}" {
+                   Name "Panel0"
+                   Slot FrameWidgetSlot "{5DA2921B3FD3F01C}" {
+                    Anchor 0.5 0 0.5 0
+                    PositionX 0
+                    OffsetLeft 0
+                    PositionY 0
+                    OffsetTop 0
+                    SizeX 0
+                    OffsetRight 0
+                    SizeY 0
+                    OffsetBottom 0
+                    Alignment 0.5 0
+                    SizeToContent 1
+                   }
+                   "Z Order" -5
+                   "Is Visible" 0
+                   Color 0.051 0.702 0.035 1
+                   {
+                    PanelWidgetClass "{5DA2921C23E7BBC1}" {
+                     Name "Panel1"
+                     Slot OverlayWidgetSlot "{5DA29EB8E7786B0C}" {
+                      HorizontalAlign 3
+                      VerticalAlign 3
+                      Padding -15 0 -15 -15
+                     }
+                     "Z Order" -4
+                     Opacity 0.1
+                     Color 0 0 0 1
+                     style full
+                    }
+                    TextWidgetClass "{5DA2921922D6CDF9}" {
+                     Name "m_TextMap_POI_Old"
+                     Slot OverlayWidgetSlot "{5DA29EB8E7786B26}" {
+                      VerticalAlign 0
+                     }
+                     "Z Order" 2
+                     Clipping False
+                     Color 0.78 0.78 0.78 1
+                     Text "East of Rookery Point."
+                     "Font Size" 25
+                     "Min Font Size" 25
+                     "Horizontal Alignment" Center
+                     Wrap 1
+                     FontProperties FontProperties "{5DA292190D9DCDC6}" {
+                      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                      Italic 1
+                      Bold 1
+                      OutlineSize 1
+                      ShadowSize 18
+                     }
+                    }
+                    PanelWidgetClass "{5DA2921CBBBCD938}" {
+                     Name "Panel0"
+                     Slot OverlayWidgetSlot "{5DA2921CBBBCD976}" {
+                      HorizontalAlign 3
+                      VerticalAlign 3
+                      Padding -15 0 -15 -15
+                     }
+                     "Z Order" -2
+                     Opacity 0.5
+                     Color 0.051 0.702 0.035 1
+                     style outline_4px
+                    }
+                   }
+                  }
+                 }
+                }
+                TextWidgetClass "{5DA2921994B21355}" {
+                 Name "Text0"
+                 Slot FrameWidgetSlot "{5DA2921994B21339}" {
+                 }
+                 "Z Order" 30
+                 "Is Enabled" 0
+                 "Is Visible" 0
+                }
+                MapWidgetClass "{5D389BF89D95DD11}" {
+                 Name "MapWidget_old"
+                 Slot FrameWidgetSlot "{5D0685A29B27EE53}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY 0
+                  OffsetBottom 0
+                 }
+                 Color 0 0 0 0
+                 SizeInUnits 2048 2048
+                 OffsetPixels 0 0
+                 Clear 1
+                 ClearColor 0.262 0.456 0.515 1
+                 Imagesets {
+                  "{BCD5479864D1A79A}UI/Textures/Map/topographicIcons/icons_topographic_map.imageset" "{F7E8D4834A3AFF2F}UI/Imagesets/Conflict/conflict-icons-bw.imageset" "{9AF52DEEF08E7F74}UI/Imagesets/Editor/editor_icons_map.imageset"
+                 }
+                 TextureDashedLine "{48D3C3A42E53D202}UI/Textures/Map/lines/lineDashed.edds"
+                }
+               }
+              }
+              FrameWidgetClass "{60BB39C5513242B1}" {
+               Name "MapFrame"
+               Slot FrameWidgetSlot "{60D0A38285C6986D}" {
+                Anchor 0 0 1 1
+                PositionX 0
+                OffsetLeft 0
+                PositionY 0
+                OffsetTop 0
+                SizeX -924
+                OffsetRight 0
+                SizeY -604.88
+                OffsetBottom 0
+               }
+               Clipping False
+               {
+                MapWidgetClass "{60BB39C5513242B0}" {
+                 Name "MapWidget"
+                 Slot FrameWidgetSlot "{50A4DDC879494878}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY 0
+                  OffsetBottom 0
+                  Alignment 0 0
+                 }
+                 Color 1 1 1 1
+                 SizeInUnits 1024 1024
+                 OffsetPixels 0 0
+                 Clear 1
+                 ClearColor 0.114 0.209 0.231 1
+                 Imagesets {
+                  "{BCD5479864D1A79A}UI/Textures/Map/topographicIcons/icons_topographic_map.imageset" "{F7E8D4834A3AFF2F}UI/Imagesets/Conflict/conflict-icons-bw.imageset" "{9AF52DEEF08E7F74}UI/Imagesets/Editor/editor_icons_map.imageset"
+                 }
+                 TextureDashedLine "{48D3C3A42E53D202}UI/Textures/Map/lines/lineDashed.edds"
+                }
+                CanvasWidgetClass "{60BB39C5513242B3}" {
+                 Name "ManualCamera"
+                 Slot FrameWidgetSlot "{5A45347FD72F20AD}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY 0
+                  OffsetBottom 0
+                  Alignment 0 0
+                 }
+                 SizeInUnits 1024 1024
+                }
+                CanvasWidgetClass "{60BB39C5513242B2}" {
+                 Name "DrawingWidget"
+                 Slot FrameWidgetSlot "{50A4DDC879494989}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY 0
+                  OffsetBottom 0
+                  Alignment 0 0
+                 }
+                 Color 1 1 1 1
+                 SizeInUnits 1024 1024
+                 Clear 1
+                 ClearColor 0 0 0 0
+                 FontProperties {
+                  FontProperties "{50A691C68850B695}" {
+                   Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                  }
+                 }
+                }
+                FrameWidgetClass "{60BB39C5513200C5}" {
+                 Name "DrawingContainer"
+                 Slot FrameWidgetSlot "{5D828475DBE539F7}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX -1820
+                  OffsetRight 0
+                  SizeY -1050
+                  OffsetBottom 0
+                 }
+                }
+                FrameWidgetClass "{60BB39C5513200CB}" {
+                 Name "UIIconsContainer"
+                 Slot FrameWidgetSlot "{54E30A36DBD6A67B}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY 0
+                  OffsetBottom 0
+                 }
+                 "Z Order" 65
+                 "Is Visible" 0
+                }
+                FrameWidgetClass "{60BB39C5513200C9}" : "{759E272AB041AC21}UI/layouts/Map/MapRuler.layout" {
+                 Name "RulerFrame"
+                 Slot FrameWidgetSlot "{59387C05F9964BF9}" {
+                 }
+                 "Z Order" 80
+                 "Is Enabled" 0
+                 "Is Visible" 0
+                 {
+                  ImageWidgetClass "{59387C05CE1B5E65}" {
+                   Prefab "{59387C05CE1B5E65}"
+                   Size 4096 4096
+                  }
+                 }
+                }
+                FrameWidgetClass "{60BB39C5513200CE}" : "{3E056C4AA830A951}UI/layouts/Map/MapCompass.layout" {
+                 Name "CompassFrame"
+                 Slot FrameWidgetSlot "{50EEEA24A3B55E9F}" {
+                 }
+                 "Z Order" 90
+                }
+                FrameWidgetClass "{60BB39C5513200CC}" : "{53FECD6BF5324E19}UI/layouts/Map/MapWatch.layout" {
+                 Name "WatchFrame"
+                 Slot FrameWidgetSlot "{50EEEA24A3B55E9F}" {
+                 }
+                 "Z Order" 100
+                }
+                ImageWidgetClass "{60BB39C5513204F1}" {
+                 Name "LightOverlay"
+                 Slot FrameWidgetSlot "{52E6A9EC8F952EEC}" {
+                  Anchor 0 0 1 1
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX -1820
+                  OffsetRight 0
+                  SizeY -1050
+                  OffsetBottom 0
+                 }
+                 "Z Order" 120
+                 "Is Visible" 0
+                 Opacity 0.05
+                 Color 1 0.804 0.38 1
+                 Size 0 0
+                 "Blend Mode" Blend
+                }
+                HorizontalLayoutWidgetClass "{60BB39C5513204F0}" {
+                 Name "LightCone"
+                 Slot FrameWidgetSlot "{52DAFAF0E0E5133F}" {
+                  Anchor 0 0 1 1
+                  PositionX 1.745
+                  PositionY 0
+                  OffsetTop 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY 0
+                  OffsetBottom 0
+                  Alignment 0 0
+                 }
+                 "Z Order" 120
+                 "Is Visible" 0
+                 Color 0 0 0 1
+                 {
+                  ImageWidgetClass "{60BB39C5513204EF}" {
+                   Name "FillLeft"
+                   Slot LayoutSlot "{52DA9C9935318517}" {
+                    Padding 0 0 0 0
+                    FillWeight 1
+                   }
+                   Color 0 0 0 1
+                   Size 0 0
+                  }
+                  VerticalLayoutWidgetClass "{60BB39C5513189F6}" {
+                   Name "VerticalLayout0"
+                   Slot LayoutSlot "{52DAFAF0E0E5139E}" {
+                   }
+                   Color 0 0 0 1
+                   "Fill Origin" Top
+                   {
+                    ImageWidgetClass "{60BB39C5513189F7}" {
+                     Name "FillTop"
+                     Slot LayoutSlot "{52DA9C997457414E}" {
+                      Padding 0 0 0 0
+                      FillWeight 1
+                     }
+                     Color 0 0 0 1
+                     Size 0 0
+                    }
+                    ImageWidgetClass "{60BB39C55131531F}" {
+                     Name "Cone"
+                     Slot LayoutSlot "{52DAFAF0E0E51C5B}" {
+                      HorizontalAlign 1
+                      VerticalAlign 1
+                      Padding 0 0 0 0
+                     }
+                     Color 0 0 0 1
+                     Texture "{07DC87F03BA4402C}UI/Textures/Map/lightCones/lightCone_flashlight0_ca.edds"
+                     Image ""
+                     Size 1024 1024
+                     "Blend Mode" Blend
+                     Range 0.414
+                    }
+                    ImageWidgetClass "{60BB39C55131531C}" {
+                     Name "FillBot"
+                     Slot LayoutSlot "{52DA9C997457414E}" {
+                      SizeMode Fill
+                      FillWeight 1
+                     }
+                     Color 0 0 0 1
+                     Size 0 0
+                    }
+                   }
+                  }
+                  ImageWidgetClass "{60BB39C5513110F7}" {
+                   Name "FillRight"
+                   Slot LayoutSlot "{52DAFAF0E0E51C15}" {
+                    SizeMode Fill
+                    FillWeight 1
+                   }
+                   Color 0 0 0 1
+                   Size 0 0
+                  }
+                 }
+                }
+                HorizontalLayoutWidgetClass "{60BB39C5513110F6}" : "{6380743F533D3733}UI/layouts/Map/CursorCrosshair.layout" {
+                 Name "CursorCrosshair"
+                 Slot FrameWidgetSlot "{55A2A2EE2E39E9FB}" {
+                 }
+                 "Z Order" 110
+                }
+                FrameWidgetClass "{60BB54C83AF74D6E}" {
+                 Name "Panel0"
+                 Slot FrameWidgetSlot "{5DA2921AEE4191EC}" {
+                  Anchor 0 0 1 0.4
+                  PositionX 0
+                  OffsetLeft 0
+                  PositionY 0
+                  SizeX 0
+                  OffsetRight 0
+                  SizeY -188
+                  OffsetBottom 0
+                  SizeToContent 1
+                 }
+                 "Z Order" 7
+                 Color 0.051 0.701 0.036 1
+                 {
+                  OverlayWidgetClass "{60BB54C83AF74D69}" {
+                   Name "Panel0"
+                   Slot FrameWidgetSlot "{5DA2921B3FD3F01C}" {
+                    PositionX 0
+                    OffsetLeft 0
+                    PositionY 0
+                    OffsetTop 0
+                    SizeX 0
+                    OffsetRight 0
+                    SizeY 0
+                    OffsetBottom 0
+                    Alignment 0 0
+                    SizeToContent 1
+                   }
+                   "Z Order" -5
+                   Color 0.051 0.702 0.035 1
+                   {
+                    PanelWidgetClass "{60BB54C83AF74D68}" {
+                     Name "Panel1"
+                     Slot OverlayWidgetSlot "{5DA29EB8E7786B0C}" {
+                      HorizontalAlign 3
+                      VerticalAlign 3
+                      Padding -15 0 -15 -15
+                     }
+                     "Z Order" -4
+                     Opacity 0.1
+                     Color 0 0 0 1
+                     style full
+                    }
+                    TextWidgetClass "{60BB54C83AF74D6B}" {
+                     Name "m_TextMap_POI"
+                     Slot OverlayWidgetSlot "{5DA29EB8E7786B26}" {
+                      HorizontalAlign 0
+                      VerticalAlign 0
+                     }
+                     "Z Order" 2
+                     Clipping False
+                     Color 0.78 0.78 0.78 1
+                     Text "East of Rookery Point."
+                     "Font Size" 64
+                     "Min Font Size" 64
+                     "Horizontal Alignment" Center
+                     Wrap 1
+                     FontProperties FontProperties "{5DA292190D9DCDC6}" {
+                      Font "{E2CBA6F76AAA42AF}UI/Fonts/Roboto/Roboto_Regular.fnt"
+                      Bold 1
+                      OutlineSize 1
+                      ShadowSize 18
+                     }
+                    }
+                    PanelWidgetClass "{60BB54C83AF72425}" {
+                     Name "Panel0"
+                     Slot OverlayWidgetSlot "{5DA2921CBBBCD976}" {
+                      HorizontalAlign 3
+                      VerticalAlign 3
+                      Padding -15 0 -15 -15
+                     }
+                     "Z Order" -2
+                     Opacity 0.5
+                     Color 0.051 0.702 0.035 1
+                     style outline_4px
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{5D389BF89D96B0E2}" {
+       Name "Overlay1"
+       Slot FrameWidgetSlot "{5CA8005E9E34B333}" {
+        Anchor 0 0 1 1
+        PositionX 960
+        PositionY 540
+        SizeX -1820
+        OffsetRight 0
+        SizeY -1050
+        OffsetBottom 0
+       }
+       "Z Order" -5
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        ImageWidgetClass "{5D389BF89D96B0EC}" {
+         Name "Image0"
+         Slot OverlayWidgetSlot "{5CA88B40E109F999}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Opacity 0.1
+         Color 0 0 0 1
+         Size 3840 2160
+         Tiling Wrap
+         "Flip Horizontally" 1
+         "Flip Vertically" 1
+         Mask "{F34F32B7E2EAA48E}UI/Textures/ScreenEffects/Suppression/supressionVignette8.edds"
+         "Transition width" 1
+         Progress 0.484
+        }
+        BlurWidgetClass "{5D389BF89D96B0EF}" {
+         Name "Blur0"
+         Slot OverlayWidgetSlot "{5CA88B414EC8300F}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         "Z Order" 5
+         Opacity 0.1
+         Intensity 1
+         "Tint Blend Mode" Add
+        }
+        ImageWidgetClass "{5D389BF89D96B0EE}" {
+         Name "Image1"
+         Slot OverlayWidgetSlot "{5CA88B40E109F999}" {
+          HorizontalAlign 3
+          VerticalAlign 3
+         }
+         Opacity 0.1
+         Color 0 0 0 1
+         Size 3840 2160
+         Tiling Wrap
+         "Flip Horizontally" 1
+         "Flip Vertically" 1
+         "Transition width" 0.74
+         Progress 0.464
+        }
+       }
+      }
+     }
+    }
+    TextWidgetClass "{60B92261D63821C2}" {
+     Name "Text1"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 102.459
+      OffsetLeft 102.459
+      PositionY 84.358
+      OffsetTop 84.358
+      SizeX 100
+      OffsetRight -202.459
+      SizeY 30
+      OffsetBottom -114.358
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 1"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B92261D6AC434D}" {
+     Name "Text2"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 389.696
+      OffsetLeft 389.696
+      PositionY 338.955
+      OffsetTop 338.955
+      SizeX 100
+      OffsetRight -489.696
+      SizeY 30
+      OffsetBottom -368.955
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 2"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B92261DA30BE71}" {
+     Name "Text3"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 162.382
+      OffsetLeft 162.382
+      PositionY 557.649
+      OffsetTop 557.649
+      SizeX 100
+      OffsetRight -262.382
+      SizeY 30
+      OffsetBottom -587.649
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 3"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B9226138D35629}" {
+     Name "Text0"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 216.048
+      OffsetLeft 216.048
+      PositionY 221.449
+      OffsetTop 221.449
+      SizeX 100
+      OffsetRight -316.048
+      SizeY 30
+      OffsetBottom -251.449
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 0"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B92261DE06B16D}" {
+     Name "Text4"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX -22.052
+      OffsetLeft -22.1
+      PositionY 207.849
+      OffsetTop 207.8
+      SizeX 100
+      OffsetRight -77.9
+      SizeY 30
+      OffsetBottom -237.8
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 4"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B92B3B1556AB85}" {
+     Name "Text5"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 832.148
+      OffsetLeft 832.1
+      PositionY 221.449
+      OffsetTop 221.4
+      SizeX 100
+      OffsetRight -932.1
+      SizeY 30
+      OffsetBottom -251.4
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 5"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B92B3B1D34E600}" {
+     Name "Text6"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 973.948
+      OffsetLeft 973.9
+      PositionY 526.449
+      OffsetTop 526.4
+      SizeX 100
+      OffsetRight -1073.9
+      SizeY 30
+      OffsetBottom -556.4
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Text "Text 6"
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+    TextWidgetClass "{60B92B3B0B6AE39A}" {
+     Name "Text7"
+     Slot FrameWidgetSlot "{60B9226138D357DA}" {
+      PositionX 896.948
+      OffsetLeft 896.9
+      PositionY 768.349
+      OffsetTop 768.3
+      SizeX 100
+      OffsetRight -996.9
+      SizeY 30
+      OffsetBottom -798.3
+      SizeToContent 1
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Rotation 0
+     Text "Text 7"
+     "Font Size" 71
+     "Min Font Size" 71
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{60B92261035108DA}" {
+      OutlineSize 3
+      ShadowSize 14
+     }
+    }
+   }
+  }
+ }
+}

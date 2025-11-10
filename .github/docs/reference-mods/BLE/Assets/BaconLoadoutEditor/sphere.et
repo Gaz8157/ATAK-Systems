@@ -1,0 +1,9 @@
+GenericEntity {
+ ID "656EB07559103E0F"
+ components {
+  MeshObject "{656EB075571B52C4}" {
+   Object "{1C9289F3F08D96F4}Assets/BaconLoadoutEditor/sphere.xob"
+  }
+ }
+ scale 0.1
+}

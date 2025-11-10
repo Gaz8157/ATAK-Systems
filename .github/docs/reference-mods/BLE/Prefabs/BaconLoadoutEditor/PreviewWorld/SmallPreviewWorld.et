@@ -1,0 +1,27 @@
+GenericWorldEntity {
+ ID "656AD6079F2126A4"
+ coords 0 0 0
+ boundMins 0 0 0
+ boundMaxs 0 0 0
+ blockSize 200 1500 200
+ SkyPreset "{71025B355B855044}UI/BaconLoadoutEditor/HDRi_GunBuilder.emat"
+ {
+  GenericWorldLightEntity {
+   ID "656AD6079F21F77B"
+   coords 3.974 4.836 1.45
+   angleX -13.425
+   angleY -138.057
+   SunAngularSize 1
+   DirectLightLV 1
+   DirectLightColor 0.555 0.749 0.812 0
+   IndirectLightLV 0.5
+   IndirectLightColor 0.326 0.396 0.427 0
+   ProbeReflectionEV 1
+   ProbeDiffuseEV 1
+   "GlobalAOPower " 0.609
+   TargetEV 0
+   ManualHDRBrightness always
+   ManualHDRBrightnessLV 1
+  }
+ }
+}

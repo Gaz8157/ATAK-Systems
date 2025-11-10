@@ -1,0 +1,65 @@
+SCR_KeyBindingMenuConfig {
+ m_KeyBindingCategories {
+  SCR_KeyBindingCategory "{60BB1C7B535838D4}" {
+   m_sName "gOS_KeyBindings"
+   m_sDisplayName "vPad Mod (gOS)"
+   m_KeyBindingEntries {
+    SCR_KeyBindingEntry "{60BB1C7B535838C2}" {
+     m_sActionName "gOS_MiniMap_PanX_Left"
+     m_sDisplayName "Pan Left"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{60BB2234982001CF}" {
+     m_sActionName "gOS_MiniMap_PanX_Right"
+     m_sDisplayName "Pan Right"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{60BB54C8A139C149}" {
+     m_sActionName "gOS_MiniMap_PanY_Up"
+     m_sDisplayName "Pan Up"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{60BB54C8A139C17A}" {
+     m_sActionName "gOS_MiniMap_PanY_Down"
+     m_sDisplayName "Pan Down"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{60BB54C8A139C177}" {
+     m_sActionName "gOS_MiniMap_Zoom_In"
+     m_sDisplayName "Zoom In"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{60BB54C8A139C162}" {
+     m_sActionName "gOS_MiniMap_Zoom_Out"
+     m_sDisplayName "Zoom Out"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{60BB54C8A139C09E}" {
+     m_sActionName "gOS_MiniMap_POI"
+     m_sDisplayName "Toggle Centered"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{}" {
+     m_sActionName "gOS_MiniMap_Settings"
+     m_sDisplayName "gOS Settings"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{}" {
+     m_sActionName "gOS_Map_Hold"
+     m_sDisplayName "MAP KEY (For Hold Functionality)"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{}" {
+     m_sActionName "gOS_Brightness_Hold"
+     m_sDisplayName "Brightness"
+     m_sPreset "click"
+    }
+    SCR_KeyBindingEntry "{}" {
+     m_sActionName "gOS_MiniMap_Options"
+     m_sDisplayName "Quick Options"
+     m_sPreset "click"
+    }
+   }
+  }
+ }
+}

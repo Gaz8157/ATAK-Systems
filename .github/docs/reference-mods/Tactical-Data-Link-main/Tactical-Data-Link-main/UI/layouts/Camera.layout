@@ -1,0 +1,26 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ Slot FrameWidgetSlot "{65D638DE50D660B7}" {
+  OffsetLeft 0
+  OffsetTop 0
+  SizeX 500
+  OffsetRight -500
+  SizeY 250
+  OffsetBottom -250
+ }
+ {
+  RenderTargetWidgetClass "{65D14C479CFCAB79}" {
+   Name "CameraDisplay"
+   Slot FrameWidgetSlot "{65D4317B29031C18}" {
+    OffsetLeft 0
+    OffsetTop 0
+    SizeX 500
+    OffsetRight -500
+    SizeY 250
+    OffsetBottom -250
+    Alignment 0 0
+   }
+   camera 15
+  }
+ }
+}

@@ -1,0 +1,248 @@
+ActionManager {
+ Actions {
+  Action gOS_MiniMap_PanX_Left {
+   InputSource InputSourceSum "{60BB1C7A88432B43}" {
+    Sources {
+     InputSourceValue "{60BB1C7A88432B61}" {
+      FilterPreset "click"
+      Input "keyboard:KC_LEFT"
+     }
+     InputSourceCombo "{60C8CDC3AA4CA742}" {
+      FilterPreset "gamepad:click"
+      Sources {
+       InputSourceValue "{60C8CDC3AA4CA771}" {
+        Input "gamepad0:y"
+       }
+       InputSourceValue "{60C8CDC3AA4CA77B}" {
+        Input "gamepad0:pad_left"
+       }
+      }
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_PanX_Right {
+   InputSource InputSourceSum "{60BB1C7A88432B2F}" {
+    Sources {
+     InputSourceValue "{60BB1C7A884328D1}" {
+      FilterPreset "click"
+      Input "keyboard:KC_RIGHT"
+     }
+     InputSourceCombo "{60C8CDC3AA4CA72F}" {
+      FilterPreset "gamepad:click"
+      Sources {
+       InputSourceValue "{60C8CDC3AA4CA4D1}" {
+        Input "gamepad0:y"
+       }
+       InputSourceValue "{60C8CDC3AA4CA4DB}" {
+        Input "gamepad0:pad_right"
+       }
+      }
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_PanY_Up {
+   InputSource InputSourceSum "{60BB1C7A884328F9}" {
+    Sources {
+     InputSourceValue "{60BB1C7A884328E6}" {
+      FilterPreset "click"
+      Input "keyboard:KC_UP"
+     }
+     InputSourceCombo "{60C8CDC3AA4CA49C}" {
+      FilterPreset "gamepad:click"
+      Sources {
+       InputSourceValue "{60C8CDC3AA4CA484}" {
+        Input "gamepad0:y"
+       }
+       InputSourceValue "{60C8CDC3AA4CA488}" {
+        Input "gamepad0:pad_up"
+       }
+      }
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_PanY_Down {
+   InputSource InputSourceSum "{60BB1C7A88432883}" {
+    Sources {
+     InputSourceValue "{60BB1C7A8843288B}" {
+      FilterPreset "click"
+      Input "keyboard:KC_DOWN"
+     }
+     InputSourceCombo "{60C8CDC3AA4CA440}" {
+      FilterPreset "gamepad:click"
+      Sources {
+       InputSourceValue "{60C8CDC3AA4CA44A}" {
+        Input "gamepad0:y"
+       }
+       InputSourceValue "{60C8CDC3AA4CA47F}" {
+        Input "gamepad0:pad_down"
+       }
+      }
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_Zoom_In {
+   InputSource InputSourceSum "{60BB1C7A88432852}" {
+    Sources {
+     InputSourceValue "{60BB1C7A8843285B}" {
+      FilterPreset "click"
+      Input "keyboard:KC_RSHIFT"
+     }
+     InputSourceValue "{60C8CDC3AA4CA431}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:pad_right"
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_Zoom_Out {
+   InputSource InputSourceSum "{60BB1C7A8843286F}" {
+    Sources {
+     InputSourceValue "{60BB1C7A88432814}" {
+      FilterPreset "click"
+      Input "keyboard:KC_RCONTROL"
+     }
+     InputSourceValue "{60C8CDC3AA4CA5CD}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:pad_left"
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_POI {
+   InputSource InputSourceSum "{60BB1C7A88432832}" {
+    Sources {
+     InputSourceValue "{60BB1C7A8843283B}" {
+      FilterPreset "click"
+      Input "keyboard:KC_RETURN"
+     }
+     InputSourceValue "{60C8CDC3AA4CA585}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:b"
+     }
+    }
+   }
+  }
+  Action gOS_MiniMap_Settings {
+   InputSource InputSourceSum "{60C963A63AA94874}" {
+    Sources {
+     InputSourceValue "{60C963A63AA9487C}" {
+      FilterPreset "click"
+      Input "keyboard:KC_HOME"
+     }
+    }
+   }
+  }
+
+  Action gOS_MiniMap_Brightness {
+   InputSource InputSourceSum "{}" {
+    Sources {
+     InputSourceValue "{}" {
+      FilterPreset "click"
+      Input "keyboard:KC_END"
+     }
+    }
+   }
+  }
+
+  Action gOS_Map_Hold {
+   InputSource InputSourceSum "{60C963A63AA9480F}" {
+    Sources {
+     InputSourceValue "{60C963A63AA94835}" {
+      FilterPreset "click"
+      Input "keyboard:KC_M"
+     }
+     InputSourceValue "{60C963A63AA94839}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:view"
+     }
+    }
+   }
+  }
+
+  Action gOS_MiniMap_Options {
+   InputSource InputSourceSum "{}" {
+    Sources {
+     InputSourceValue "{}" {
+      FilterPreset "click"
+      Input "keyboard:KC_H"
+     }
+     InputSourceValue "{}" {
+      FilterPreset "gamepad:click"
+      Input "gamepad0:thumb_left"
+     }
+    }
+   }
+  }
+ }
+ Contexts {
+  ActionContext CharacterGeneralContext {
+   ActionRefs +{
+    "gOS_Map_Hold"
+   }
+  }
+  ActionContext gOS_Context_MiniMap {
+   Priority 69
+   Flags 2
+   ActionRefs {
+    "gOS_MiniMap_POI"
+    "gOS_MiniMap_PanX_Left"
+    "gOS_MiniMap_PanX_Right"
+    "gOS_MiniMap_PanY_Up"
+    "gOS_MiniMap_PanY_Down"
+    "gOS_MiniMap_Zoom_In"
+    "gOS_MiniMap_Zoom_Out"
+    "gOS_MiniMap_Settings"
+    "gOS_MiniMap_Brightness"
+    "gOS_MiniMap_Options"
+   }
+  }
+  ActionContext gOS_Context_MiniMap_NoPan {
+   Priority 69
+   Flags 2
+   ActionRefs {
+    "gOS_MiniMap_POI"
+    "gOS_MiniMap_Zoom_In"
+    "gOS_MiniMap_Zoom_Out"
+    "gOS_MiniMap_Settings"
+    "gOS_MiniMap_Brightness"
+    "gOS_MiniMap_Options"
+   }
+  }
+  ActionContext gOS_Context_MiniMap_NoZoom {
+   Priority 69
+   Flags 2
+   ActionRefs {
+    "gOS_MiniMap_POI"
+    "gOS_MiniMap_PanX_Left"
+    "gOS_MiniMap_PanX_Right"
+    "gOS_MiniMap_PanY_Up"
+    "gOS_MiniMap_PanY_Down"
+    "gOS_MiniMap_Settings"
+    "gOS_MiniMap_Brightness"
+    "gOS_MiniMap_Options"
+   }
+  }
+  ActionContext gOS_Context_MiniMap_NoPanNoZoom {
+   Priority 69
+   Flags 2
+   ActionRefs {
+    "gOS_MiniMap_POI"
+    "gOS_MiniMap_Settings"
+    "gOS_MiniMap_Brightness"
+    "gOS_MiniMap_Options"
+   }
+  }
+  ActionContext gOS_Context_MiniMap_Placed_Blocked {
+   Priority 69
+   Flags 2
+   ActionRefs {
+    "gOS_MiniMap_Settings"
+    "gOS_MiniMap_Options"
+   }
+  }
+ }
+}

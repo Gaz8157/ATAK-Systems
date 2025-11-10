@@ -1,0 +1,480 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ components {
+  ATAK_TacticalOverlayWidgetHandler "{ATAK_TACTICAL_HANDLER}" {
+  }
+ }
+ {
+  OverlayWidgetClass "{ROOT}" {
+   Name "OverlayRoot"
+   Slot FrameWidgetSlot "{ROOT_SLOT}" {
+    Anchor 0.5 0.5 0.5 0.5
+    OffsetLeft -400
+    OffsetTop -225
+    SizeX 800
+    OffsetRight 400
+    SizeY 450
+    OffsetBottom 225
+    Alignment 0.5 0.5
+   }
+   Color 0 0 0 0
+   {
+    ImageWidgetClass "{DEVICE_BG}" {
+     Name "DeviceBackground"
+     Slot OverlayWidgetSlot "{BG_SLOT}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" 1
+     "Is Visible" 1
+     Opacity 1
+     Clipping False
+     Color 1 1 1 1
+     Texture "{C1FBA55F5DB765E2}UI/Textures/GRS_ATAK_Device_UI.edds"
+     Size 800 450
+     Tiling None
+     "Blend Mode" Blend
+    }
+    FrameWidgetClass "{CONTENT_FRAME}" {
+     Name "ContentFrame"
+     Slot OverlayWidgetSlot "{CF_SLOT}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Z Order" 100
+     Color 0 0 0 0
+     {
+      ButtonWidgetClass "{BTN_MISSIONS}" {
+       Name "BtnMissions"
+       Slot FrameWidgetSlot "{BM_SLOT}" {
+        PositionX 50
+        OffsetLeft 50
+        PositionY 10
+        OffsetTop 10
+        SizeX 150
+        OffsetRight -200
+        SizeY 40
+        OffsetBottom -50
+       }
+       Color 0.2 0.2 0.2 0.8
+       components {
+        SCR_ModularButtonComponent "{BM_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BM_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BM_TEXT}" {
+         Name "BtnMissionsText"
+         Slot FrameWidgetSlot "{BMT_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.7 0.7 0.7 1
+         Text "MISSIONS"
+         "Font Size" 14
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      ButtonWidgetClass "{BTN_MAP}" {
+       Name "BtnMap"
+       Slot FrameWidgetSlot "{BMAP_SLOT}" {
+        PositionX 210
+        OffsetLeft 210
+        PositionY 10
+        OffsetTop 10
+        SizeX 150
+        OffsetRight -360
+        SizeY 40
+        OffsetBottom -50
+       }
+       Color 0.2 0.2 0.2 0.8
+       components {
+        SCR_ModularButtonComponent "{BMAP_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BMAP_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BMAP_TEXT}" {
+         Name "BtnMapText"
+         Slot FrameWidgetSlot "{BMAPT_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.7 0.7 0.7 1
+         Text "MAP"
+         "Font Size" 14
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      ButtonWidgetClass "{BTN_SYSTEMS}" {
+       Name "BtnSystems"
+       Slot FrameWidgetSlot "{BS_SLOT}" {
+        PositionX 370
+        OffsetLeft 370
+        PositionY 10
+        OffsetTop 10
+        SizeX 150
+        OffsetRight -520
+        SizeY 40
+        OffsetBottom -50
+       }
+       Color 0.2 0.2 0.2 0.8
+       components {
+        SCR_ModularButtonComponent "{BS_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BS_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BS_TEXT}" {
+         Name "BtnSystemsText"
+         Slot FrameWidgetSlot "{BST_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.7 0.7 0.7 1
+         Text "SYSTEMS"
+         "Font Size" 14
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      FrameWidgetClass "{INFO_BOX}" {
+       Name "InfoBox"
+       Slot FrameWidgetSlot "{IB_SLOT}" {
+        PositionX 20
+        OffsetLeft 20
+        PositionY 70
+        OffsetTop 70
+        SizeX 250
+        OffsetRight -270
+        SizeY 250
+        OffsetBottom -320
+       }
+       Color 0.1 0.1 0.1 0.5
+       {
+        TextWidgetClass "{GRID_DISPLAY}" {
+         Name "GridDisplay"
+         Slot FrameWidgetSlot "{GD_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 10
+          OffsetTop 10
+          SizeX 230
+          OffsetRight -240
+          SizeY 20
+          OffsetBottom -30
+         }
+         Color 0.3 1 0.3 1
+         Text "31U 12345 67890"
+         "Font Size" 12
+        }
+        TextWidgetClass "{COMPASS_DISPLAY}" {
+         Name "CompassDisplay"
+         Slot FrameWidgetSlot "{CD_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 35
+          OffsetTop 35
+          SizeX 230
+          OffsetRight -240
+          SizeY 20
+          OffsetBottom -55
+         }
+         Color 0.95 0.95 0.95 1
+         Text "N 271°"
+         "Font Size" 12
+        }
+        TextWidgetClass "{STATUS_TEXT}" {
+         Name "StatusText"
+         Slot FrameWidgetSlot "{ST_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 65
+          OffsetTop 65
+          SizeX 230
+          OffsetRight -240
+          SizeY 40
+          OffsetBottom -105
+         }
+         Color 0.1 0.1 0.1 1
+         Text "RANGE ACTIVE\nSTATUS: GREEN"
+         "Font Size" 10
+        }
+        TextWidgetClass "{NORTH_COORD_TEXT}" {
+         Name "NorthCoordText"
+         Slot FrameWidgetSlot "{NCT_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 115
+          OffsetTop 115
+          SizeX 230
+          OffsetRight -240
+          SizeY 18
+          OffsetBottom -133
+         }
+         Color 0.1 0.1 0.1 1
+         Text "N 1345.35"
+         "Font Size" 11
+        }
+        TextWidgetClass "{WEST_COORD_TEXT}" {
+         Name "WestCoordText"
+         Slot FrameWidgetSlot "{WCT_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 138
+          OffsetTop 138
+          SizeX 230
+          OffsetRight -240
+          SizeY 18
+          OffsetBottom -156
+         }
+         Color 0.1 0.1 0.1 1
+         Text "W 2941.6"
+         "Font Size" 11
+        }
+        TextWidgetClass "{ALTITUDE_INFO}" {
+         Name "AltitudeInfo"
+         Slot FrameWidgetSlot "{AT_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 161
+          OffsetTop 161
+          SizeX 230
+          OffsetRight -240
+          SizeY 18
+          OffsetBottom -179
+         }
+         Color 0.1 0.1 0.1 1
+         Text "125 ft AGL"
+         "Font Size" 11
+        }
+        TextWidgetClass "{BEARING_INFO}" {
+         Name "BearingInfo"
+         Slot FrameWidgetSlot "{BST_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 184
+          OffsetTop 184
+          SizeX 230
+          OffsetRight -240
+          SizeY 18
+          OffsetBottom -202
+         }
+         Color 0.1 0.1 0.1 1
+         Text "324°M 0 MPH"
+         "Font Size" 11
+        }
+        TextWidgetClass "{GPS_ACCURACY_TEXT}" {
+         Name "GPSAccuracyText"
+         Slot FrameWidgetSlot "{GAT_SLOT}" {
+          PositionX 10
+          OffsetLeft 10
+          PositionY 210
+          OffsetTop 210
+          SizeX 230
+          OffsetRight -240
+          SizeY 18
+          OffsetBottom -228
+         }
+         Color 0.4 0.4 0.4 1
+         Text "+/-8m GPS ACC"
+         "Font Size" 9
+        }
+       }
+      }
+      ButtonWidgetClass "{BTN_ZOOM_IN}" {
+       Name "BtnZoomIn"
+       Slot FrameWidgetSlot "{BZI_SLOT}" {
+        PositionX 50
+        OffsetLeft 50
+        PositionY 390
+        OffsetTop 390
+        SizeX 100
+        OffsetRight -150
+        SizeY 35
+        OffsetBottom -425
+       }
+       Color 0.2 0.2 0.2 0.7
+       components {
+        SCR_ModularButtonComponent "{BZI_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BZI_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BZI_TEXT}" {
+         Slot FrameWidgetSlot "{BZIT_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.9 0.9 0.9 1
+         Text "Zoom In"
+         "Font Size" 12
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      ButtonWidgetClass "{BTN_ZOOM_OUT}" {
+       Name "BtnZoomOut"
+       Slot FrameWidgetSlot "{BZO_SLOT}" {
+        PositionX 160
+        OffsetLeft 160
+        PositionY 390
+        OffsetTop 390
+        SizeX 100
+        OffsetRight -260
+        SizeY 35
+        OffsetBottom -425
+       }
+       Color 0.2 0.2 0.2 0.7
+       components {
+        SCR_ModularButtonComponent "{BZO_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BZO_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BZO_TEXT}" {
+         Slot FrameWidgetSlot "{BZOT_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.9 0.9 0.9 1
+         Text "Zoom Out"
+         "Font Size" 12
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      ButtonWidgetClass "{BTN_CENTER}" {
+       Name "BtnCenter"
+       Slot FrameWidgetSlot "{BC_SLOT}" {
+        PositionX 270
+        OffsetLeft 270
+        PositionY 390
+        OffsetTop 390
+        SizeX 100
+        OffsetRight -370
+        SizeY 35
+        OffsetBottom -425
+       }
+       Color 0.2 0.2 0.2 0.7
+       components {
+        SCR_ModularButtonComponent "{BC_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BC_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BC_TEXT}" {
+         Slot FrameWidgetSlot "{BCT_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.9 0.9 0.9 1
+         Text "Center"
+         "Font Size" 12
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      ButtonWidgetClass "{BTN_MENU}" {
+       Name "BtnMenu"
+       Slot FrameWidgetSlot "{BM_SLOT}" {
+        PositionX 380
+        OffsetLeft 380
+        PositionY 390
+        OffsetTop 390
+        SizeX 100
+        OffsetRight -480
+        SizeY 35
+        OffsetBottom -425
+       }
+       Color 0.2 0.2 0.2 0.7
+       components {
+        SCR_ModularButtonComponent "{BME_COMP}" {
+         m_bFocusOnMouseEnter 1
+        }
+        ButtonActionComponent "{BME_ACTION}" {
+        }
+       }
+       {
+        TextWidgetClass "{BM_TEXT}" {
+         Slot FrameWidgetSlot "{BMT_SLOT}" {
+          Anchor 0 0 1 1
+         }
+         Color 0.9 0.9 0.9 1
+         Text "Menu"
+         "Font Size" 12
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+        }
+       }
+      }
+      TextWidgetClass "{TIME_DISPLAY}" {
+       Name "TimeDisplay"
+       Slot FrameWidgetSlot "{TD_SLOT}" {
+        PositionX 650
+        OffsetLeft 650
+        PositionY 70
+        OffsetTop 70
+        SizeX 130
+        OffsetRight -780
+        SizeY 25
+        OffsetBottom -95
+       }
+       Color 1 1 1 1
+       Text "13:00"
+       "Font Size" 18
+       "Horizontal Alignment" Center
+      }
+      TextWidgetClass "{MISSION_ID_DISPLAY}" {
+       Name "MissionIDDisplay"
+       Slot FrameWidgetSlot "{MID_SLOT}" {
+        PositionX 650
+        OffsetLeft 650
+        PositionY 100
+        OffsetTop 100
+        SizeX 130
+        OffsetRight -780
+        SizeY 20
+        OffsetBottom -120
+       }
+       Color 0.85 0.85 1 1
+       Text "012008"
+       "Font Size" 16
+       "Horizontal Alignment" Center
+      }
+      TextWidgetClass "{BATTERY_ICON}" {
+       Name "BatteryIcon"
+       Slot FrameWidgetSlot "{BI_SLOT}" {
+        PositionX 650
+        OffsetLeft 650
+        PositionY 125
+        OffsetTop 125
+        SizeX 130
+        OffsetRight -780
+        SizeY 20
+        OffsetBottom -145
+       }
+       Color 0.25 1 0.25 1
+      Text "⚡ 100%"
+      "Font Size" 14
+      "Horizontal Alignment" Center
+     }
+    }
+   }
+  }
+ }
+}
