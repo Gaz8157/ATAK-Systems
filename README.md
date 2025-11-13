@@ -18,6 +18,7 @@ ATAK Systems provides an interactive tactical device with real-time GPS coordina
 - 🧭 **Compass System** - Standalone compass with bearing and direction
 - 🎮 **Multi-tab Interface** - Missions, Map, and Systems tabs
 - 🌐 **Multiplayer Ready** - Network synchronization for mission data
+- 🔄 **Network Retry System** - Automatic retry with exponential backoff for failed RPC calls
 
 ## Quick Start
 
@@ -51,6 +52,7 @@ ATAK Systems/
 ### Key Documentation
 - **[Copilot Instructions](.github/copilot-instructions.md)** - Complete AI agent development guide
 - **[Widget Guide](ATAK_Widget_Guide.md)** - UI widget structure and templates
+- **[Network Retry Guide](ATAK_NetworkRetry_Guide.md)** - Network retry system documentation
 - **API Documentation** - `.github/docs/api/` (Enfusion & Arma Reforger)
 - **Reference Mods** - `.github/docs/reference-mods/` (BLE, vPad, Tactical-Data-Link)
 
@@ -80,10 +82,15 @@ See [.github/copilot-instructions.md](.github/copilot-instructions.md) for:
 - `ATAK_DeviceMenu` - Cursor/gamepad navigation
 - Input action: `ATAK_Toggle` (keyboard:KC_N)
 
+### Network Reliability
+- `ATAK_NetworkRetryComponent` - Automatic retry with exponential backoff
+- `ATAK_MissionSyncComponent` - Mission data synchronization with retry
+- Configurable retry attempts, delays, and timeouts
+
 ### Planned Features
 - **Map Rendering** - Real-time terrain and satellite imagery
-- **Missions Tab** - Command coordination and mission briefings
-- **Network Sync** - Multiplayer mission data synchronization
+- **Missions Tab** - Command coordination and mission briefings (components ready)
+- **Network Sync** - Multiplayer mission data synchronization (implemented)
 
 ## Technical Notes
 
