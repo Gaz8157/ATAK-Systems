@@ -60,11 +60,33 @@ class ATAK_TacticalOverlayWidgetHandler : ScriptedWidgetComponent
     protected FrameWidget m_SystemsContent;
     protected FrameWidget m_MissionsContent;
     
+    // Enhanced status indicators (added from research)
+    protected TextWidget m_ZoomLevel;
+    protected TextWidget m_ConnectionStatus;
+    protected ImageWidget m_BatteryGauge;
+    protected ImageWidget m_SignalStrength;
+    protected ImageWidget m_GPSStatusIcon;
+    
+    // Container frames for better organization (added from research)
+    protected FrameWidget m_HeaderBar;
+    protected FrameWidget m_MainContent;
+    protected FrameWidget m_FooterBar;
+    protected FrameWidget m_StatusOverlay;
+    protected FrameWidget m_ControlsOverlay;
+    
     // State
     protected bool m_bInitialized = false;
     protected bool m_bMenuVisible = false;
     protected int m_iActiveTab = 1; // 0=Missions, 1=Map, 2=Systems
     protected ATAK_UIComponent m_UIComponent;
+    
+    // Performance optimization - throttle updates
+    protected float m_fLastUpdateTime = 0;
+    protected float m_fUpdateInterval = 0.1; // Update every 100ms instead of every frame
+    protected int m_iBatteryLevel = 100;
+    protected int m_iSignalStrength = 5;
+    protected bool m_bGPSLocked = true;
+    protected float m_fCurrentZoom = 1.0;
     
     //------------------------------------------------------------------------------------------------
     // Widget handler attached - called automatically when component is attached to widget
@@ -182,6 +204,21 @@ class ATAK_TacticalOverlayWidgetHandler : ScriptedWidgetComponent
         m_MapContent = m_MapDisplay;
         // Systems content will be from Systems layout
         // Missions content can be added later
+        m_MissionsContent = FrameWidget.Cast(m_RootWidget.FindAnyWidget("MissionsContent"));
+        
+        // Enhanced status indicators (optional - may not exist in layout yet)
+        m_ZoomLevel = TextWidget.Cast(m_RootWidget.FindAnyWidget("ZoomLevel"));
+        m_ConnectionStatus = TextWidget.Cast(m_RootWidget.FindAnyWidget("ConnectionStatus"));
+        m_BatteryGauge = ImageWidget.Cast(m_RootWidget.FindAnyWidget("BatteryGauge"));
+        m_SignalStrength = ImageWidget.Cast(m_RootWidget.FindAnyWidget("SignalStrength"));
+        m_GPSStatusIcon = ImageWidget.Cast(m_RootWidget.FindAnyWidget("GPSStatusIcon"));
+        
+        // Container frames (optional - may not exist in layout yet)
+        m_HeaderBar = FrameWidget.Cast(m_RootWidget.FindAnyWidget("HeaderBar"));
+        m_MainContent = FrameWidget.Cast(m_RootWidget.FindAnyWidget("MainContent"));
+        m_FooterBar = FrameWidget.Cast(m_RootWidget.FindAnyWidget("FooterBar"));
+        m_StatusOverlay = FrameWidget.Cast(m_RootWidget.FindAnyWidget("StatusOverlay"));
+        m_ControlsOverlay = FrameWidget.Cast(m_RootWidget.FindAnyWidget("ControlsOverlay"));
             
         Print("[ATAK_Handler] Widgets initialized");
     }
@@ -611,5 +648,201 @@ class ATAK_TacticalOverlayWidgetHandler : ScriptedWidgetComponent
             dir = dir - 8;
         string directions[8] = {"N", "NE", "E", "SE", "S", "SW", "W", "NW"};
         return directions[dir];
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Enhanced Methods (added from UI research)
+    //------------------------------------------------------------------------------------------------
+    
+    //------------------------------------------------------------------------------------------------
+    // Update battery status with visual indicator
+    // @param percentage - Battery level 0-100
+    void UpdateBatteryStatus(int percentage)
+    {
+        if (!m_bInitialized)
+            return;
+        
+        m_iBatteryLevel = percentage;
+        
+        // Update text widget
+        if (m_BatteryIcon)
+        {
+            string icon = "⚡";
+            // Color code based on level
+            if (percentage > 50)
+                m_BatteryIcon.SetColor(new Color(0, 1, 0, 1)); // Green
+            else if (percentage > 20)
+                m_BatteryIcon.SetColor(new Color(1, 1, 0, 1)); // Yellow
+            else
+                m_BatteryIcon.SetColor(new Color(1, 0, 0, 1)); // Red
+                
+            m_BatteryIcon.SetText(string.Format("%1 %2%%", icon, percentage));
+        }
+        
+        // Update visual gauge if available
+        if (m_BatteryGauge)
+        {
+            // Set image opacity or size based on percentage
+            float fillAmount = percentage / 100.0;
+            m_BatteryGauge.SetOpacity(fillAmount);
+        }
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Update signal strength indicator
+    // @param bars - Signal strength 0-5 bars
+    void UpdateSignalStrength(int bars)
+    {
+        if (!m_bInitialized)
+            return;
+        
+        m_iSignalStrength = bars;
+        
+        if (m_SignalStrength)
+        {
+            // Color code based on strength
+            if (bars >= 4)
+                m_SignalStrength.SetColor(new Color(0, 1, 0, 1)); // Green - Excellent
+            else if (bars >= 2)
+                m_SignalStrength.SetColor(new Color(1, 1, 0, 1)); // Yellow - Fair
+            else
+                m_SignalStrength.SetColor(new Color(1, 0, 0, 1)); // Red - Poor
+                
+            m_SignalStrength.SetOpacity(1.0);
+        }
+        
+        Print(string.Format("[ATAK_Handler] Signal strength updated: %1 bars", bars));
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Update GPS lock status
+    // @param locked - true if GPS has lock, false otherwise
+    void UpdateGPSStatus(bool locked)
+    {
+        if (!m_bInitialized)
+            return;
+        
+        m_bGPSLocked = locked;
+        
+        if (m_GPSStatusIcon)
+        {
+            if (locked)
+                m_GPSStatusIcon.SetColor(new Color(0, 1, 0, 1)); // Green - Locked
+            else
+                m_GPSStatusIcon.SetColor(new Color(1, 0, 0, 1)); // Red - No lock
+                
+            m_GPSStatusIcon.SetOpacity(1.0);
+        }
+        
+        // Update GPS accuracy text color
+        if (m_GPSAccuracyText)
+        {
+            if (locked)
+                m_GPSAccuracyText.SetColor(new Color(0.1, 0.1, 0.1, 1)); // Normal text
+            else
+                m_GPSAccuracyText.SetColor(new Color(1, 0, 0, 1)); // Red - warning
+        }
+        
+        string status = "locked";
+        if (!locked)
+            status = "searching";
+        Print(string.Format("[ATAK_Handler] GPS status: %1", status));
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Update connection status display
+    // @param status - Connection status string (e.g., "ONLINE", "OFFLINE", "CONNECTING")
+    void UpdateConnectionStatus(string status)
+    {
+        if (!m_bInitialized)
+            return;
+        
+        if (m_ConnectionStatus)
+        {
+            m_ConnectionStatus.SetText(status);
+            
+            // Color code based on status
+            if (status == "ONLINE")
+                m_ConnectionStatus.SetColor(new Color(0, 1, 0, 1)); // Green
+            else if (status == "CONNECTING" || status == "DEGRADED")
+                m_ConnectionStatus.SetColor(new Color(1, 1, 0, 1)); // Yellow
+            else
+                m_ConnectionStatus.SetColor(new Color(1, 0, 0, 1)); // Red - offline/error
+        }
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Update zoom level display
+    // @param zoom - Current zoom level (1.0 = 1:1, 0.5 = 1:2, etc.)
+    void UpdateZoomLevel(float zoom)
+    {
+        if (!m_bInitialized)
+            return;
+        
+        m_fCurrentZoom = zoom;
+        
+        if (m_ZoomLevel)
+        {
+            // Convert zoom to scale ratio (e.g., 1:5000)
+            int scale = Math.Round(1000.0 / zoom);
+            m_ZoomLevel.SetText(string.Format("1:%1", scale));
+        }
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Update with performance throttling
+    // Only update at specified interval instead of every frame
+    void UpdateThrottled(float deltaTime)
+    {
+        if (!m_bInitialized)
+            return;
+        
+        float currentTime = System.GetTickCount() / 1000.0;
+        
+        // Check if enough time has passed since last update
+        if (currentTime - m_fLastUpdateTime < m_fUpdateInterval)
+            return;
+        
+        m_fLastUpdateTime = currentTime;
+        
+        // Perform throttled updates here
+        UpdateDisplay();
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Set update interval for throttled updates
+    // @param interval - Update interval in seconds (default 0.1 = 100ms)
+    void SetUpdateInterval(float interval)
+    {
+        m_fUpdateInterval = interval;
+        Print(string.Format("[ATAK_Handler] Update interval set to %1s", interval));
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Get current battery level
+    int GetBatteryLevel()
+    {
+        return m_iBatteryLevel;
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Get current signal strength
+    int GetSignalStrength()
+    {
+        return m_iSignalStrength;
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Get GPS lock status
+    bool IsGPSLocked()
+    {
+        return m_bGPSLocked;
+    }
+    
+    //------------------------------------------------------------------------------------------------
+    // Get current zoom level
+    float GetZoomLevel()
+    {
+        return m_fCurrentZoom;
     }
 }
